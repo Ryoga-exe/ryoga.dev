@@ -202,5 +202,5 @@ header > a {
 }
 
 #space {
-    height: calc(100vh);
+    height: 100vh;
 }
