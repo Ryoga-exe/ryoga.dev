@@ -196,7 +196,11 @@ header > a {
     color: #FF0000;
 }
 
-#copyright{
+#copyright {
     display: block;
     font-size: 15px;
+}
+
+#space {
+    height: calc(100vh);
 }
