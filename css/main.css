@@ -25,14 +25,56 @@
 
 #cover-more-scroll {
     display: block;
-    font-size: 20px;
+    font-size: 23px;
     position: absolute;
-    bottom: 3%;
+    bottom: 0;
     text-align: center;
     color: #343875;
+    cursor: pointer;
 }
 
-#cover-more-scroll i {
-    margin-top: 5px;
-    font-size: 25px;
+#cover-more-scroll p {
+    padding: 10px 10px 50px 10px;
+}
+
+#cover-more-scroll p::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    border-left: 2px solid #343875;
+    border-bottom: 2px solid #343875;
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+}
+@-webkit-keyframes sdb {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-25px, 25px);
+        opacity: 0;
+    }
+}
+@keyframes sdb {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-25px, 25px);
+        opacity: 0;
+    }
 }
