@@ -18,12 +18,16 @@
 #cover-content img{
     width: 100%;
 }
+#cover-content p{
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 #cover-more-scroll {
     display: block;
     font-size: 20px;
     position: absolute;
-    bottom: 30px;
+    bottom: 3%;
     text-align: center;
     color: #343875;
 }
