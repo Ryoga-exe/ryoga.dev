@@ -1,7 +1,7 @@
 :root {
     --Header-bg: #333;
     --Txt-color:  #333;
-    --navBg-color: #ddd;
+    --navBg-color: #eee;
     --hover-github: #333;
 }
 :root .darkmode-body{
@@ -14,6 +14,7 @@
 header {
     display: block;
     position: fixed;
+    opacity: 0;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -25,7 +26,7 @@ header {
 header > a {
     position: absolute;
     width: 200px;
-    height: 57.41px;
+    height: 57.41px; /* ToDo JS で動的に設定する */
 }
 
 #header-logo {
@@ -61,7 +62,7 @@ header > a {
     --memu-size: 20px;
     display: block;
     position: fixed;
-    top: calc((57.41px - var(--memu-size)) / 2);
+    top: calc((57.41px - var(--memu-size)) / 2);  /* ToDo JS で動的に設定する */
     right: 25px;
     width:  calc(var(--memu-size) * 1.25);
     height: var(--memu-size);
