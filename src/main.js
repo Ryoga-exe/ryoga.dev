@@ -1,5 +1,6 @@
 let header;
 let prev;
+let scrolledState = 0;
 window.addEventListener("DOMContentLoaded", function() {
     /*
     document.getElementById("theme-switch-btn").onclick = function() {
@@ -7,6 +8,7 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     */
     document.getElementById("cover-more-scroll").onclick = function() {
+        scrolledState = document.documentElement.scrollTop;
         scrolltoMain();
     }
 
@@ -36,9 +38,10 @@ function scrolltoMain() {
     var y = document.documentElement.scrollTop;
     //let val = -Math.pow( 2, -10 * counter ) + 1.01; // expoOut
     let t = counter / 0.5;
-	if (t < 1)  val =  0.5 * Math.pow( 2, 10 * (t - 1) );
-    else val = 0.5 * ( -Math.pow( 2, -10 * (--t)) + 2 ) + 0.01;
-    window.scrollTo(0, document.getElementById("cover").clientHeight * val);
+	val =  t < 1 ? 0.5 * Math.pow( 2, 10 * (t - 1) ) : 0.5 * ( -Math.pow( 2, -10 * (--t)) + 2 ) + 0.01; // expoInOut
+    scrollval = (document.getElementById("cover").clientHeight - scrolledState) * val + scrolledState;
+    if (scrollval >= y)
+        window.scrollTo(0, scrollval);
     counter += 0.01;
     if (y <= document.getElementById("cover").clientHeight || y == document.body.clientHeight || counter == 1.0) {
         window.setTimeout("scrolltoMain()", 12);
