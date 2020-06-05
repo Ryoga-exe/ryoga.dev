@@ -78,3 +78,29 @@
         opacity: 0;
     }
 }
+
+#bio {
+    height: 1500px;
+    padding-top: 150px;
+    background-color:#3dc4b8;
+    color: white;
+    text-align: center;
+}
+#bio p {
+    font-size: 1.2em;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 2.3em;
+    font-weight: normal;
+}
+h2::after {
+    margin-top: 12px;
+    margin-bottom: 35px;
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: black;
+    opacity: 0.3;
+}
