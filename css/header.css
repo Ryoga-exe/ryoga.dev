@@ -59,13 +59,13 @@ header {
 }
 
 .menu {
-    --memu-size: 20px;
+    --menu-size: 20px;
     display: block;
     position: fixed;
-    top: calc((56.41px - var(--memu-size)) / 2);
+    top: calc((56.41px - var(--menu-size)) / 2);
     right: 25px;
-    width:  calc(var(--memu-size) * 1.25);
-    height: var(--memu-size);
+    width:  calc(var(--menu-size) * 1.25);
+    height: var(--menu-size);
     cursor: pointer;
     z-index: 20;
 }
@@ -213,23 +213,23 @@ header {
         display: block;
         width: 150px;
         height: auto;
-        padding: 10px 20px 8px 20px;
+        padding: 10px 20px 7px 20px;
         background-color: var(--Header-bg);
         transition: 0.3s;
     }
     .menu {
-        --memu-size: 15px;
+        --menu-size: 15px;
         display: block;
         position: fixed;
-        top: calc((38.77px - var(--memu-size)) / 2);
+        top: calc((37.77px - var(--menu-size)) / 2);
         right: 20px;
-        width:  calc(var(--memu-size) * 1.25);
-        height: var(--memu-size);
+        width:  calc(var(--menu-size) * 1.25);
+        height: var(--menu-size);
         cursor: pointer;
         z-index: 20;
     }
     .menu-line {
-        top: calc(50% - 0px);
+        top: calc(50% - 1px);
     }
     .menu-inner::after,
     .menu-inner::before {
