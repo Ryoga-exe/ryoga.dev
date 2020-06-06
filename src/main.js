@@ -11,8 +11,8 @@ window.addEventListener("DOMContentLoaded", function() {
         scrolledState = document.documentElement.scrollTop;
         scrolltoMain();
     }
-
     header = document.getElementById("head");
+    
     prev = document.documentElement.scrollTop >= document.getElementById("cover").clientHeight;
     if (prev) header.style.opacity="1.0";
     else header.style.opacity="0";
@@ -43,7 +43,7 @@ function scrolltoMain() {
     if (scrollval >= y)
         window.scrollTo(0, scrollval);
     counter += 0.01;
-    if (y <= document.getElementById("cover").clientHeight || y == document.body.clientHeight || counter == 1.0) {
+    if (y <= document.getElementById("cover").clientHeight || counter < 1.00 || y == document.body.clientHeight) {
         window.setTimeout("scrolltoMain()", 12);
     }
     else {
