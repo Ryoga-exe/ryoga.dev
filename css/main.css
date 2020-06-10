@@ -169,6 +169,7 @@ h3 {
 #skills > div {
     width: 100%;
     display: flex;
+    margin-bottom: 20px;
 }
 
 #skills > div div {
@@ -180,12 +181,21 @@ h3 {
     margin-top: 35px;
     font-size: 60px;
 }
+.skill-section i {
+    margin: 0 10px;
+}
 .skill-section::after{
     font-family: Roboto;
     content: attr(skill);
     display: block;
     margin-top: 15px;
     font-size: 18px;
+}
+
+#works {
+    background-color: #32787a;
+    color: #eee;
+    text-align: center;
 }
 
 
@@ -197,5 +207,6 @@ h3 {
     
     #skills > div >  div {
         width: 100%;
+        margin-bottom: 100px;
     }
 }
