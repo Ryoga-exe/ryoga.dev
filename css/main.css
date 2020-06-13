@@ -194,15 +194,25 @@ h3 {
 }
 
 #works {
-    background-color: #32787a;
+    background-color: #377f81;
     color: #eee;
     text-align: center;
 }
 
 #tweets{
-    background-color: #1a5355;
+    background-color: #296e70;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
 }
+
+.twitter-follow-button {
+    display: block;
+}
+
 
 @media screen and (max-width: 559px) {
     #skills > div {
