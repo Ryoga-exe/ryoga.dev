@@ -199,15 +199,19 @@ h3 {
     text-align: center;
 }
 
+#tweets{
+    background-color: #1a5355;
+    height: 100vh;
+}
 
 @media screen and (max-width: 559px) {
     #skills > div {
         width: 100%;
         display: block;
     }
-    
     #skills > div >  div {
         width: 100%;
-        margin-bottom: 100px;
+        margin-top: 30px;
+        margin-bottom: 70px;
     }
 }
