@@ -1,52 +1,32 @@
-let header;
-let prev;
-let scrolledState = 0;
-window.addEventListener("DOMContentLoaded", function() {
-    /*
-    document.getElementById("theme-switch-btn").onclick = function() {
-        document.body.classList.toggle("darkmode-body");
-    };
-    */
-    document.getElementById("cover-more-scroll").onclick = function() {
-        scrolledState = document.documentElement.scrollTop;
-        scrolltoMain();
-    }
-    header = document.getElementById("head");
+let pages = ['sample', '10sChallenge', 'sigmabeat', 'tetTyping'];  // ToDo : 動的に、自動で page ディレクトリより取得
+let pageFiles = new Array();
+document.addEventListener('DOMContentLoaded', async () => {
     
-    prev = document.documentElement.scrollTop >= document.getElementById("cover").clientHeight;
-    if (prev) header.style.opacity="1.0";
-    else header.style.opacity="0";
+    await loadPages(); // ToDo 上限を設けて、More ボタンでさらに読み込む
+    // ソートをする
+    console.log(pageFiles); // to debug
+
+    let works = document.getElementById('works');
+
+    pageFiles.forEach(c => {
+        let container = document.createElement('div');
+        let description = document.createElement('span');
+        container.className = 'work-container'
+        description.textContent = c.name === undefined ? ' ' : c.name;
+        if (c.image !== undefined) container.style.backgroundImage = 'url(pages/' + c.image + ')';
+        container.appendChild(description);
+        works.appendChild(container);
+    });
 })
 
-window.onscroll = function() {
-    if (document.documentElement.scrollTop >= document.getElementById("cover").clientHeight){
-        if (!prev){
-            header.style.opacity="1.0"; 
-        }
-        prev = true;
-    }
-    else {
-        if (prev){
-            header.style.opacity="0";
-        }
-        prev = false;
+async function loadPages() {
+    for (let i = 0; i < pages.length; i++) {
+        pageFiles[i] = (await (getJSON('pages/' + pages[i] + '.json')));
     }
 }
 
-let counter = 0;
-function scrolltoMain() {
-    var y = document.documentElement.scrollTop;
-    //let val = -Math.pow( 2, -10 * counter ) + 1.01; // expoOut
-    let t = counter / 0.5;
-	val =  t < 1 ? 0.5 * Math.pow( 2, 10 * (t - 1) ) : 0.5 * ( -Math.pow( 2, -10 * (--t)) + 2 ) + 0.01; // expoInOut
-    scrollval = (document.getElementById("cover").clientHeight - scrolledState) * val + scrolledState;
-    if (scrollval >= y)
-        window.scrollTo(0, scrollval);
-    counter += 0.01;
-    if (y <= document.getElementById("cover").clientHeight || counter < 1.00 || y == document.body.clientHeight) {
-        window.setTimeout("scrolltoMain()", 12);
-    }
-    else {
-        counter = 0;
-    }
+async function getJSON(fileName) {
+    let jsonContent;
+    await fetch(fileName).then(r => r.text()).then(t => { jsonContent = JSON.parse(t); });
+    return jsonContent;
 }
