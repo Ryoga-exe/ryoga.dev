@@ -1,6 +1,8 @@
 let header;
 let prev;
 let scrolledState = 0;
+let isScrolling = false;
+
 window.addEventListener("DOMContentLoaded", function() {
     /*
     document.getElementById("theme-switch-btn").onclick = function() {
@@ -8,8 +10,13 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     */
     document.getElementById("cover-more-scroll").onclick = function() {
-        scrolledState = document.documentElement.scrollTop;
-        scrolltoMain();
+        if (!isScrolling){
+            isScrolling = true;
+            document.addEventListener('touchmove', noScroll, { passive: false });
+            document.addEventListener('mousewheel', noScroll, { passive: false });
+            scrolledState = document.documentElement.scrollTop;
+            scrolltoMain();
+        }
     }
     header = document.getElementById("head");
     
@@ -33,6 +40,10 @@ window.onscroll = function() {
     }
 }
 
+function noScroll(event) {
+    event.preventDefault();
+}
+
 let counter = 0;
 function scrolltoMain() {
     var y = document.documentElement.scrollTop;
@@ -47,6 +58,9 @@ function scrolltoMain() {
         window.setTimeout("scrolltoMain()", 12);
     }
     else {
+        document.removeEventListener('touchmove', noScroll, { passive: false });
+        document.removeEventListener('mousewheel', noScroll, { passive: false });
         counter = 0;
+        isScrolling = false;
     }
 }
