@@ -1,39 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ryoga.exe's Website]]></title><description><![CDATA[A website made by Ryoga.exe a Japanese programmer]]></description><link>https://ryoga-exe.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Sep 2020 18:00:57 GMT</lastBuildDate><item><title><![CDATA[Gatsby.js でサイトを作った]]></title><link>https://ryoga-exe.github.io/blog/hello-world/</link><guid isPermaLink="false">https://ryoga-exe.github.io/blog/hello-world/</guid><pubDate>Tue, 15 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ryoga.exe's Website]]></title><description><![CDATA[A website made by Ryoga.exe a Japanese programmer]]></description><link>https://ryoga-exe.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Sep 2020 18:21:12 GMT</lastBuildDate><item><title><![CDATA[Gatsby.js でサイトを作った]]></title><description><![CDATA[というイケイケな静的サイトジェネレーターを知り、折角なので自分のサイトを作り直してみた。   まあ、公開を急いだためまだスターターほぼそのままであるが… とりあえず今言えることは、「Gatsby最高！！！！」 はい、めちゃくちゃいい。ブログがMark Down…]]></description><link>https://ryoga-exe.github.io/blog/hello-world/</link><guid isPermaLink="false">https://ryoga-exe.github.io/blog/hello-world/</guid><pubDate>Tue, 15 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Gatsby.js&lt;/code&gt;というイケイケな静的サイトジェネレーターを知り、折角なので自分のサイトを作り直してみた。  &lt;/p&gt;
+&lt;h6&gt;まあ、公開を急いだためまだスターターほぼそのままであるが…&lt;/h6&gt;
+&lt;p&gt;とりあえず今言えることは、「Gatsby最高！！！！」&lt;/p&gt;
+&lt;p&gt;はい、めちゃくちゃいい。ブログがMark Down記法で書けて、しかもTSにも対応、確認しやすいし、スターターも充実している。  &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     std&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;cout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; std&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;endl&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACEhEy/9oACAEBAAEFAkqW2DlnRj73yf/EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8Bi6f/xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAbEAADAQADAQAAAAAAAAAAAAABESEAMUGBof/aAAgBAQABPyGxNMfrLHmCDZmAzzvJJDjEQCHv/9oADAMBAAIAAwAAABDIL//EABYRAQEBAAAAAAAAAAAAAAAAAAERAP/aAAgBAwEBPxARhylZv//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFoktI//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAxIWFBcYHh/9oACAEBAAE/EEbMLQ0fMHDVaPIXyI4pk4JUnWacNCtO8ojDE9TGIYES7/Jn/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/a80bd/salty_egg.jpg 148w,
-/static/8058f3f26913fea3b6a89a73344fe94a/1c91a/salty_egg.jpg 295w,
-/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg 590w,
-/static/8058f3f26913fea3b6a89a73344fe94a/a8a14/salty_egg.jpg 885w,
-/static/8058f3f26913fea3b6a89a73344fe94a/fbd2c/salty_egg.jpg 1180w,
-/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;コードも置ける。&lt;/p&gt;
+&lt;p&gt;GitHub Actionsを使えば、自動でビルド&amp;#x26;デプロイしてくれる。
+なんかすげえ楽。&lt;/p&gt;
+&lt;p&gt;しかも&lt;strong&gt;爆速&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;いいっすねぇ。&lt;/p&gt;
+&lt;p&gt;長々と喋りましたが、これからは自分なりのいい感じなイケイケなサイトにしていくつもりです ()&lt;/p&gt;
+&lt;p&gt;ぼちぼち更新します。&lt;/p&gt;</content:encoded></item></channel></rss>
