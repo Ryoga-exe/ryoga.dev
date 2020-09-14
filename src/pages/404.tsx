@@ -13,7 +13,6 @@ type DataProps = {
 }
 
 const NotFoundPage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
-  
   <Layout location={location} title={data.site.siteMetadata.title}>
     <SEO title="404: Not Found" />
     <h1>Not Found</h1>
@@ -21,7 +20,6 @@ const NotFoundPage: React.FC<PageProps<DataProps>> = ({ data, location }) => (
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
-
 
 export default NotFoundPage
 
