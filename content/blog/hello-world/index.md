@@ -2,6 +2,8 @@
 title: Gatsby.js でサイトを作った
 date: "2020-09-15"
 description: "Hello World!"
+tags: ['gatsby', 'develop']
+status: 'published'
 ---
 
 `Gatsby.js`というイケイケな静的サイトジェネレーターを知り、折角なので自分のサイトを作り直してみた。  
