@@ -14,41 +14,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article
-            key={node.fields.slug}
-            itemScope
-            itemType="http://schema.org/Article"
-          >
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link
-                  style={{ boxShadow: `none` }}
-                  to={node.fields.slug}
-                  itemProp="url"
-                >
-                  <span itemProp="headline">{title}</span>
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-                itemProp="description"
-              />
-            </section>
-          </article>
-        )
-      })}
+      <Link to="/blog"><h1>Blog</h1></Link>
     </Layout>
   )
 }
