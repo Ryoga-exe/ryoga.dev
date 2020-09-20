@@ -8,6 +8,7 @@ Made with...
 - React.js
 - Gatsby.js
 - TypeScript
+- SCSS
 - GitHub Pages
 - GitHub Actions
 - And so on...
