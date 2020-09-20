@@ -31,7 +31,7 @@ module.exports = {
     title: `Ryoga.exe's Website`,
     author: {
       name: `Ryoga.exe`,
-      summary: `student / programmer / skier`,
+      summary: `Student / Programmer / Skier`,
     },
     description: `A website made by Ryoga.exe a Japanese programmer`,
     siteUrl: `https://ryoga-exe.github.io`,
@@ -98,12 +98,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
   ],

@@ -8,15 +8,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-
-import { rhythm } from "../../utils/typography"
+import styled from "styled-components"
 
 const Bio: React.FC<any>= () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 60, height: 60) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -37,34 +36,33 @@ const Bio: React.FC<any>= () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
-      </p>
-    </div>
+    <Base>
+      <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
+      <div>
+        <p>
+          <a href={`https://twitter.com/${social.twitter}`}>
+            {author.name}
+          </a>
+        </p>
+        <p>{author.summary}</p>
+      </div>
+    </Base>
   )
 }
+
+// justify-content: center;
+const Base = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+`
+
+const BioImage = styled(Image)`
+  margin-bottom: 0;
+  margin-right: 1.2rem;
+  min-width: 60px;
+  border-radius: 50%;
+`
 
 export default Bio
