@@ -7,3 +7,5 @@ export const Footer: React.FC = () => (
     </small>
   </footer>
 )
+
+export default Footer;
