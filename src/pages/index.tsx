@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
 import Hero from "../components/organisms/hero"
-// import { rhythm } from "../utils/typography"
+
 
 const TopPage: React.FC<any> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -17,8 +17,10 @@ const TopPage: React.FC<any> = ({ data, location }) => {
 
         <Hero />
 
-        <Bio />
+        
         <Link to="/blog"><h1>Blog</h1></Link>
+
+        <Bio />
       </Layout>
     </React.Fragment>
   )
