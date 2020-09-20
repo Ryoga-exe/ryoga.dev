@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../utils/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex: React.FC<any>  = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
