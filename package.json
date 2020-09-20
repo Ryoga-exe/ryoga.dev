@@ -39,6 +39,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-plugin-ts-config": "^1.0.0",
     "prettier": "2.1.1"
   },
   "keywords": [
