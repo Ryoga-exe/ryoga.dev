@@ -1,7 +1,20 @@
 /*
-
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
     {
       resolve: `gatsby-plugin-ts-config`,
       options: {
@@ -13,7 +26,6 @@ module.exports = {
 };
 
 */
-
 module.exports = {
   siteMetadata: {
     title: `Ryoga.exe's Website`,
@@ -93,5 +105,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
   ],
 }

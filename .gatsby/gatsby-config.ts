@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
+    /*
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,6 +34,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {
