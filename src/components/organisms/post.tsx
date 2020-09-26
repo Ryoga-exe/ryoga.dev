@@ -7,7 +7,7 @@ const Base = styled.div`
   
 `
 
-export const Post: React.FC = () => (
+const Post: React.FC = () => (
   <Base></Base>
 )
 

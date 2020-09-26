@@ -12,7 +12,7 @@ const Base = styled.div`
   padding-bottom: 2px;
 `
 
-export const Devlopment: React.FC = () => (
+const Devlopment: React.FC = () => (
   <Base>
     このサイトは工事中です。/
     This site is not yet complete. (WIP)

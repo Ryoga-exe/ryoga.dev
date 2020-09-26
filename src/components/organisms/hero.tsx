@@ -13,12 +13,18 @@ const Base = styled.div`
   padding: 0 10px;
 `
 
-export const Hero: React.FC = () => (
-  <Base>
+const Hero: React.FC = () => {
+  const handleOnClick = () => {
+    // Scroll
+    // console.log("clicked");
+  }
+  return(
+    <Base>
 
-    <Logo />
-    <div className="scroll-more"><p>MORE</p></div>
-  </Base>
-)
+      <Logo />
+      <div className="scroll-more" onClick={handleOnClick}><p>MORE</p></div>
+    </Base>
+  );
+}
 
 export default Hero

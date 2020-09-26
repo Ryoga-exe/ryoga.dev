@@ -1,11 +1,16 @@
 import React from "react"
+import styled from "styled-components";
+
+const BaseFooter = styled.footer`
+  
+`
 
 export const Footer: React.FC = () => (
-  <footer>
+  <BaseFooter>
     <small>
       © {new Date().getFullYear()} Ryoga.exe All rights reserved. Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
     </small>
-  </footer>
+  </BaseFooter>
 )
 
 export default Footer;
