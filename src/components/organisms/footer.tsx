@@ -5,7 +5,7 @@ const BaseFooter = styled.footer`
   
 `
 
-export const Footer: React.FC = () => (
+const Footer: React.FC = () => (
   <BaseFooter>
     <small>
       © {new Date().getFullYear()} Ryoga.exe All rights reserved. Built with <a href="https://www.gatsbyjs.org">Gatsby</a>

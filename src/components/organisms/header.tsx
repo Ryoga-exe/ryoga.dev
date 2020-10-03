@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Header: React.FC = () => (
+const Header: React.FC = () => (
   <header>
 
   </header>

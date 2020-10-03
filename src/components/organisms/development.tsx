@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import styled from "styled-components"
 
 const Base = styled.div`
@@ -12,11 +12,16 @@ const Base = styled.div`
   padding-bottom: 2px;
 `
 
-const Devlopment: React.FC = () => (
-  <Base>
-    このサイトは工事中です。/
-    This site is not yet complete. (WIP)
-  </Base>
-)
-
-export default Devlopment
+export default class Development extends Component {
+  state = {
+    disp : (<Base>このサイトは工事中です。/ This site is not yet complete. (WIP)</Base>)
+  }
+  handleOnClick = () => {
+    this.setState({disp: (<div></div>)});
+  }
+  render() {
+    return (
+      <div onClick={this.handleOnClick}>{this.state.disp}</div>
+    );
+  }
+}
