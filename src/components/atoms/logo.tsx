@@ -6,12 +6,9 @@ type LogoProps = {
   minWidth?: string;
 }
 
-const Base = styled.div.attrs(props => ({
-  width:    props.width || '16%',
-  minWidth: props.minWidth || '250px',
-}))`
-  width: ${props => props.width};
-  min-width: ${props => props.minWidth};
+const Base = styled.div<{width?: string, minWidth?: string}>`
+  width:     ${props => (props.width || '16%')};
+  min-width: ${props => (props.minWidth || '250px')};
 `
 
 const Logo: React.FC<LogoProps> = ({ width, minWidth }) => (
