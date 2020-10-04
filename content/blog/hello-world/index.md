@@ -14,7 +14,7 @@ status: 'published'
 
 はい、めちゃくちゃいい。ブログがMark Down記法で書けて、しかもTSにも対応、確認しやすいし、スターターも充実している。  
 
-```cpp
+```cpp{numberLines: true}
 #include <iostream>
 
 int main() {
