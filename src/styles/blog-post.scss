@@ -6,9 +6,7 @@
         font-size: 2.2em;
         margin-top: 10px;
         margin-bottom: 5px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        word-break: break-word;
     }
 
     .post-date {
