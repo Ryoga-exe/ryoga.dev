@@ -1,0 +1,17 @@
+
+.blog-title {
+    margin-bottom: 35px;
+
+    h1 {
+        font-size: 2.2em;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .post-date {
+        font-size: 0.8em;
+    }
+}

@@ -7,7 +7,7 @@ type LogoProps = {
 }
 
 const Base = styled.div.attrs(props => ({
-  width:    props.width || '17%',
+  width:    props.width || '16%',
   minWidth: props.minWidth || '250px',
 }))`
   width: ${props => props.width};

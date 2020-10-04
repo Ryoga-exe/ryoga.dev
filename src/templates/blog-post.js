@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/molecules/bio"
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
+import "../styles/blog-post.scss"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -16,40 +17,24 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article itemScope itemType="http://schema.org/Article">
-        <header>
-          <h1
-            itemProp="headline"
-            style={{
-              //marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
+      <article>
+        <div className="blog-title">
+          <h1 itemProp="headline">
             {post.frontmatter.title}
           </h1>
-          <p
-            style={{
-              //...scale(-1 / 5),
-              display: `block`,
-              //marginBottom: rhythm(1),
-            }}
-          >
+          <p className="post-date">
             {post.frontmatter.date}
           </p>
-        </header>
+        </div>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr
-          style={{
-            //marginBottom: rhythm(1),
-          }}
-        />
-        <footer>
-          <Bio />
-        </footer>
+        <hr />
+        <Bio />
       </article>
+
+
 
       <nav>
         <ul
