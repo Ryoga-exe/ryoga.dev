@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../utils/seo"
 import "../styles/blog-post.scss"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article className="blog-article">
         <div className="blog-title">
           <h1 itemProp="headline">
             {post.frontmatter.title}
@@ -30,6 +30,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        {/*<section>{renderAst(post.htmlAst)}</section>*/}
       </article>
 
 
@@ -51,6 +52,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               </Link>
             )}
           </li>
+          
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">

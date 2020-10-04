@@ -3,7 +3,7 @@ title: Gatsby.js のサイトの改善
 date: "2020-10-04"
 description: "いろいろと改造してみました。"
 tags: ['gatsby', 'develop']
-status: 'draft'
+status: 'published'
 ---
 
 `Gatsby.js`を使ってサイトを作っているのですが、その途中経過として書きます。  
