@@ -11,6 +11,7 @@ const Base = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  background-color: white;
 `
 
 const Hero: React.FC = () => {
@@ -20,7 +21,6 @@ const Hero: React.FC = () => {
   }
   return(
     <Base>
-
       <Logo />
       <div className="scroll-more" onClick={handleOnClick}><p>MORE</p></div>
     </Base>
