@@ -34,7 +34,7 @@ module.exports = {
       summary: `Student / Programmer / Skier`,
     },
     description: `A website made by Ryoga.exe a Japanese programmer`,
-    siteUrl: `https://ryoga-exe.github.io`,
+    siteUrl: `https://ryoga.dev/`,
     social: {
       twitter: `Ryoga_exe`,
     },
