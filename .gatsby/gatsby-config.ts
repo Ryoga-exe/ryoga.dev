@@ -3,6 +3,7 @@ const siteUrl = `https://ryoga.dev`;
 const siteDescription = `Ryoga.exeのサイト`;
 const backgroundColor = `#09090f`;
 const themeColor = `#7ee6a6`;
+const siteFavicon = `content/assets/icon.png`;
 
 const siteMetadata = {
   title: siteTitle,
@@ -124,7 +125,7 @@ module.exports = {
         background_color: backgroundColor,
         theme_color: themeColor,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: siteFavicon,
       },
     },
     `gatsby-plugin-offline`,
