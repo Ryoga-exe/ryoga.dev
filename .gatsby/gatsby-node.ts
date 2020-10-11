@@ -2,6 +2,23 @@ import path from "path"
 import { GatsbyNode } from "gatsby"
 import { createFilePath } from "gatsby-source-filesystem"
 
+interface BlogProps {
+  allMarkdownRemark: {
+    edges: [
+      {
+        node: {
+          frontmatter: {
+            title: string;
+          }
+          fields: {
+            slug: string;
+          }
+        }
+      }
+    ]
+  }
+};
+
 const query = `
   query {
     allMarkdownRemark(
@@ -25,7 +42,7 @@ const query = `
 
 export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions: { createPage } }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
-  const result = await graphql(query);
+  const result = await graphql<BlogProps>(query);
 
   if (result.errors) throw result.errors;
   const posts = result.data.allMarkdownRemark.edges;
@@ -46,15 +63,13 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions:
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
+export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: { createNodeField }, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
-    const value = `/blog` + createFilePath({ node, getNode })
+    const value = `/blog` + createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
 }
