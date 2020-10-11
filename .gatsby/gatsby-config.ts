@@ -47,6 +47,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-graphql-codegen',
+      options: {
+        codegenConfig: { maybeValue: 'T | undefined' },
+        fileName: `types/graphql-types.d.ts`
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -95,7 +102,7 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
   ],
 }
