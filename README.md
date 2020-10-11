@@ -5,7 +5,7 @@ You can see [here](https://ryoga-exe.github.io)!
 
 Made with...
 
-- React.js
+- React
 - Gatsby.js
 - TypeScript
 - SCSS
