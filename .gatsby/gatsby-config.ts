@@ -109,9 +109,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ryoga.exe's Website`,
-        short_name: `Ryoga.exe`,
-        start_url: `/`,
+        name: siteTitle,
+        short_name: siteTitle,
+        description: siteDescription,
+        Scope: `/`,
+        start_url: `/?utm_source=homescreen`,
         background_color: backgroundColor,
         theme_color: themeColor,
         display: `minimal-ui`,
