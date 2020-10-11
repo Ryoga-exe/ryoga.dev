@@ -1,25 +1,37 @@
+const siteTitle = `Ryoga.exe's Website`;
+const siteUrl = `https://ryoga.dev`;
+const siteDescription = `Ryoga.exeのサイト`;
+const backgroundColor = `#09090f`;
+const themeColor = `#7ee6a6`;
+
 const siteMetadata = {
-  title: `Ryoga.exe's Website`,
-  description: `A website made by Ryoga.exe a Japanese programmer`,
-  siteUrl: `https://ryoga-exe.github.io`,
+  title: siteTitle,
+  siteTitleAlt: `Ryoga.exe's Website`,
+  siteHeadline: `Ryoga.exe's Website`,
+  siteUrl: siteUrl,
+  description: siteDescription,
+  siteLanguage: `ja`,
   author: {
     name: `Ryoga.exe`,
-    summary: `student / programmer / skier`,
+    summary: `Student / Programmer / Skier`,
   },
+  basePath: `/`,
   social: {
     twitter: `Ryoga_exe`,
+    github: `Ryoga-exe`,
+    qiita: `Ryoga-exe`,
   },
-}
+};
 
 module.exports = {
   siteMetadata,
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
-    /*
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-root-import`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,7 +46,6 @@ module.exports = {
         name: `assets`,
       },
     },
-    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -51,35 +62,40 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: false,
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `UA-179580992-1`,
       },
     },
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Ryoga.exe's Website`,
         short_name: `Ryoga.exe`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: backgroundColor,
+        theme_color: themeColor,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    
+    `gatsby-plugin-sitemap`,
   ],
-};
+}
