@@ -9,6 +9,8 @@ Made with...
 - Gatsby.js
 - TypeScript
 - SCSS
+- styled-components
+- PWA
 - GitHub Pages
 - GitHub Actions
 - And so on...
