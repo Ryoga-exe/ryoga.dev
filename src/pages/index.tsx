@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/molecules/bio"
-import Layout from "../components/layout"
-import SEO from "../utils/seo"
-import Hero from "../components/organisms/hero"
+import Bio from "src/components/molecules/bio"
+import Layout from "src/components/layout"
+import SEO from "src/utils/seo"
+import Hero from "src/components/organisms/hero"
 
 
 const TopPage: React.FC<any> = ({ data, location }) => {

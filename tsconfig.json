@@ -18,7 +18,11 @@
     "target": "esnext",  
     "allowJs": true,  
     "resolveJsonModule": true,  
-    "isolatedModules": true  
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "src": ["src/*"]
+    }
   },  
   "exclude": [  
     "node_modules"  
