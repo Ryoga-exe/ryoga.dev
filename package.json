@@ -1,12 +1,13 @@
 {
-  "name": "ryoga-exe.github.io",
+  "name": "ryoga-exe.dev",
   "private": true,
-  "description": "Ryoga.exe's Website; Made with GatsbyJs",
+  "description": "ryoga.dec - Ryoga.exe's Website; Made with GatsbyJs",
   "version": "0.1.0",
-  "author": "Ryoga.exe <ryoga-exe.github.io>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Ryoga.exe <ryoga.dev>",
+  "license": "0BSD",
+  "keywords": [
+    "gatsby"
+  ],
   "dependencies": {
     "@types/styled-components": "^5.1.3",
     "babel-plugin-styled-components": "^1.11.1",
@@ -21,7 +22,6 @@
     "gatsby-plugin-sharp": "^2.6.32",
     "gatsby-plugin-sitemap": "^2.4.14",
     "gatsby-plugin-styled-components": "^3.3.11",
-    "gatsby-plugin-typography": "^2.5.10",
     "gatsby-remark-copy-linked-files": "^2.3.14",
     "gatsby-remark-images": "^3.3.29",
     "gatsby-remark-prismjs": "^3.5.11",
@@ -35,23 +35,15 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
     "styled-components": "^5.2.0",
     "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.0",
     "gatsby-plugin-ts-config": "^1.0.0",
     "prettier": "2.1.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

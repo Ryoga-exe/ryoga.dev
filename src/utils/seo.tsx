@@ -62,10 +62,6 @@ const SEO: React.FC<any> = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          name: "google-site-verification",
-          content: "2u6Sbn7o9xt3WZIdIfJhyYaLHGOCjT540_o2oxHMVGc"
-        },
       ].concat(meta)}
     />
   )

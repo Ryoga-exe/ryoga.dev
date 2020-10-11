@@ -1,44 +1,30 @@
-/*
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-ts-config`,
-      options: {
-        // specify gatsby-*.ts file's directory
-        configDir: `.gatsby`,
-      },
-    },
-  ],
+const siteTitle = `Ryoga.exe's Website`;
+const siteUrl = `https://ryoga.dev`;
+const siteDescription = `Ryoga.exeのサイト`;
+const backgroundColor = `#09090f`;
+const themeColor = `#7ee6a6`;
+
+const siteMetadata = {
+  title: siteTitle,
+  siteTitleAlt: `Ryoga.exe's Website`,
+  siteHeadline: `Ryoga.exe's Website`,
+  siteUrl: siteUrl,
+  description: siteDescription,
+  siteLanguage: `ja`,
+  author: {
+    name: `Ryoga.exe`,
+    summary: `Student / Programmer / Skier`,
+  },
+  basePath: `/`,
+  social: {
+    twitter: `Ryoga_exe`,
+    github: `Ryoga-exe`,
+    qiita: `Ryoga-exe`,
+  },
 };
 
-*/
 module.exports = {
-  siteMetadata: {
-    title: `Ryoga.exe's Website`,
-    author: {
-      name: `Ryoga.exe`,
-      summary: `Student / Programmer / Skier`,
-    },
-    description: `A website made by Ryoga.exe a Japanese programmer`,
-    siteUrl: `https://ryoga.dev/`,
-    social: {
-      twitter: `Ryoga_exe`,
-    },
-  },
+  siteMetadata,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -87,7 +73,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
-        trackingId: `UA-179580992-1`,
+        // trackingId: `UA-179580992-1`,
       },
     },
     `gatsby-plugin-feed`,
@@ -97,8 +83,8 @@ module.exports = {
         name: `Ryoga.exe's Website`,
         short_name: `Ryoga.exe`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: backgroundColor,
+        theme_color: themeColor,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
