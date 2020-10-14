@@ -8,7 +8,7 @@ type LogoProps = {
 }
 
 const Base = styled.div<{width?: string, minWidth?: string, fill?: string}>`
-  width:     ${props => (props.width    || '16%')};
+  width:     ${props => (props.width    || '12%')};
   min-width: ${props => (props.minWidth || '250px')};
   fill:      ${props => (props.fill     || 'black')};
 `

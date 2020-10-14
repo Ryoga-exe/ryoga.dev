@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Footer from "./organisms/footer"
-import Dev from "./organisms/development"
 import styled from "styled-components"
 
 const Main = styled.main`
@@ -44,7 +43,6 @@ const Layout: React.FC<any> = ({ location, title, children }) => {
   }
   return (
     <React.Fragment>
-      <Dev />
       <header>{header}</header>
       {location.pathname === rootPath ?
         <main>{children}</main>:
