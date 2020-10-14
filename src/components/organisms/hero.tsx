@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Logo from "../atoms/logo"
+import Logo from "src/components/atoms/logo"
 
-import "../../styles/scroll-more.scss"
+import "src/styles/scroll-more.scss"
 
 const Base = styled.div`
   width: 100%;
