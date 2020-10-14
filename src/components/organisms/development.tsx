@@ -10,6 +10,7 @@ const Base = styled.div`
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
+  z-index: 64;
 `
 
 export default class Development extends Component {
