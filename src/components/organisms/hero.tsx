@@ -6,7 +6,7 @@ import "src/styles/scroll-more.scss"
 
 const Base = styled.div`
   width: 100%;
-  height: min(max(28vw, 45vh), 100vh);
+  height: min(max(25vw, 45vh), 100vh);
   display: flex;
   justify-content: center;
   align-items: center;

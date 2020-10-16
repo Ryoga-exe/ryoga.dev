@@ -4,14 +4,10 @@ import { Link } from "gatsby"
 import Footer from "./organisms/footer"
 import styled from "styled-components"
 
-const Main = styled.main`
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+const Main = styled.div`
+  margin: 0px auto 20px;
+  padding: 20px 20px 0px;
   max-width: 1100px;
-  padding-top: 20px;
-  margin-bottom: 20px;
 `
 
 const Layout: React.FC<any> = ({ location, title, children }) => {
@@ -44,10 +40,12 @@ const Layout: React.FC<any> = ({ location, title, children }) => {
   return (
     <React.Fragment>
       <header>{header}</header>
+      <main>
       {location.pathname === rootPath ?
-        <main>{children}</main>:
+        <div>{children}</div>:
         <Main>{children}</Main>
       }
+      </main>
       <Footer />
     </React.Fragment>
   )
