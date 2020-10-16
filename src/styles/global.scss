@@ -11,3 +11,9 @@
 body {
   line-height: 1.9;
 }
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
