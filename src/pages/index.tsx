@@ -5,7 +5,7 @@ import Bio from "src/components/molecules/bio"
 import Layout from "src/components/layout"
 import SEO from "src/utils/seo"
 import Hero from "src/components/organisms/hero"
-
+import Container from "src/components/atoms/container"
 
 const TopPage: React.FC<any> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,13 +14,12 @@ const TopPage: React.FC<any> = ({ data, location }) => {
     <React.Fragment>
       <Layout location={location} title={siteTitle}>
         <SEO title="Top" />
-
         <Hero />
-
-        
-        <Link to="/blog"><h1>Blog</h1></Link>
-
-        <Bio />
+        <Container>
+          <Link to="/blog"><h1>Blog</h1></Link>
+          <div style={{height: `100vh`}}></div>
+          <Bio />
+        </Container>
       </Layout>
     </React.Fragment>
   )

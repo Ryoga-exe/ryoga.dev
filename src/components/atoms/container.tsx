@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-const Container = styled.div<{maxWidth?: string}>`
-  margin: 0px auto 20px;
-  padding: 20px 20px 0px;
-  max-width: ${props => (props.maxWidth || '1100px')};
+const Container = styled.div<{maxWidth?: string, margin?: string, padding?: string}>`
+  margin:    ${props => (props.margin   || '0 auto')};
+  padding:   ${props => (props.padding  || '0 3vw')};
+  max-width: ${props => (props.maxWidth || '1120px')};
 `
 
 export default Container

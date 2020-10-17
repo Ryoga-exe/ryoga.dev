@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Logo from "src/components/atoms/logo"
-
-import "src/styles/scroll-more.scss"
+// import "src/styles/scroll-more.scss"
 
 const Base = styled.div`
   width: 100%;
@@ -10,7 +9,7 @@ const Base = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px 0px;
   background-color: #15171a;
 `
 

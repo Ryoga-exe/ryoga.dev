@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/molecules/bio"
-import Layout from "../components/layout"
-import SEO from "../utils/seo"
-import "../styles/blog-post.scss"
+import Bio from "src/components/molecules/bio"
+import Layout from "src/components/layout"
+import SEO from "src/utils/seo"
+import "src/styles/blog-post.scss"
 
 const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark

@@ -5,8 +5,8 @@ import Container from "src/components/atoms/container"
 const BaseFooter = styled.footer`
   width: 100%;
   margin-top: auto;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   background-color: #15171a;
 `
 
