@@ -2,10 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
+//import { BioQuery } from "../../../types/graphql-types"
 
 const Bio: React.FC<any>= () => {
   const data = useStaticQuery(graphql`
-    query BioQuery {
+    query Bio {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
           fixed(width: 60, height: 60) {
@@ -33,9 +34,7 @@ const Bio: React.FC<any>= () => {
       <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
       <div>
         <p>
-          <a href={`https://twitter.com/${social.twitter}`}>
-            {author.name}
-          </a>
+          <a href={`https://twitter.com/${social.twitter}`}>{author.name}</a>
         </p>
         <p>{author.summary}</p>
       </div>
