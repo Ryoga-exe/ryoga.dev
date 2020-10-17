@@ -1,14 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Footer from "./organisms/footer"
-import styled from "styled-components"
-
-const Main = styled.div`
-  margin: 0px auto 20px;
-  padding: 20px 20px 0px;
-  max-width: 1100px;
-`
+import Container from "src/components/atoms/container"
 
 const Layout: React.FC<any> = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -43,7 +36,7 @@ const Layout: React.FC<any> = ({ location, title, children }) => {
       <main>
       {location.pathname === rootPath ?
         <div>{children}</div>:
-        <Main>{children}</Main>
+        <Container>{children}</Container>
       }
       </main>
       <Footer />
