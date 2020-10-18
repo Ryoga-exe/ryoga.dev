@@ -33,6 +33,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-root-import`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,

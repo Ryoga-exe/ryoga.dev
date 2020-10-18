@@ -15,7 +15,7 @@ const TopPage: React.FC<any> = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <SEO title="Top" />
         <Hero />
-        <Container>
+        <Container id="main">
 
           <Link to="/blog"><h1>Blog</h1></Link>
           <Link to="/About"><h1>About</h1></Link>

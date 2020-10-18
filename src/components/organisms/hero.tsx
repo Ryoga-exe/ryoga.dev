@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "styled-components"
 import Logo from "src/components/atoms/logo"
 import "src/styles/scroll-more.scss"
@@ -15,14 +16,10 @@ const Base = styled.div`
 `
 
 const Hero: React.FC = () => {
-  const handleOnClick = () => {
-    console.log("clicked");
-    scrollTo('html')
-  }
   return(
     <Base>
       <Logo fill="white"/>
-      <div className="scroll-more" onClick={handleOnClick}></div>
+      <div className="scroll-more" onClick={() => scrollTo('#main')}></div>
     </Base>
   );
 }
