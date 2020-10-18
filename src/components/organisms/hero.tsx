@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import Logo from "src/components/atoms/logo"
-// import "src/styles/scroll-more.scss"
+import "src/styles/scroll-more.scss"
 
 const Base = styled.div`
+  position: relative;
   width: 100%;
   height: min(max(25vw, 45vh), 100vh);
   display: flex;
@@ -14,16 +15,14 @@ const Base = styled.div`
 `
 
 const Hero: React.FC = () => {
-  /*
   const handleOnClick = () => {
-    // Scroll
-    // console.log("clicked");
+    console.log("clicked");
+    scrollTo('html')
   }
-  */
   return(
     <Base>
       <Logo fill="white"/>
-      {/*<div className="scroll-more" onClick={handleOnClick}><p>MORE</p></div>*/}
+      <div className="scroll-more" onClick={handleOnClick}></div>
     </Base>
   );
 }

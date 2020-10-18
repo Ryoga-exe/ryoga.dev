@@ -1,28 +1,26 @@
 .scroll-more {
+    width: 30px;
+    height: 60px;
     display: block;
-    font-size: 23px;
     position: absolute;
     bottom: 0;
     text-align: center;
-    color: #343875;
+    color: white;
     cursor: pointer;
-    p {
-        padding: 10px 10px 50px 10px;
-        &::after{
-            content: "";
+    &::after{
+        content: "";
         position: absolute;
-        top: 20px;
+        top: 0px;
         left: 50%;
         width: 18px;
         height: 18px;
-        margin-left: -9px;
-        border-left: 2px solid #343875;
-        border-bottom: 2px solid #343875;
+        margin-left: -9.5px;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
         -webkit-transform: rotate(-45deg) translate(0, 0);
         transform: rotate(-45deg) translate(0, 0);
         -webkit-animation: more-scroll 1.5s infinite;
         animation: more-scroll 1.5s infinite;
-        }
     }
 }
 

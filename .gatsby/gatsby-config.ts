@@ -2,7 +2,7 @@ const siteTitle = `Ryoga.exe's Website`;
 const siteUrl = `https://ryoga.dev`;
 const siteDescription = `Ryoga.exeのサイト`;
 const backgroundColor = `#09090f`;
-const themeColor = `#7ee6a6`;
+const themeColor = `#15171a`;
 const siteFavicon = `content/assets/icon.png`;
 
 const siteMetadata = {

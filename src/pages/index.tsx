@@ -16,7 +16,9 @@ const TopPage: React.FC<any> = ({ data, location }) => {
         <SEO title="Top" />
         <Hero />
         <Container>
+
           <Link to="/blog"><h1>Blog</h1></Link>
+          <Link to="/About"><h1>About</h1></Link>
           <div style={{height: `100vh`}}></div>
           <Bio />
         </Container>
