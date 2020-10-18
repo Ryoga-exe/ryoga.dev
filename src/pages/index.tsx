@@ -39,6 +39,7 @@ const AboutMe: React.FC = () => (
 
 const Heading = styled.h2`
   font-size: 2.3em;
+  font-weight: normal;
 `
 
 export const pageQuery = graphql`

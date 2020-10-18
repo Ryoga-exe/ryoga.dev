@@ -4,5 +4,5 @@ import "ress"
 import "prismjs/themes/prism-okaidia.css"
 import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "../src/styles/prismhighlight.scss"
-
+import "typeface-roboto"
 import "../src/styles/global.scss"
