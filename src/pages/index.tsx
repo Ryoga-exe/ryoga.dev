@@ -29,6 +29,12 @@ const TopPage: React.FC<any> = ({ data, location }) => {
 
 export default TopPage
 
+const AboutMe: React.FC = () => (
+  <Container>
+    
+  </Container>
+)
+
 export const pageQuery = graphql`
   query {
     site {
