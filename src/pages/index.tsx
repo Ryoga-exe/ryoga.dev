@@ -44,7 +44,7 @@ const AboutMe: React.FC = () => (
 
 const Heading = styled.h2`
   display: inline-block;
-  font-size: 2.3em;
+  font-size: 2.2em;
   font-weight: normal;
   &::after{
     content: '';
