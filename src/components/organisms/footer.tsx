@@ -12,7 +12,7 @@ const BaseFooter = styled.footer`
 
 const FotterSmall = styled.small`
   display: inline;
-  font-size: 0.8em;
+  font-size: 0.85em;
   color: rgba(255, 255, 255, 0.7);
   > a {
     text-decoration: none;

@@ -17,10 +17,9 @@ const TopPage: React.FC<any> = ({ data, location }) => {
         <SEO title="Top" />
         <Hero />
         <AboutMe />
-        <Container id="main">
+        <Container >
 
           <Link to="/blog"><h1>Blog</h1></Link>
-          <Link to="/about"><h1>About</h1></Link>
           <div style={{height: `100vh`}}></div>
           <Bio />
         </Container>
@@ -32,14 +31,29 @@ const TopPage: React.FC<any> = ({ data, location }) => {
 export default TopPage
 
 const AboutMe: React.FC = () => (
-  <Container>
+  <Container id="aboutMe" padding="100px 3vw">
     <Heading>About Me</Heading>
+    <section>
+      <p>茨城県の某中等学校に通ってるただの人間です。</p>
+      <p>ゲーム開発、Webサイト製作、電子工作などいろいろやっています。たまに編み物もやります。</p>
+      <p>最近は、ReactやGatsby.js、競プロにハマって勉強していますが、やりたいことが多すぎて方向性が散乱しがちです。</p>
+      <Link to="/about"><h1>About</h1></Link>
+    </section>
   </Container>
 )
 
 const Heading = styled.h2`
+  display: inline-block;
   font-size: 2.3em;
   font-weight: normal;
+  &::after{
+    content: '';
+    display: block;
+    height: 3px;
+    margin-bottom: 1.8rem;
+    background-color: black;
+    opacity: 0.3;
+  }
 `
 
 export const pageQuery = graphql`

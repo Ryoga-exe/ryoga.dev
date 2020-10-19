@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
   return(
     <Base>
       <Logo fill="white"/>
-      <div className="scroll-more" onClick={() => scrollTo('#main')}></div>
+      <div className="scroll-more" onClick={() => scrollTo('#aboutMe')}></div>
     </Base>
   );
 }
