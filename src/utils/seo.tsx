@@ -67,7 +67,7 @@ const SEO: React.FC<any> = ({ description, lang, meta, title }) => {
         {
           name: `twitter:image`,
           content: `${site.siteMetadata.siteUrl}${site.siteMetadata.siteDefaultImage}`,
-        }
+        },
       ].concat(meta)}
     />
   )
