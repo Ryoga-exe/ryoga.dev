@@ -17,6 +17,7 @@ const TopPage: React.FC<any> = ({ data, location }) => {
         <SEO title="Top" />
         <Hero />
         <AboutMe />
+        <Skills />
         <Container >
 
           <Link to="/blog"><h1>Blog</h1></Link>
@@ -39,6 +40,12 @@ const AboutMe: React.FC = () => (
       <p>最近は、ReactやGatsby.js、競プロにハマって勉強していますが、やりたいことが多すぎて方向性が散乱しがちです。</p>
       <Link to="/about"><h1>About</h1></Link>
     </section>
+  </Container>
+)
+
+const Skills: React.FC = () => (
+  <Container id="skills" padding="100px 3vw">
+    <Heading>Skills</Heading>
   </Container>
 )
 

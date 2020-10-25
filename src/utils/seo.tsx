@@ -9,8 +9,10 @@ const SEO: React.FC<any> = ({ description, lang, meta, title }) => {
       query {
         site {
           siteMetadata {
+            siteUrl
             title
             description
+            siteDefaultImage
             social {
               twitter
             }
@@ -48,7 +50,7 @@ const SEO: React.FC<any> = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary`, // `summary_large_image`
         },
         {
           name: `twitter:creator`,
@@ -62,6 +64,10 @@ const SEO: React.FC<any> = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.siteDefaultImage}`,
+        }
       ].concat(meta)}
     />
   )

@@ -2166,6 +2166,7 @@ export type SiteFieldsEnum =
   | 'siteMetadata___siteUrl'
   | 'siteMetadata___description'
   | 'siteMetadata___siteLanguage'
+  | 'siteMetadata___siteDefaultImage'
   | 'siteMetadata___author___name'
   | 'siteMetadata___author___summary'
   | 'siteMetadata___basePath'
@@ -3061,6 +3062,7 @@ export type SiteSiteMetadata = {
   siteUrl?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   siteLanguage?: Maybe<Scalars['String']>;
+  siteDefaultImage?: Maybe<Scalars['String']>;
   author?: Maybe<SiteSiteMetadataAuthor>;
   basePath?: Maybe<Scalars['String']>;
   social?: Maybe<SiteSiteMetadataSocial>;
@@ -3083,6 +3085,7 @@ export type SiteSiteMetadataFilterInput = {
   siteUrl?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   siteLanguage?: Maybe<StringQueryOperatorInput>;
+  siteDefaultImage?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<SiteSiteMetadataAuthorFilterInput>;
   basePath?: Maybe<StringQueryOperatorInput>;
   social?: Maybe<SiteSiteMetadataSocialFilterInput>;
@@ -3160,7 +3163,7 @@ export type Unnamed_4_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type Unnamed_4_Query = { site?: Maybe<{ siteMetadata?: Maybe<(
-      Pick<SiteSiteMetadata, 'title' | 'description'>
+      Pick<SiteSiteMetadata, 'siteUrl' | 'title' | 'description' | 'siteDefaultImage'>
       & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
 

@@ -4,6 +4,7 @@ const siteDescription = `Ryoga.exeのサイト`;
 const backgroundColor = `#09090f`;
 const themeColor = `#15171a`;
 const siteFavicon = `content/assets/icon.png`;
+const siteDefaultImage = `/image/default.png`;
 
 const siteMetadata = {
   title: siteTitle,
@@ -12,6 +13,7 @@ const siteMetadata = {
   siteUrl: siteUrl,
   description: siteDescription,
   siteLanguage: `ja`,
+  siteDefaultImage,
   author: {
     name: `Ryoga.exe`,
     summary: `Student / Programmer / Skier`,
