@@ -50,7 +50,7 @@ const SEO: React.FC<any> = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:card`,
-          content: `summary`, // `summary_large_image`
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
