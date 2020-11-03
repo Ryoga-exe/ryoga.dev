@@ -1,7 +1,7 @@
 # Ryoga.exe's Website (WIP) <--
 
 This is my portfolio site!
-You can see [here](https://ryoga-exe.github.io)!
+You can see [here](https://ryoga.dev)!
 
 Made with...
 
