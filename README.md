@@ -10,7 +10,7 @@ Made with...
 - TypeScript
 - SCSS
 - styled-components
-- PWA
+- ~~PWA~~
 - GitHub Pages
 - GitHub Actions
 - And so on...
