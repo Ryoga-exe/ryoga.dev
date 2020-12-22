@@ -6,6 +6,8 @@ import Layout from "src/components/layout"
 import SEO from "src/utils/seo"
 import Hero from "src/components/organisms/hero"
 import Container from "src/components/atoms/container"
+import ButtonDetail from "src/components/atoms/button"
+
 import styled from "styled-components"
 
 const TopPage: React.FC<any> = ({ data, location }) => {
@@ -32,26 +34,27 @@ const TopPage: React.FC<any> = ({ data, location }) => {
 export default TopPage
 
 const AboutMe: React.FC = () => (
-  <Container id="aboutMe" padding="100px 3vw">
+  <Container id="aboutMe" padding="100px 4vw">
     <Heading>About Me</Heading>
     <section>
       <p>茨城県の某中等学校に通ってるただの人間です。</p>
       <p>ゲーム開発、Webサイト製作、電子工作などいろいろやっています。たまに編み物もやります。</p>
       <p>最近は、ReactやGatsby.js、競プロにハマって勉強していますが、やりたいことが多すぎて方向性が散乱しがちです。</p>
-      <Link to="/about"><h1>About</h1></Link>
+      <p>詳しくはAboutページへ</p>
+      <ButtonDetail txt="About" to="/about">About</ButtonDetail>
     </section>
   </Container>
 )
 
 const Skills: React.FC = () => (
-  <Container id="skills" padding="100px 3vw">
+  <Container id="skills" padding="100px 4vw">
     <Heading>Skills</Heading>
   </Container>
 )
 
 const Heading = styled.h2`
   display: inline-block;
-  font-size: 2.2em;
+  font-size: 1.9em;
   font-weight: normal;
   &::after{
     content: '';
@@ -59,7 +62,7 @@ const Heading = styled.h2`
     height: 3px;
     margin-bottom: 1.8rem;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.4;
   }
 `
 

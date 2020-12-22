@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Container = styled.div<{maxWidth?: string, margin?: string, padding?: string}>`
   margin:    ${props => (props.margin   || '0 auto')};
-  padding:   ${props => (props.padding  || '0 3vw')};
+  padding:   ${props => (props.padding  || '0 4vw')};
   max-width: ${props => (props.maxWidth || '1120px')};
 `
 

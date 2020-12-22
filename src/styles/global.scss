@@ -1,3 +1,5 @@
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
 .selection-disabled {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -15,7 +17,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, 'Noto Sans JP', sans-serif;
   font-weight: normal;
   letter-spacing: 0;
   line-height: 1.8;
