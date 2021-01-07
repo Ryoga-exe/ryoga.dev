@@ -54,16 +54,6 @@ type ButtonDetailProps = {
   to  : string;
 }
 
-/*
-
-const Base = styled.div<{width?: string, minWidth?: string, fill?: string}>`
-  width:     ${props => (props.width    || '12%')};
-  min-width: ${props => (props.minWidth || '270px')};
-  fill:      ${props => (props.fill     || 'black')};
-`
-
-*/
-
 const ButtonDetail: React.FC<ButtonDetailProps> = ({ txt, to }) => (
   <Base to={to}>
     <span>{txt}</span>
