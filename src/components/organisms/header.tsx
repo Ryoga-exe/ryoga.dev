@@ -7,7 +7,10 @@ import Container from "src/components/atoms/container"
 const Base = styled.header`
   position: relative;
   width: 100%;
+  margin-bottom: 20px;
+  z-index: 32;
   background-color: #15171a;
+  box-shadow: 0px 0px 10px 0px #999;
 `
 
 const FlexBox = styled.div`
@@ -34,7 +37,7 @@ const Pages = styled.div`
     color: white;
     text-decoration: none;
     &:hover {
-      
+
     }
   }
 `
