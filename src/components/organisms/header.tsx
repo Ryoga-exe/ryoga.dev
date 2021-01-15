@@ -19,6 +19,9 @@ const FlexBox = styled.div`
 
 const ToTop = styled(Link)`
   display: inline-block;
+  height: 100%;
+  display: flex;
+  align-items: center;
 `
 
 // ToDo: 今いるページをlocationを使って薄く表示&リンクを踏めないように
