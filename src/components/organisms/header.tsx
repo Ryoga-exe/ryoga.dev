@@ -21,6 +21,7 @@ const ToTop = styled(Link)`
   display: inline-block;
 `
 
+// ToDo: 今いるページをlocationを使って薄く表示&リンクを踏めないように
 const Header: React.FC = () => (
   <Base>
     <Container>
