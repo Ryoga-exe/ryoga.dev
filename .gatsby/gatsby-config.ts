@@ -51,6 +51,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    /*
     {
       resolve: 'gatsby-plugin-graphql-codegen',
       options: {
@@ -58,6 +59,7 @@ module.exports = {
         fileName: `types/graphql-types.d.ts`
       },
     },
+    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {
