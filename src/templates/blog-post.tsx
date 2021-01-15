@@ -5,6 +5,8 @@ import Bio from "src/components/molecules/bio"
 import Layout from "src/components/layout"
 import SEO from "src/utils/seo"
 import "src/styles/blog-post.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendar} from '@fortawesome/free-solid-svg-icons'
 
 const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -23,7 +25,7 @@ const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
             {post.frontmatter.title}
           </h1>
           <p className="post-date">
-            {post.frontmatter.date}
+            <FontAwesomeIcon icon={faCalendar}/>{post.frontmatter.date}
           </p>
         </div>
         <section

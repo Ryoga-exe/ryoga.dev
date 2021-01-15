@@ -1,21 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/molecules/bio"
-import Layout from "../components/layout"
-import SEO from "../utils/seo"
+import Bio from "src/components/molecules/bio"
+import Layout from "src/components/layout"
+import SEO from "src/utils/seo"
 
 
-const About: React.FC<any> = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const About: React.FC<any> = ({ location }) => {
   return (
     <React.Fragment>
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location}>
         <SEO title="About" />
-        
         <Link to="/blog"><h1>Blog</h1></Link>
-
         <Bio />
       </Layout>
     </React.Fragment>

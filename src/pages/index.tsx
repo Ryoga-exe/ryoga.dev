@@ -10,12 +10,10 @@ import ButtonDetail from "src/components/atoms/button"
 
 import styled from "styled-components"
 
-const TopPage: React.FC<any> = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const TopPage: React.FC<any> = ({ location }) => {
   return (
     <React.Fragment>
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location}>
         <SEO title="Top" />
         <Hero />
         <AboutMe />

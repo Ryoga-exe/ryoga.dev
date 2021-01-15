@@ -1,11 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/molecules/bio"
-import Layout from "../components/layout"
-import SEO from "../utils/seo"
+import Bio from "src/components/molecules/bio"
+import Layout from "src/components/layout"
+import SEO from "src/utils/seo"
 import styled from "styled-components";
 import { BlogPostsIndexQuery } from "types/graphql-types"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendar} from '@fortawesome/free-solid-svg-icons'
 
 const Base = styled.footer`
 `
@@ -16,11 +18,10 @@ type Props = {
 };
 
 const BlogIndex: React.FC<Props>  = ({ data, location }) => {
-  const siteTitle = data.site?.siteMetadata?.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title="Blog" />
       {posts.map(({ node }) => {
         const title = node.frontmatter?.title || node.fields?.slug
@@ -40,7 +41,7 @@ const BlogIndex: React.FC<Props>  = ({ data, location }) => {
                   <span itemProp="headline">{title}</span>
                 </Link>
               </h3>
-              <small>{node.frontmatter?.date}</small>
+              <small><FontAwesomeIcon icon={faCalendar}/>{node.frontmatter?.date}</small>
             </header>
             <section>
               <p
