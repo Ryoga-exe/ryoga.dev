@@ -11,7 +11,7 @@ const About: React.FC<any> = ({ location }) => {
     <React.Fragment>
       <Layout location={location}>
         <SEO title="About" />
-        <Link to="/blog"><h1>Blog</h1></Link>
+        
         <Bio />
       </Layout>
     </React.Fragment>
