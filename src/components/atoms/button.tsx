@@ -11,7 +11,7 @@ const Base = styled(Link)`
   padding: 8px 50px;
   line-height: 1;
   margin-top: 30px;
-  font-size: 1.0em;
+  font-size: 1.00em;
   border-radius: 2px;
   color: white;
   
