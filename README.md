@@ -1,5 +1,8 @@
 # Ryoga.exe's Website (WIP) <--
 
+![github pages](https://github.com/Ryoga-exe/ryoga.dev/workflows/github%20pages/badge.svg)
+
+
 This is my portfolio site!
 You can see [here](https://ryoga.dev)!
 
