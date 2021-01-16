@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"2l/u":function(t,a,n){"use strict";n.r(a);var e=n("q1tI"),c=n.n(e),l=n("b9BR"),o=n("9Dj+"),u=n("Yi6t"),b=n("qKvR");a.default=function(t){var a=t.location;return Object(b.a)(c.a.Fragment,null,Object(b.a)(o.a,{location:a},Object(b.a)(u.a,{title:"About"}),Object(b.a)("h1",null,"About"),Object(b.a)("p",null,"Ryoga.exeというHNで活動している人です。"),Object(b.a)(l.a,null)))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-1a782f7f3b529995a868.js.map
