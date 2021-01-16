@@ -20,3 +20,7 @@ Made with...
 - And so on...
 
 And I used this [starter](https://github.com/gatsbyjs/gatsby-starter-blog)!
+
+## TwitterCard
+
+![card](static/images/default.png)
