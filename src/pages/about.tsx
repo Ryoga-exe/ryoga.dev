@@ -12,6 +12,10 @@ const About: React.FC<any> = ({ location }) => {
       <Layout location={location}>
         <SEO title="About" />
         
+        <h1>About</h1>
+        <p>Ryoga.exeというHNで活動している人です。</p>
+        
+
         <Bio />
       </Layout>
     </React.Fragment>
