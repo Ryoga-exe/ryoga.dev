@@ -9,7 +9,7 @@ const Layout: React.FC<any> = ({ location, children }) => {
     <React.Fragment>
       {isIndex ?
         <header></header>:
-        <Header />
+        <Header location={location}/>
       }
       <main>
       {isIndex ?

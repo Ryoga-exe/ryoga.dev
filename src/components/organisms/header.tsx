@@ -31,34 +31,69 @@ const Pages = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
-  > a {
-    font-size: 18px;
-    margin-left: 7px;
+  a {
+    height: 65%;
+    position: relative;
+    font-size: 17px;
+    margin-left: 20px;
     color: white;
     text-decoration: none;
-    &:hover {
-
+    transition: .3s;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: all .3s ease 0s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  p {
+    height: 65%;
+    position: relative;
+    font-size: 17px;
+    margin-left: 20px;
+    color: white;
+    opacity: 0.7;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: white;
     }
   }
 `
 
-// ToDo: 今いるページをlocationを使って薄く表示&リンクを踏めないように
 // ToDo: スマホのときメニューで開閉にする
-const Header: React.FC = () => (
-  <Base>
-    <Container>
-      <FlexBox>
-        <ToPage to="/">
-          <Logo width="150px" minWidth="100px" fill="white"/>
-        </ToPage>
-        <Pages>
-          <ToPage to="/about">About</ToPage>
-          <ToPage to="/blog">Blog</ToPage>
-          <ToPage to="/works">Works</ToPage>
-        </Pages>
-      </FlexBox>
-    </Container>
-  </Base>
-)
+const Header: React.FC<any> = ({ location }) => {
+  const menuItems = ['about', 'blog', 'works'];
+  const locationName = location.pathname.slice(1);
+  return (
+    <Base>
+      <Container>
+        <FlexBox>
+          <ToPage to="/">
+            <Logo width="150px" minWidth="100px" fill="white"/>
+          </ToPage>
+          <Pages>
+            {menuItems.map((item) => {
+              return (item == locationName ?
+              <p>{item.charAt(0).toUpperCase() + item.slice(1)}</p> :
+              <ToPage to={'/'+item}>{item.charAt(0).toUpperCase() + item.slice(1)}</ToPage>)
+            })}
+          </Pages>
+        </FlexBox>
+      </Container>
+    </Base>
+  )
+}
 
 export default Header
