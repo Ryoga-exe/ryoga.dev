@@ -60,6 +60,7 @@ const Pages = styled.div`
     margin-left: 20px;
     color: white;
     opacity: 0.7;
+    text-decoration: none;
     &::after {
       position: absolute;
       content: '';
@@ -85,9 +86,10 @@ const Header: React.FC<any> = ({ location }) => {
           </ToPage>
           <Pages>
             {menuItems.map((item) => {
+              const pageName = item.charAt(0).toUpperCase() + item.slice(1);
               return (item == locationName ?
-              <p>{item.charAt(0).toUpperCase() + item.slice(1)}</p> :
-              <ToPage to={'/'+item}>{item.charAt(0).toUpperCase() + item.slice(1)}</ToPage>)
+              <p>{pageName}</p> :
+              <ToPage to={'/'+item}>{pageName}</ToPage>)
             })}
           </Pages>
         </FlexBox>
