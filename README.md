@@ -17,6 +17,7 @@ Made with...
 - ~~PWA~~
 - GitHub Pages
 - GitHub Actions
+- Google Domains
 - And so on...
 
 And I used this [starter](https://github.com/gatsbyjs/gatsby-starter-blog)!
