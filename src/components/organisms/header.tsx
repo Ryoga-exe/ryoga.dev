@@ -76,7 +76,10 @@ const Pages = styled.div`
 // ToDo: スマホのときメニューで開閉にする
 const Header: React.FC<any> = ({ location }) => {
   const menuItems = ['about', 'blog', 'works'];
-  const locationName = location.pathname.slice(1);
+  const locationName = 
+    location.pathname.slice(-1) == '/' ?
+    location.pathname.slice(1).slice(0, -1) :
+    location.pathname.slice(1);
   return (
     <Base>
       <Container>
