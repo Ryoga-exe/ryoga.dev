@@ -15,6 +15,8 @@ Made with...
 - SCSS
 - styled-components
 - ~~PWA~~
+- Font Awesome
+- react-fontawesome
 - GitHub Pages
 - GitHub Actions
 - Google Domains
