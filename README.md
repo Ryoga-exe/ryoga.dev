@@ -24,6 +24,6 @@ Made with...
 
 And I used this [starter](https://github.com/gatsbyjs/gatsby-starter-blog)!
 
-## TwitterCard
+## OGP Image
 
 ![card](static/images/default.png)
