@@ -18,7 +18,7 @@ const Base = styled.div`
 const Hero: React.FC = () => {
   return(
     <Base>
-      <Logo fill="white"/>
+      <Logo fill="white" isHero={true}/>
       <div className="scroll-more" onClick={() => scrollTo('#aboutMe')}></div>
     </Base>
   );
