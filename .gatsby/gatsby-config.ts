@@ -36,6 +36,7 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-root-import`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
