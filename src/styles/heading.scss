@@ -1,0 +1,19 @@
+$border-height: 2px;
+
+h2 {
+  text-transform: none;
+  position: relative;
+  font-size: 1.3rem;
+  padding-bottom: 0.25em;
+  margin-top: 2.0rem;
+  margin-bottom: 1.5rem;
+  border-bottom: $border-height solid #ccc;
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 120px;
+    bottom: -$border-height;
+    height: $border-height;
+    background-color: rgb(48, 95, 190);
+  }
+}
