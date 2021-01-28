@@ -51,17 +51,8 @@ const Skills: React.FC = () => (
 )
 
 const Heading = styled.h2`
-  display: inline-block;
   font-size: 1.9em;
-  font-weight: normal;
-  &::after{
-    content: '';
-    display: block;
-    height: 3px;
-    margin-bottom: 1.8rem;
-    background-color: black;
-    opacity: 0.4;
-  }
+  font-weight: 500;
 `
 
 export const pageQuery = graphql`
