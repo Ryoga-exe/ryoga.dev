@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components";
 import Container from "src/components/atoms/container"
+import Color from 'src/utils/color'
 
 const BaseFooter = styled.footer`
   width: 100%;
   margin-top: auto;
   padding-top: 20px;
   padding-bottom: 40px;
-  background-color: #15171a;
+  background-color: ${Color.bgAccent};
 `
 
 const FotterSmall = styled.small`

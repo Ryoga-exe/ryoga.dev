@@ -3,6 +3,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "styled-components"
 import Logo from "src/components/atoms/logo"
 import "src/styles/scroll-more.scss"
+import Color from 'src/utils/color'
 
 const Base = styled.div`
   position: relative;
@@ -12,7 +13,7 @@ const Base = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10px 0px;
-  background-color: #15171a;
+  background-color: ${Color.bgAccent};
 `
 
 const Hero: React.FC = () => {

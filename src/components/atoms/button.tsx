@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Color from 'src/utils/color'
 
 const Base = styled(Link)`
   text-decoration: none;
@@ -13,19 +14,19 @@ const Base = styled(Link)`
   margin-top: 30px;
   font-size: 1.00em;
   border-radius: 2px;
-  color: white;
+  color: ${Color.buttonText};
   
-  background-color: rgba(21, 23, 26, 1.0);
+  background-color: ${Color.buttonBg};
   transition: 0.3s;
   > span {
-    color: white;
+    color: ${Color.buttonText};
     display: inline-block;
     -webkit-transform: translateX(8px);
     transform: translateX(8px);
     transition: 0.3s;
   }
   > svg {
-    color: white;
+    color: ${Color.buttonText};
     display: inline-block;
     -webkit-transform: translateX(-8px);
     transform: translateX(-8px);
@@ -33,7 +34,7 @@ const Base = styled(Link)`
     transition: 0.3s;
   }
   &:hover {
-    background-color: rgba(21, 23, 26, 0.7);
+    background-color: ${Color.buttonBgHoverd};
     transition: 0.3s;
     > span {
       

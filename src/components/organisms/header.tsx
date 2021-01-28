@@ -3,13 +3,14 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import Logo from "src/components/atoms/logo"
 import Container from "src/components/atoms/container"
+import Color from 'src/utils/color'
 
 const Base = styled.header`
   position: relative;
   width: 100%;
   margin-bottom: 20px;
   z-index: 32;
-  background-color: #15171a;
+  background-color: ${Color.bgAccent};
   box-shadow: 0px 0px 10px 0px #999;
 `
 
