@@ -6,6 +6,7 @@ import Layout from "src/components/layout"
 import SEO from "src/utils/seo"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
+import 'src/styles/heading.scss'
 
 const H1 = styled.h1`
   position: relative;
@@ -30,21 +31,6 @@ const H1 = styled.h1`
   }
 `
 
-const H2 = styled.h2`
-  position: relative;
-  padding: 0.25em 0;
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.0rem;
-  &::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background: -webkit-linear-gradient(to right, rgb(32, 73, 112), transparent);
-    background: linear-gradient(to right, rgb(32, 73, 112), transparent);
-  }
-`
-
 // ToDo: 見た目の改善
 // ToDo: Skillsの作成 jsonかなんかで管理したい
 // ToDo: Linksの改善 さすがに配列をmapで回したい、あとアイコンかなんかで綺麗にしたい
@@ -60,13 +46,13 @@ const About: React.FC<any> = ({ location }) => {
         
         <H1>About<span className="selection-disabled"><FontAwesomeIcon icon={faSyncAlt}/>Last updated: 2021/01/18</span></H1>
 
-        <H2>このサイトについて</H2>
+        <h2>このサイトについて</h2>
         <p>個人サイト兼ブログサイトです。<Link to="/works">自分の作品</Link>もまとめたりします。</p>
         <p>Gatsby.jsで書き、GitHub Pagesでホスティングをしています。ブログはマークダウン形式で書けます！</p>
         <p>一応オープンソースなので、<a href="https://github.com/ryoga-exe/ryoga.dev">GitHubのリポジトリ</a>からソースコード等を見ることができます。</p>
         <p>その他の詳しい技術等はリポジトリのREADMEをご覧ください。</p>
 
-        <H2>Profileなど</H2>
+        <h2>Profileなど</h2>
         <p>Name: Ryoga.exe</p>
         <p>Age: {today<thisYearBirthday?age-1:age}</p>
         <p>Birthday: {birthday.toLocaleDateString()}</p>
@@ -76,9 +62,9 @@ const About: React.FC<any> = ({ location }) => {
         <p>競技プログラミングをやってます。主にC++を使います。Web関係の技術も好きです。このサイトをデザインも込みで作れる程度の能力はあります。</p>
         <p>それと、ゲームプログラミングや電子工作も好きです。</p>
 
-        <H2>Skills</H2>
+        <h2>Skills</h2>
 
-        <H2>Links</H2>
+        <h2>Links</h2>
         <a href="https://github.com/ryoga-exe">GitHub</a><br/>
         <a href="https://twitter.com/ryoga_exe">Twitter</a><br/>
         <a href="https://atcoder.jp/users/ryoga_exe">AtCoder</a><br/>
@@ -88,7 +74,7 @@ const About: React.FC<any> = ({ location }) => {
         <a href="https://qiita.com/ryoga-exe">Qiita</a><br/>
         <a href="https://beta.sparebeat.com/users/Ryoga-exe">Sparebeat</a><br/>
 
-        <H2>Experiences</H2>
+        <h2>Experiences</h2>
         <Bio />
       </Layout>
     </React.Fragment>
