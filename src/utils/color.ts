@@ -9,5 +9,5 @@ export default {
 
   accent: '#305fbe',
   text: 'black',
-
+  underline: '#ccc'
 }
