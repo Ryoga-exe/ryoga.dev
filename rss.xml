@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ryoga.exe's Website]]></title><description><![CDATA[Ryoga.exeのサイト]]></description><link>https://ryoga.dev</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 28 Jan 2021 17:10:07 GMT</lastBuildDate><item><title><![CDATA[Gatsby.js のサイトの改善]]></title><description><![CDATA[…]]></description><link>https://ryoga.dev/blog/blog-improve/</link><guid isPermaLink="false">https://ryoga.dev/blog/blog-improve/</guid><pubDate>Sun, 04 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Gatsby.js&lt;/code&gt;を使ってサイトを作っているのですが、その途中経過として書きます。&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ryoga.exe's Website]]></title><description><![CDATA[Ryoga.exeのサイト]]></description><link>https://ryoga.dev</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 31 Jan 2021 13:48:18 GMT</lastBuildDate><item><title><![CDATA[月記 2021.1]]></title><description><![CDATA[毎日日記を書くのは辛いし、かといってこのブログサイトをあまり更新しないのもなあ…　と思ったので月ごとに書くことにしました。
+というわけで2021年1月を振り返ります。 このサイトの更新等 ぼちぼちと更新しています。 About…]]></description><link>https://ryoga.dev/blog/diary-2020-1/</link><guid isPermaLink="false">https://ryoga.dev/blog/diary-2020-1/</guid><pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;毎日日記を書くのは辛いし、かといってこのブログサイトをあまり更新しないのもなあ…　と思ったので月ごとに書くことにしました。
+というわけで2021年1月を振り返ります。&lt;/p&gt;
+&lt;h2 id=&quot;このサイトの更新等&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E3%81%93%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E6%9B%B4%E6%96%B0%E7%AD%89&quot; aria-label=&quot;このサイトの更新等 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;このサイトの更新等&lt;/h2&gt;
+&lt;p&gt;ぼちぼちと更新しています。&lt;/p&gt;
+&lt;p&gt;Aboutページをいい感じにしたり、ヘッダーを改善したりしました。
+まだ気に食わないところが結構あるのでもっと改善したい。こういうのはissueとかリポジトリのprojectsで管理してみようかな…&lt;/p&gt;
+&lt;p&gt;これからは、ヘッダー部分のレスポンシブ対応(ハンバーガーメニューに)やWorksページを充実、見た目の向上等をしたいです。&lt;/p&gt;
+&lt;h2 id=&quot;競プロ関連&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E7%AB%B6%E3%83%97%E3%83%AD%E9%96%A2%E9%80%A3&quot; aria-label=&quot;競プロ関連 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;競プロ関連&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 81.59509202453987%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACL0lEQVQ4y51Ui3KaQBT1/7+lnaZpqpk8jA+0Ux8VkTdOShSViCAYRSXC6e4qjNaknfbOnD1zL8uZs8u95EBis9lguVxiReA4M8RxTMtIkuSfkaNLGlTU8zwEgf/fokwwiiK4rosqx0FTVYTLF3jzOXO+3W6x2x3E8ffI0YU6Erpd9CQFU8eFT8TCMDw4jI+wd0HdU6SnO3GYKifxDp5lwB3oWIcrvCwCuDOHcUSdMqyxWYeIdzvErxF2BKngiUNaoBsfhTqe5CYWRGQ+9zCd2phMxrDtCWZE/PnZxsyZkqsIyf4Vou36XDBNOpaA28cqimYdd/1ShtuUjQfcGUXCNC8jr9xg4Fns3TiJTx1G0SsEvYFK+wpcpwCOLxz4OsvLwj0qYhnVzjVqpF5qXWI0Nc8FU4eW1IJe+QKDKxyQz7hfK0Cr30Kt34O/+QCldAmNwBuZh/t/Q3AgNqCUP0PlvhJcnUAsXUAofoRUvoBM9uj1PKSHT3BHP88F0yObugS18w0a/z2D0W1CbHIMerfBQOuU5VYN7nTy/kcZDC0omg7d6EMzDGi6AUXV0BV6+5puZKC5rKhwyVQd9+GJ4JNpQpZliKIInufxo91mkCUJiiKzZ6qiMFYI93o90kqz9/owZjNsEtHxeEx6b993tm2Tn4XDcsrD4TDL6TM/CM4d0mVi04adwfd9JH8Y2Pjo8rPa0fhlRw4WIXHmk0lYMPh+CMuakxlfH4SSN+c2+U2Mxi/ShLNEaVTdiQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Chart&quot;
+        title=&quot;Chart&quot;
+        src=&quot;/static/6e71b65f6e59c3a3df5de77bbbab9f7b/c8518/chart.png&quot;
+        srcset=&quot;/static/6e71b65f6e59c3a3df5de77bbbab9f7b/9d4d6/chart.png 163w,
+/static/6e71b65f6e59c3a3df5de77bbbab9f7b/59727/chart.png 325w,
+/static/6e71b65f6e59c3a3df5de77bbbab9f7b/c8518/chart.png 650w,
+/static/6e71b65f6e59c3a3df5de77bbbab9f7b/6c18f/chart.png 887w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;年末年始あたりは用事があり、コンテストにほとんど参加できなかったのですが、約230くらいレートが伸びました！
+しかし、1月最後のABC190で超失敗してしまったのがとても悔しいです…&lt;/p&gt;
+&lt;p&gt;今月でDPや累積和、いもす法には結構慣れてきて、ACを普通に取れるようになってきました。
+用事が重なりあまり精進できなかったので新しく覚えたアルゴリズムはあんまりないです…&lt;/p&gt;
+&lt;p&gt;参加回数20回までには入緑したいところ。&lt;/p&gt;
+&lt;h2 id=&quot;新ノートpc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E6%96%B0%E3%83%8E%E3%83%BC%E3%83%88pc&quot; aria-label=&quot;新ノートpc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;新ノートPC&lt;/h2&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
+  &lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;My new gear... &lt;a href=&quot;https://t.co/aa8r9Z9P19&quot;&gt;pic.twitter.com/aa8r9Z9P19&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ryoga.exe (@Ryoga_exe) &lt;a href=&quot;https://twitter.com/Ryoga_exe/status/1347094175762632704?ref_src=twsrc%5Etfw&quot;&gt;January 7, 2021&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;はい、ASUSのノートPCが年末のセールでかなり安くなったので買いました。
+今メインで使っているデスクトップPCにはないOfficeが付いているのでいい感じ。実はABC190にはこれで参加しました。&lt;/p&gt;
+&lt;p&gt;いろいろとあってクリーンインストールする羽目になりましたが、現在はWSL2環境の整ったサブ開発機になりました！
+Visual Studio CodeのRemote WSL拡張機能はいいぞ…&lt;/p&gt;
+&lt;p&gt;これでリモートワークが叫ばれる世の中に追いついた()&lt;/p&gt;
+&lt;h2 id=&quot;初当選&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E5%88%9D%E5%BD%93%E9%81%B8&quot; aria-label=&quot;初当選 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;初当選&lt;/h2&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
+  &lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/pronama?ref_src=twsrc%5Etfw&quot;&gt;@pronama&lt;/a&gt; &lt;br&gt;当選したプロ生ちゃんのグッズ届きました！&lt;br&gt;めちゃくちゃかわいい、やったー！&lt;a href=&quot;https://twitter.com/hashtag/%E3%83%97%E3%83%AD%E7%94%9F%E3%81%A1%E3%82%83%E3%82%93?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#プロ生ちゃん&lt;/a&gt; &lt;a href=&quot;https://t.co/pvJMNpPzKl&quot;&gt;pic.twitter.com/pvJMNpPzKl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ryoga.exe (@Ryoga_exe) &lt;a href=&quot;https://twitter.com/Ryoga_exe/status/1355856129159389193?ref_src=twsrc%5Etfw&quot;&gt;January 31, 2021&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;めちゃくちゃかわいいグッズが当たりました！&lt;/p&gt;
+&lt;p&gt;締め切りギリギリで応募したら当たってしまいました…(プロ生ちゃん自体は前から知っていたのですが、アカウントの存在は知らなかった)
+こういうプレゼント企画自体初めて応募したので当選のツイートを見たときはすげえ驚きました。&lt;/p&gt;
+&lt;h2 id=&quot;その他&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E3%81%9D%E3%81%AE%E4%BB%96&quot; aria-label=&quot;その他 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;その他&lt;/h2&gt;
+&lt;p&gt;スキーの大会などに参加したりしました。&lt;/p&gt;
+&lt;p&gt;あとは、開発している音ゲーのためのコントローラーの開発のためにPSoCを始めたり、GitHubでSimple IconsのissueにコメントしてOSSに貢献したりしました。(日頃の英語の勉強が役に立った！)&lt;/p&gt;
+&lt;h2 id=&quot;来月の目標、やりたいこと&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E6%9D%A5%E6%9C%88%E3%81%AE%E7%9B%AE%E6%A8%99%E3%80%81%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8&quot; aria-label=&quot;来月の目標、やりたいこと permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;来月の目標、やりたいこと&lt;/h2&gt;
+&lt;p&gt;とりあえず、AtCoder緑！
+あとはこのサイトをもっと充実させる！&lt;/p&gt;
+&lt;p&gt;…そんな感じ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js のサイトの改善]]></title><description><![CDATA[…]]></description><link>https://ryoga.dev/blog/blog-improve/</link><guid isPermaLink="false">https://ryoga.dev/blog/blog-improve/</guid><pubDate>Sun, 04 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Gatsby.js&lt;/code&gt;を使ってサイトを作っているのですが、その途中経過として書きます。&lt;br&gt;
 今回はブログページを中心にいじりました。&lt;/p&gt;
 &lt;h2 id=&quot;下書き公開の設定&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E4%B8%8B%E6%9B%B8%E3%81%8D%E5%85%AC%E9%96%8B%E3%81%AE%E8%A8%AD%E5%AE%9A&quot; aria-label=&quot;下書き公開の設定 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;下書き/公開の設定&lt;/h2&gt;
 &lt;p&gt;下書き中の記事のマークダウンのヘッダー部分を&lt;code class=&quot;language-text&quot;&gt;status: &amp;#39;draft&amp;#39;&lt;/code&gt;に設定することで公開されないようにしました。&lt;br&gt;
