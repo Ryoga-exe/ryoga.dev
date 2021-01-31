@@ -38,6 +38,7 @@ module.exports = {
     `gatsby-plugin-root-import`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-fontawesome-css`,
+    "gatsby-plugin-twitter",
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
