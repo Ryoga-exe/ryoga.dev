@@ -24,6 +24,7 @@ const TopPage: React.FC<any> = ({ location }) => {
           <div style={{height: `100vh`}}></div>
           <Bio />
         </Container>
+        <p>{`${process.env.TEST}`}</p>
       </Layout>
     </React.Fragment>
   )
