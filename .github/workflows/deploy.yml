@@ -29,6 +29,7 @@ jobs:
     - name: build
       run: npm run build
       env:
+        CI: true
         TEST: ${{ secrets.TEST }}
 
     - name: deploy
