@@ -28,11 +28,11 @@ jobs:
 
     - name: build
       run: npm run build
+      env:
+        TEST: ${{ secrets.TEST }}
 
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
-      env:
-        TEST: ${{ secrets.TEST }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
