@@ -41,6 +41,12 @@ module.exports = {
     "gatsby-plugin-twitter",
     `gatsby-plugin-feed`,
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["QIITA_API_KEY", "QIITA_USER_NAME"]
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `content/blog`,
