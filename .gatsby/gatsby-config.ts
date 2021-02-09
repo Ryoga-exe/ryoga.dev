@@ -41,12 +41,6 @@ module.exports = {
     "gatsby-plugin-twitter",
     `gatsby-plugin-feed`,
     {
-      resolve: `gatsby-plugin-env-variables`,
-      options: {
-        allowList: ["QIITA_API_KEY", "QIITA_USER_NAME"]
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `content/blog`,
@@ -63,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-source-qiita`,
       options: {
-        accessToken: process.env.QIITA_API_KEY,
-        userName: process.env.QIITA_USER_NAME,
+        accessToken: process.env.GATSBY_QIITA_API_KEY,
+        userName: process.env.GATSBY_QIITA_USER_NAME,
         fetchPrivate: false,
         // excludedPostIds:
       }
