@@ -54,6 +54,15 @@ module.exports = {
         name: `assets`,
       },
     },
+    {
+      resolve: `gatsby-source-qiita`,
+      options: {
+        accessToken: process.env.QIITA_API_KEY,
+        userName: process.env.QIITA_USER_NAME,
+        fetchPrivate: false,
+        // excludedPostIds:
+      }
+    },
     /*
     {
       resolve: 'gatsby-plugin-graphql-codegen',
