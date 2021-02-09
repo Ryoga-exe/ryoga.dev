@@ -1,6 +1,5 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = {
   plugins: [

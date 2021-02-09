@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-source-qiita`,
       options: {
-        accessToken: process.env.GATSBY_QIITA_API_KEY,
-        userName: process.env.GATSBY_QIITA_USER_NAME,
+        accessToken: process.env.QIITA_API_KEY,
+        userName: process.env.QIITA_USER_NAME,
         fetchPrivate: false,
         // excludedPostIds:
       }
