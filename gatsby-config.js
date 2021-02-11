@@ -5,7 +5,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-ts-config`,
       options: {
-        // specify gatsby-*.ts file's directory
         configDir: `.gatsby`,
       },
     },
