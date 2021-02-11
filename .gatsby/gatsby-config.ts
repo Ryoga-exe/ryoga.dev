@@ -54,6 +54,15 @@ module.exports = {
         name: `assets`,
       },
     },
+    {
+      resolve: `gatsby-source-qiita`,
+      options: {
+        accessToken: process.env.QIITA_API_TOKEN,
+        userName: siteMetadata.social.qiita,
+        fetchPrivate: false,
+        // excludedPostIds:
+      }
+    },
     /*
     {
       resolve: 'gatsby-plugin-graphql-codegen',
@@ -105,15 +114,6 @@ module.exports = {
       options: {
         siteUrl,
       },
-    },
-    {
-      resolve: `gatsby-source-qiita`,
-      options: {
-        accessToken: process.env.QIITA_API_TOKEN,
-        userName: 'Ryoga-exe',
-        fetchPrivate: false,
-        // excludedPostIds:
-      }
     },
     `gatsby-plugin-sitemap`,
     {
