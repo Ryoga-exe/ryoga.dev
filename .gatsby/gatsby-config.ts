@@ -24,6 +24,7 @@ const siteMetadata = {
     twitter: `Ryoga_exe`,
     github: `Ryoga-exe`,
     qiita: `Ryoga-exe`,
+    atcoder: `Ryoga_exe`,
   },
 };
 
