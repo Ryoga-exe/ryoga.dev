@@ -33,7 +33,8 @@ Sparebeatで全曲SSを取ったりした。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">DXLibで作った音ゲーSiv3Dで作り直そうかな...</p>&mdash; Ryoga.exe (@Ryoga_exe) <a href="https://twitter.com/Ryoga_exe/status/1364644504272179202?ref_src=twsrc%5Etfw">February 24, 2021</a></blockquote>
 自作音ゲーの開発を再開しました。
-以前は`DxLib`で制作してましたが、`Open Siv3D`で作り直そうかなと考えています。
+
+以前は`DxLib` で制作してましたが、`Open Siv3D`で作り直そうかなと考えています。
 
 なんか、今月は成し遂げたことが少なかった気がする...
 
