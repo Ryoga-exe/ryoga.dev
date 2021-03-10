@@ -18,45 +18,48 @@ type Props = {
 };
 
 const BlogIndex: React.FC<Props>  = ({ data, location }) => {
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location}>
-      <SEO title="Blog" />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter?.title || node.fields?.slug
-        return (
-          <article
-            key={node.fields?.slug}
-            itemScope
-            itemType="http://schema.org/Article"
-          >
-            <header>
-              <h3>
-                <Link
-                  style={{ boxShadow: `none` }}
-                  to={node.fields?.slug}
-                  itemProp="url"
-                >
-                  <span itemProp="headline">{title}</span>
-                </Link>
-              </h3>
-              <small><FontAwesomeIcon icon={faCalendar}/>{node.frontmatter?.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter?.description || node.excerpt,
-                }}
-                itemProp="description"
-              />
-            </section>
-          </article>
-        )
-      })}
+    <React.Fragment>
+      <Layout location={location}>
+        <SEO title="Blog" />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter?.title || node.fields?.slug;
+          return (
+            <article
+              key={node.fields?.slug}
+              itemScope
+              itemType="http://schema.org/Article"
+            >
+              <header>
+                <h3>
+                  <Link
+                    style={{ boxShadow: `none` }}
+                    to={node.fields?.slug}
+                    itemProp="url"
+                  >
+                    <span itemProp="headline">{title}</span>
+                  </Link>
+                </h3>
+                <small><FontAwesomeIcon icon={faCalendar}/>{node.frontmatter?.date}</small>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter?.description || node.excerpt,
+                  }}
+                  itemProp="description"
+                />
+              </section>
+            </article>
+          )
+        })}
 
-      <Bio />
-    </Layout>
+        <Bio />
+      </Layout>
+    </React.Fragment>
+
   )
 }
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, PageProps } from "gatsby"
 
 import Bio from "src/components/molecules/bio"
 import Layout from "src/components/layout"
@@ -10,7 +10,7 @@ import ButtonDetail from "src/components/atoms/button"
 
 import styled from "styled-components"
 
-const TopPage: React.FC<any> = ({ location }) => {
+const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
     <React.Fragment>
       <Layout location={location}>
