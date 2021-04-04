@@ -42,7 +42,7 @@ C++の歩き方というサイトの[なぜかコンパイルできる](https://
 
 ## OpenSiv3D実装会初参加
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">初めて参加しました。<br>雰囲気がとてもよくて居心地が良かった<br>自作音ゲーの開発を進めたり、Squircleの実装を若干改善したりしました！<a href="https://twitter.com/hashtag/OpenSiv3D%E5%AE%9F%E8%A3%85%E4%BC%9A?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSiv3D実装会</a> <a href="https://t.co/K96fp3eg8a">pic.twitter.com/K96fp3eg8a</a></p>&mdash; Ryoga.exe (@Ryoga_exe) <a href="https://twitter.com/Ryoga_exe/status/1376093147084681216?ref_src=twsrc%5Etfw">March 28, 2021</a>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">初めて参加しました。<br>雰囲気がとてもよくて居心地が良かった<br>自作音ゲーの開発を進めたり、Squircleの実装を若干改善したりしました！<a href="https://twitter.com/hashtag/OpenSiv3D%E5%AE%9F%E8%A3%85%E4%BC%9A?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSiv3D実装会</a> <a href="https://t.co/K96fp3eg8a">pic.twitter.com/K96fp3eg8a</a></p>&mdash; Ryoga.exe (@Ryoga_exe) <a href="https://twitter.com/Ryoga_exe/status/1376093147084681216?ref_src=twsrc%5Etfw">March 28, 2021</a></blockquote>
 
 初めてだったので少し緊張というか、迷惑掛けないか心配なところもありましたが、とても雰囲気がよく作業がはかどりました。時間があれば、次回も参加したい
 
