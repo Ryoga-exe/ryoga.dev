@@ -18,7 +18,10 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
         <Hero />
         <AboutMe />
         <Skills />
-        <Container >
+        <Works />
+        <Blog />
+        <Achievements />
+        <Container>
 
           <Link to="/blog"><h1>Blog</h1></Link>
           <div style={{height: `100vh`}}></div>
@@ -49,6 +52,26 @@ const Skills: React.FC = () => (
     <Heading>Skills</Heading>
   </Container>
 )
+
+const Works: React.FC = () => (
+  <Container id="works" padding="100px 4vw">
+    <Heading>Works</Heading>
+  </Container>
+)
+
+const Blog: React.FC = () => (
+  <Container id="blog" padding="100px 4vw">
+    <Heading>Blog</Heading>
+  </Container>
+)
+
+const Achievements: React.FC = () => (
+  <Container id="achievements" padding="100px 4vw">
+    <Heading>Achievements</Heading>
+  </Container>
+)
+
+
 
 const Heading = styled.h2`
   font-size: 1.9em;
