@@ -3,7 +3,7 @@ import { PageProps, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "@components/layout"
 import SEO from "@utils/seo"
-import ButtonDetail from "@components/atoms/button"
+import ButtonDetail from "@components/molecules/button"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
 
