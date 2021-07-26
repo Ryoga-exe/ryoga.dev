@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import Color from 'src/utils/color'
+import Color from '@utils/color'
 
 const Base = styled(Link)`
   text-decoration: none;

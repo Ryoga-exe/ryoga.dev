@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql, PageProps } from "gatsby"
 
-import Bio from "src/components/molecules/bio"
-import Layout from "src/components/layout"
-import SEO from "src/utils/seo"
-import Hero from "src/components/organisms/hero"
-import Container from "src/components/atoms/container"
-import ButtonDetail from "src/components/atoms/button"
+import Bio from "@components/molecules/bio"
+import Layout from "@components/layout"
+import SEO from "@utils/seo"
+import Hero from "@components/organisms/hero"
+import Container from "@components/atoms/container"
+import ButtonDetail from "@components/atoms/button"
 
 import styled from "@emotion/styled"
 

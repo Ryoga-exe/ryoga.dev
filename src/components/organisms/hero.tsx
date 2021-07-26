@@ -1,9 +1,9 @@
 import React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "@emotion/styled"
-import Logo from "src/components/atoms/logo"
-import "src/styles/scroll-more.scss"
-import Color from 'src/utils/color'
+import Logo from "@components/atoms/logo"
+import "@styles/scroll-more.scss"
+import Color from '@utils/color'
 
 const Base = styled.div`
   position: relative;

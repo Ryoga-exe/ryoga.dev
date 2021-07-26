@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "src/components/molecules/bio"
-import Layout from "src/components/layout"
-import SEO from "src/utils/seo"
+import Bio from "@components/molecules/bio"
+import Layout from "@components/layout"
+import SEO from "@utils/seo"
 import styled from "@emotion/styled";
 import { BlogPostsIndexQuery } from "types/graphql-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, PageProps } from "gatsby"
 import styled from "@emotion/styled"
-import Logo from "src/components/atoms/logo"
-import Container from "src/components/atoms/container"
-import Color from 'src/utils/color'
+import Logo from "@components/atoms/logo"
+import Container from "@components/atoms/container"
+import Color from '@utils/color'
 
 const Base = styled.header`
   position: relative;

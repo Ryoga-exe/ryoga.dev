@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import Color from 'src/utils/color'
+import Color from '@utils/color'
 
 const underlineHeight = "2px";
 const accentWidth = "120px";

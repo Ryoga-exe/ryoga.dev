@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "src/components/organisms/header"
-import Footer from "src/components/organisms/footer"
-import Container from "src/components/atoms/container"
+import Header from "@components/organisms/header"
+import Footer from "@components/organisms/footer"
+import Container from "@components/atoms/container"
 
 const Layout: React.FC<any> = ({ location, children }) => {
   const isIndex = location.pathname === `${__PATH_PREFIX__}/`;

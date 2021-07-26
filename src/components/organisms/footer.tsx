@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled";
-import Container from "src/components/atoms/container"
-import Color from 'src/utils/color'
+import Container from "@components/atoms/container"
+import Color from '@utils/color'
 
 const BaseFooter = styled.footer`
   width: 100%;

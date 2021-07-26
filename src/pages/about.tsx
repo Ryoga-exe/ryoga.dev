@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled";
-import Bio from "src/components/molecules/bio"
-import Layout from "src/components/layout"
-import SEO from "src/utils/seo"
+import Bio from "@components/molecules/bio"
+import Layout from "@components/layout"
+import SEO from "@utils/seo"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
-import 'src/styles/heading.scss'
+import '@styles/heading.scss'
 
 const H1 = styled.h1`
   position: relative;
