@@ -31,4 +31,4 @@ const Logo: React.FC<LogoProps> = ({ width, minWidth, fill, isHero=false }) => {
   )
 }
 
-export default Logo
+export default Logo;
