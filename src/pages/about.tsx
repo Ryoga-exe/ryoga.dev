@@ -6,7 +6,7 @@ import Layout from "@components/layout"
 import SEO from "@utils/seo"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
-import '@styles/heading.scss'
+import Heading from "@components/atoms/heading";
 
 const H1 = styled.h1`
   position: relative;
@@ -46,13 +46,13 @@ const About: React.FC<any> = ({ location }) => {
         
         <H1>About<span className="selection-disabled"><FontAwesomeIcon icon={faSyncAlt}/>Last updated: 2021/01/18</span></H1>
 
-        <h2>このサイトについて</h2>
+        <Heading.H2>このサイトについて</Heading.H2>
         <p>個人サイト兼ブログサイトです。<Link to="/works">自分の作品</Link>もまとめたりします。</p>
         <p>Gatsby.jsで書き、GitHub Pagesでホスティングをしています。ブログはマークダウン形式で書けます！</p>
         <p>一応オープンソースなので、<a href="https://github.com/ryoga-exe/ryoga.dev">GitHubのリポジトリ</a>からソースコード等を見ることができます。</p>
         <p>その他の詳しい技術等はリポジトリのREADMEをご覧ください。</p>
 
-        <h2>Profileなど</h2>
+        <Heading.H2>Profileなど</Heading.H2>
         <p>Name: Ryoga.exe</p>
         <p>Age: {today<thisYearBirthday?age-1:age}</p>
         <p>Birthday: {birthday.toLocaleDateString()}</p>
@@ -62,9 +62,9 @@ const About: React.FC<any> = ({ location }) => {
         <p>競技プログラミングをやってます。主にC++を使います。Web関係の技術も好きです。このサイトをデザインも込みで作れる程度の能力はあります。</p>
         <p>それと、ゲームプログラミングや電子工作も好きです。</p>
 
-        <h2>Skills</h2>
+        <Heading.H2>Skills</Heading.H2>
 
-        <h2>Links</h2>
+        <Heading.H2>Links</Heading.H2>
         <a href="https://github.com/ryoga-exe">GitHub</a><br/>
         <a href="https://twitter.com/ryoga_exe">Twitter</a><br/>
         <a href="https://atcoder.jp/users/ryoga_exe">AtCoder</a><br/>
@@ -74,7 +74,7 @@ const About: React.FC<any> = ({ location }) => {
         <a href="https://qiita.com/ryoga-exe">Qiita</a><br/>
         <a href="https://beta.sparebeat.com/users/Ryoga-exe">Sparebeat</a><br/>
 
-        <h2>Experiences</h2>
+        <Heading.H2>Experiences</Heading.H2>
         <Bio />
       </Layout>
     </React.Fragment>
