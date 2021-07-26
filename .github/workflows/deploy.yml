@@ -39,7 +39,7 @@ jobs:
       run: yarn install --frozen-lockfile
 
     - name: Build
-      run: npm run build
+      run: yarn build
       env:
         QIITA_API_TOKEN:  ${{ secrets.QIITA_API_TOKEN }}
 
