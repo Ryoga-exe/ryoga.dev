@@ -1,5 +1,4 @@
 import React from "react"
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "@emotion/styled"
 import Logo from "@components/atoms/logo"
 import Arrow from "@components/molecules/arrow"
@@ -20,7 +19,7 @@ const Hero: React.FC = () => {
   return(
     <Base>
       <Logo fill="white" isHero={true}/>
-      <Arrow onClick={() => scrollTo('#aboutMe')}></Arrow>
+      <Arrow href='#aboutMe' className="scroll"></Arrow>
     </Base>
   );
 }

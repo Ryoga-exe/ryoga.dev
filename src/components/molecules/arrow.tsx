@@ -17,7 +17,7 @@ const Animation = keyframes`
   }
 `
 
-const Arrow = styled.span`
+const Arrow = styled.a`
   width: 30px;
   height: 60px;
   display: block;
