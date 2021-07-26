@@ -1,9 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "@emotion/styled";
 import Bio from "@components/molecules/bio"
 import Layout from "@components/layout"
 import SEO from "@utils/seo"
+import Anchor from "@components/atoms/anchor";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 import Heading from "@components/atoms/heading";
@@ -47,9 +48,9 @@ const About: React.FC<any> = ({ location }) => {
         <H1>About<span className="selection-disabled"><FontAwesomeIcon icon={faSyncAlt}/>Last updated: 2021/01/18</span></H1>
 
         <Heading.H2>このサイトについて</Heading.H2>
-        <p>個人サイト兼ブログサイトです。<Link to="/works">自分の作品</Link>もまとめたりします。</p>
+        <p>個人サイト兼ブログサイトです。<Anchor to="/works">自分の作品</Anchor>もまとめたりします。</p>
         <p>Gatsby.jsで書き、GitHub Pagesでホスティングをしています。ブログはマークダウン形式で書けます！</p>
-        <p>一応オープンソースなので、<a href="https://github.com/ryoga-exe/ryoga.dev">GitHubのリポジトリ</a>からソースコード等を見ることができます。</p>
+        <p>一応オープンソースなので、<Anchor to="https://github.com/ryoga-exe/ryoga.dev">GitHubのリポジトリ</Anchor>からソースコード等を見ることができます。</p>
         <p>その他の詳しい技術等はリポジトリのREADMEをご覧ください。</p>
 
         <Heading.H2>Profileなど</Heading.H2>
@@ -65,14 +66,14 @@ const About: React.FC<any> = ({ location }) => {
         <Heading.H2>Skills</Heading.H2>
 
         <Heading.H2>Links</Heading.H2>
-        <a href="https://github.com/ryoga-exe">GitHub</a><br/>
-        <a href="https://twitter.com/ryoga_exe">Twitter</a><br/>
-        <a href="https://atcoder.jp/users/ryoga_exe">AtCoder</a><br/>
-        <a href="https://www.youtube.com/channel/UCWa6xjYb_02j4gMr4POxwIw">Youtube</a><br/>
-        <a href="https://www.instagram.com/ryoga.exe/">Instagram</a><br/>
-        <a href="https://www.resume.id/ryoga_exe">Resume</a><br/>
-        <a href="https://qiita.com/ryoga-exe">Qiita</a><br/>
-        <a href="https://beta.sparebeat.com/users/Ryoga-exe">Sparebeat</a><br/>
+        <Anchor to="https://github.com/ryoga-exe">GitHub</Anchor><br/>
+        <Anchor to="https://twitter.com/ryoga_exe">Twitter</Anchor><br/>
+        <Anchor to="https://atcoder.jp/users/ryoga_exe">AtCoder</Anchor><br/>
+        <Anchor to="https://www.youtube.com/channel/UCWa6xjYb_02j4gMr4POxwIw">Youtube</Anchor><br/>
+        <Anchor to="https://www.instagram.com/ryoga.exe/">Instagram</Anchor><br/>
+        <Anchor to="https://www.resume.id/ryoga_exe">Resume</Anchor><br/>
+        <Anchor to="https://qiita.com/ryoga-exe">Qiita</Anchor><br/>
+        <Anchor to="https://beta.sparebeat.com/users/Ryoga-exe">Sparebeat</Anchor><br/>
 
         <Heading.H2>Experiences</Heading.H2>
         <Bio />
