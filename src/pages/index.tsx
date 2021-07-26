@@ -19,7 +19,6 @@ import { faCss3 } from '@fortawesome/free-brands-svg-icons'
 
 import Icon from "@components/atoms/icon"
 
-
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
     <React.Fragment>
