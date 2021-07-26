@@ -7,7 +7,7 @@ import Color from '@utils/color'
 const Base = styled.div`
   position: relative;
   width: 100%;
-  height: min(max(25vw, 65vh), 100vh);
+  height: min(max(30vw, 70vh), 100vh);
   display: flex;
   justify-content: center;
   align-items: center;
