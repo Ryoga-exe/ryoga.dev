@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 //import { BioQuery } from "../../../types/graphql-types"
 
 const Bio: React.FC<any>= () => {

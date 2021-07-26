@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import Color from 'src/utils/color'
 
 const underlineHeight = "2px";

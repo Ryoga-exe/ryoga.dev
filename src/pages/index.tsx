@@ -8,7 +8,7 @@ import Hero from "src/components/organisms/hero"
 import Container from "src/components/atoms/container"
 import ButtonDetail from "src/components/atoms/button"
 
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (

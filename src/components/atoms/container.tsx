@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 const Container = styled.div<{maxWidth?: string, margin?: string, padding?: string}>`
   margin:    ${props => (props.margin   || '0 auto')};

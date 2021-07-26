@@ -1,14 +1,18 @@
 import React from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
-const Base = styled.div`
+const Base = styled.article`
   
   width: 100%;
   
 `
 
-const Post: React.FC = () => (
-  <Base></Base>
-)
+const Post: React.FC<any> = () => {
+  return (
+    <Base>
+    
+    </Base>
+  )
+}
 
 export default Post

@@ -1,6 +1,6 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import Layout from "src/components/layout"
 import SEO from "src/utils/seo"
 import ButtonDetail from "src/components/atoms/button"

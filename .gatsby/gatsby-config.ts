@@ -32,7 +32,6 @@ module.exports = {
   siteMetadata,
   plugins: [
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
@@ -123,13 +122,6 @@ module.exports = {
         host: siteUrl,
         sitemap: `${siteUrl}/sitemap.xml`,
         policy: [{ userAgent: `*`, allow: `/` }],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-        // trackingId: `UA-179580992-1`,
       },
     },
     {

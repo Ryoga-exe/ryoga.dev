@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import { Link, PageProps } from "gatsby"
+import styled from "@emotion/styled"
 import Logo from "src/components/atoms/logo"
 import Container from "src/components/atoms/container"
 import Color from 'src/utils/color'
@@ -15,7 +15,7 @@ const Base = styled.header`
 `
 
 const FlexBox = styled.div`
-  height: 48px;
+  height: 53px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@ const ToPage = styled(Link)`
   align-items: center;
 `
 
-const Pages = styled.div`
+const Pages = styled.nav`
   display: flex;
   align-items: center;
   height: 100%;
@@ -54,7 +54,9 @@ const Pages = styled.div`
       width: 100%;
     }
   }
-  p {
+  span {
+    display: flex;
+    align-items: center;
     height: 65%;
     position: relative;
     font-size: 17px;
@@ -72,10 +74,14 @@ const Pages = styled.div`
       background: white;
     }
   }
+
+  @media (max-width: 751px){
+    display: none;
+  }
 `
 
 // ToDo: スマホのときメニューで開閉にする
-const Header: React.FC<any> = ({ location }) => {
+const Header: React.FC<PageProps> = ({ location }) => {
   const menuItems = ['about', 'blog', 'works'];
   const locationName = 
     location.pathname.slice(-1) == '/' ?
@@ -92,7 +98,7 @@ const Header: React.FC<any> = ({ location }) => {
             {menuItems.map((item) => {
               const pageName = item.charAt(0).toUpperCase() + item.slice(1);
               return (item == locationName ?
-              <p>{pageName}</p> :
+              <span>{pageName}</span> :
               <ToPage to={'/'+item}>{pageName}</ToPage>)
             })}
           </Pages>

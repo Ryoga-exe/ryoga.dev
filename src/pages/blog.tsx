@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "src/components/molecules/bio"
 import Layout from "src/components/layout"
 import SEO from "src/utils/seo"
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { BlogPostsIndexQuery } from "types/graphql-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar} from '@fortawesome/free-solid-svg-icons'
