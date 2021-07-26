@@ -2,7 +2,7 @@ import React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "@emotion/styled"
 import Logo from "@components/atoms/logo"
-import "@styles/scroll-more.scss"
+import Arrow from "@components/molecules/arrow"
 import Color from '@utils/color'
 
 const Base = styled.div`
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
   return(
     <Base>
       <Logo fill="white" isHero={true}/>
-      <div className="scroll-more" onClick={() => scrollTo('#aboutMe')}></div>
+      <Arrow onClick={() => scrollTo('#aboutMe')}></Arrow>
     </Base>
   );
 }
