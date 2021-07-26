@@ -1,6 +1,6 @@
 # Ryoga.exe's Website (WIP) <--
 
-[![github pages](https://github.com/Ryoga-exe/ryoga.dev/workflows/github%20pages/badge.svg)](https://github.com/Ryoga-exe/ryoga.dev/actions)
+[![Build and Deploy](https://github.com/Ryoga-exe/ryoga.dev/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ryoga-exe/ryoga.dev/actions/workflows/deploy.yml)
 [![Github issues](https://img.shields.io/github/issues/ryoga-exe/ryoga.dev)](https://github.com/ryoga-exe/ryoga.dev/issues)
 [![Github top language](https://img.shields.io/github/languages/top/ryoga-exe/ryoga.dev)](https://github.com/ryoga-exe/ryoga.dev/)
 
@@ -14,7 +14,6 @@ Made with...
 - TypeScript
 - SCSS
 - styled-components
-- ~~PWA~~
 - Font Awesome
 - react-fontawesome
 - GitHub Pages
