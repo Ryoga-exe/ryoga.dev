@@ -32,9 +32,9 @@ module.exports = {
   siteMetadata,
   plugins: [
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-root-import`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-fontawesome-css`,
@@ -105,6 +105,19 @@ module.exports = {
           `gatsby-remark-smartypants`,
           `gatsby-remark-katex`,
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@src': 'src',
+          '@components': 'src/components',
+          '@pages': 'src/pages',
+          '@styles': 'src/styles',
+          '@utils': 'src/utils',
+        },
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
       },
     },
     `gatsby-transformer-sharp`,

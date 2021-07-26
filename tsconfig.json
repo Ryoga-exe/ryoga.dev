@@ -1,35 +1,41 @@
 {  
-  "compilerOptions": {  
-    "esModuleInterop": true,  
-    "jsx": "preserve",  
-    "lib": [  
-      "dom",  
-      "esnext"  
-    ],  
-    "module": "esnext",  
-    "moduleResolution": "node",  
-    "noEmit": true,  
-    "noFallthroughCasesInSwitch": true,  
-    "noUnusedLocals": true,  
-    "noImplicitReturns": true,  
-    "noUnusedParameters": true,  
-    "forceConsistentCasingInFileNames": true,  
-    "strict": true,  
-    "target": "esnext",  
-    "allowJs": true,  
-    "resolveJsonModule": true,  
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "es2015", "es2020"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+
+    "strict": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+
     "baseUrl": ".",
     "paths": {
-      "src": ["src/*"]
-    }
-  },  
-  "exclude": [  
-    "node_modules"  
-  ],  
-  "include": [  
-    "./src/**/*"
-    // ,
-    // "./gatsby/**/*"  
-  ]  
+      "src/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    "typeRoots": ["src/types", "node_modules/@types"]
+  },
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  },
+  "exclude": ["node_modules", "public", ".cache"],
+  "include": ["./src/**/*"]
 } 
