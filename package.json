@@ -3,8 +3,8 @@
   "private": true,
   "description": "ryoga.dev - Ryoga.exe's Website; Made with GatsbyJs",
   "version": "0.1.0",
-  "author": "Ryoga.exe <ryoga.dev>",
-  "license": "0BSD",
+  "author": "Ryoga.exe <Ryoga-exe>",
+  "license": "MIT",
   "keywords": [
     "gatsby"
   ],
