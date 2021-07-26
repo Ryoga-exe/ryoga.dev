@@ -51,13 +51,14 @@ const Base = styled(Link)`
 `
 
 type ButtonDetailProps = {
-  txt : string;
-  to  : string;
+  children?: React.ReactNode;
+  to : string;
+  target? : string;
 }
 
-const ButtonDetail: React.FC<ButtonDetailProps> = ({ txt, to }) => (
-  <Base to={to}>
-    <span>{txt}</span>
+const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => (
+  <Base to={to} target={target}>
+    <span>{children}</span>
     <FontAwesomeIcon icon={faArrowRight}/>
   </Base>
 )

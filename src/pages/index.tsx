@@ -65,7 +65,7 @@ const AboutMe: React.FC = () => (
         <p>最近は、ReactやGatsby.js、競プロにハマって勉強していますが、やりたいことが多すぎて方向性が散乱しがちです。</p>
         <p>詳しくはAboutページへ</p>
         <br />
-        <ButtonDetail txt="About" to="/about" />
+        <ButtonDetail to="/about">About</ButtonDetail>
     </Container>
   </section>
 )
@@ -80,7 +80,7 @@ const Skills: React.FC = () => (
         <Icon icon={faCss3}/>
       </div>
       <br />
-      <ButtonDetail txt="Skills" to="/about#skills" />
+      <ButtonDetail to="/about#skills">Skills</ButtonDetail>
     </Container>
   </section>
 )

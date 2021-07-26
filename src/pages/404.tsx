@@ -31,7 +31,7 @@ const NotFoundPage: React.FC<PageProps<DataProps>> = ({ location }) => (
     <p>お探しのページは見つかりませんでした。</p>
     <p>申し訳ありません。一時的にアクセスが出来ない状況にあるか、もしくは移動、削除され見つけることができません。</p>
     <p>You just hit a route that doesn't exist... the sadness.</p>
-    <ButtonDetail txt="Topへ戻る" to="/"/>
+    <ButtonDetail to="/">Topへ戻る</ButtonDetail>
   </Layout>
 )
 
