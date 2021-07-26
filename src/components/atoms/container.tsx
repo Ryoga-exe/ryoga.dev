@@ -6,4 +6,4 @@ const Container = styled.div<{maxWidth?: string, margin?: string, padding?: stri
   max-width: ${props => (props.maxWidth || '1120px')};
 `
 
-export default Container
+export default Container;
