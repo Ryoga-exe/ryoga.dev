@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Base = styled.span<{hoverColor?: string, cursor?: string}>`
   cursor: ${props => (props.cursor || 'initial')};
+  transition: 0.2s;
   &:hover {
     color: ${props => (props.hoverColor || 'initial')};
+    transition: 0.2s;
   }
 `
 
