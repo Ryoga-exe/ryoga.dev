@@ -3,7 +3,6 @@ import React from 'react';
 import Icon from '@components/atoms/icon';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-
 import { BreakPoint } from 'src/utils/breakPoint';
 
 const StyledCard = styled.div`
@@ -11,7 +10,7 @@ const StyledCard = styled.div`
   flex-direction: column;
   align-items: center;
   width: 25%;
-  padding: 1.0rem;
+  padding: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 
