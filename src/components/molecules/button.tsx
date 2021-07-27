@@ -70,6 +70,7 @@ const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => 
               css={css`
                 font-size: 0.8em;
                 margin-right: 0.4em;
+                margin-bottom: 0.1em;
               `}
             />
             {children}
@@ -86,4 +87,10 @@ const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => 
   );
 };
 
-export default ButtonDetail;
+const ButtonWrapper = styled.div`
+  > a {
+    margin-right: 2.0rem;
+  }
+`
+
+export { ButtonDetail, ButtonWrapper };

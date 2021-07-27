@@ -10,6 +10,8 @@ import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
 
+import { BreakPoint } from 'src/utils/breakPoint';
+
 const H1 = styled.h1`
   position: relative;
   font-size: 2.1rem;
@@ -23,7 +25,7 @@ const H1 = styled.h1`
       margin-right: 0.3em;
     }
   }
-  @media (max-width: 751px) {
+  @media (${BreakPoint.CSS.sp}) {
     font-size: 2rem;
     line-height: 1.3;
     > span {

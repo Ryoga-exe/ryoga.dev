@@ -22,6 +22,7 @@ const Anchor: React.FC<AnchorProps> = ({ to, target, children }) => {
             css={css`
               font-size: 0.8em;
               margin-right: 0.4em;
+              margin-bottom: 0.05em;
             `}
           />
           {children}

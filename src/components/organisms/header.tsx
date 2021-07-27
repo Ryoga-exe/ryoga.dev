@@ -6,6 +6,8 @@ import Logo from '@components/atoms/logo';
 import styled from '@emotion/styled';
 import Color from '@utils/color';
 
+import { BreakPoint } from 'src/utils/breakPoint';
+
 const Base = styled.header`
   position: relative;
   width: 100%;
@@ -76,7 +78,7 @@ const Pages = styled.nav`
     }
   }
 
-  @media (max-width: 751px) {
+  @media (${BreakPoint.CSS.sp}) {
     display: none;
   }
 `;

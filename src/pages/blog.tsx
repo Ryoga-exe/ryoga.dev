@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
 import styled from '@emotion/styled';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
 import { BlogPostsIndexQuery } from 'types/graphql-types';
@@ -34,7 +34,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }) => {
                   </Link>
                 </h3>
                 <small>
-                  <FontAwesomeIcon icon={faCalendar} />
+                  <FontAwesomeIcon icon={faCalendarAlt} />
                   {node.frontmatter?.date}
                 </small>
               </header>

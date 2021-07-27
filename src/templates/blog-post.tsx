@@ -3,7 +3,7 @@ import React from 'react';
 
 import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@styles/blog-post.scss';
 import SEO from '@utils/seo';
@@ -20,7 +20,7 @@ const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
         <div className='blog-title'>
           <h1 itemProp='headline'>{post.frontmatter.title}</h1>
           <p className='post-date'>
-            <FontAwesomeIcon icon={faCalendar} />
+            <FontAwesomeIcon icon={faCalendarAlt} />
             {post.frontmatter.date}
           </p>
         </div>

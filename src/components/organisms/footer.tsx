@@ -3,6 +3,7 @@ import React from 'react';
 import Container from '@components/atoms/container';
 import styled from '@emotion/styled';
 import Color from '@utils/color';
+import { BreakPoint } from 'src/utils/breakPoint';
 
 const BaseFooter = styled.footer`
   width: 100%;
@@ -23,7 +24,7 @@ const FotterSmall = styled.small`
       color: rgba(255, 255, 255, 1);
     }
   }
-  @media (max-width: 751px) {
+  @media (${BreakPoint.CSS.sp}) {
     display: block;
   }
 `;

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styled from '@emotion/styled';
+import { BreakPoint } from 'src/utils/breakPoint';
 
 type LogoProps = {
   width?: string;
@@ -21,7 +22,7 @@ const Base = styled.div<{
   fill: ${(props) => props.fill || 'black'};
   height: ${(props) => props.height};
 
-  @media (max-width: 751px) {
+  @media (${BreakPoint.CSS.sp}) {
     min-width: ${(props) => (props.isHero ? '230px' : props.minWidth || '270px')};
   }
 `;

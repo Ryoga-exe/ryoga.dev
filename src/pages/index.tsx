@@ -1,4 +1,4 @@
-import { Link, graphql, PageProps } from 'gatsby';
+import { Link, PageProps } from 'gatsby';
 import React from 'react';
 
 import Container from '@components/atoms/container';
@@ -6,16 +6,19 @@ import Heading from '@components/atoms/heading';
 import Icon from '@components/atoms/icon';
 import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
-import ButtonDetail from '@components/molecules/button';
+import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
 import Hero from '@components/organisms/hero';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
-import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faSkiing } from '@fortawesome/free-solid-svg-icons';
+import { faTools } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import SEO from '@utils/seo';
+
+import { Card, CardFlame } from 'src/components/molecules/card';
 
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -32,7 +35,6 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
           <Link to='/blog'>
             <h1>Blog</h1>
           </Link>
-          <div style={{ height: `100vh` }}></div>
           <Bio />
         </Container>
       </Layout>
@@ -44,9 +46,9 @@ export default TopPage;
 
 const Socials = styled.div`
   font-size: 1.7rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
   > span {
-    margin-right: 1rem;
+    margin-right: 1.0rem;
   }
 `;
 
@@ -63,7 +65,9 @@ const AboutMe: React.FC = () => (
       <p>最近は、ReactやGatsby.js、競プロにハマって勉強していますが、やりたいことが多すぎて方向性が散乱しがちです。</p>
       <p>詳しくはAboutページへ</p>
       <br />
-      <ButtonDetail to='/about'>About</ButtonDetail>
+      <ButtonWrapper>
+        <ButtonDetail to='/about'>About</ButtonDetail>
+      </ButtonWrapper>
     </Container>
   </section>
 );
@@ -76,20 +80,22 @@ const Skills: React.FC = () => (
     `}>
     <Container padding='100px 4vw'>
       <Heading.H3>Skills</Heading.H3>
-      <div
-        css={css`
-          font-size: 3rem;
-        `}>
-        <Icon icon={faHtml5} />
-        <Icon icon={faJs} />
-        <Icon icon={faCss3} />
-      </div>
+      <CardFlame>
+        <Card title='Coding' icon={faCode} size='3.0rem'></Card>
+        <Card title='Creating' icon={faTools} size='3.0rem'></Card>
+        <Card title='Skiing' icon={faSkiing} size='3.0rem'></Card>
+        <Card title='Game' icon={faGamepad} size='3.0rem'></Card>
+      </CardFlame>
       <br />
-      <ButtonDetail to='/about#skills'>Skills</ButtonDetail>
+      <ButtonWrapper>
+        <ButtonDetail to='/about#skills'>Skills</ButtonDetail>
+        <ButtonDetail to='https://www.resume.id/ryoga_exe'>See my resume</ButtonDetail>
+      </ButtonWrapper>
     </Container>
   </section>
 );
 
+// #edf2f7
 const Works: React.FC = () => (
   <section id='works'>
     <Container padding='100px 4vw'>
@@ -98,6 +104,7 @@ const Works: React.FC = () => (
   </section>
 );
 
+// #e2e8f0
 const Blog: React.FC = () => (
   <section id='blog'>
     <Container padding='100px 4vw'>
@@ -106,6 +113,7 @@ const Blog: React.FC = () => (
   </section>
 );
 
+// #cbd5e0
 const Achievements: React.FC = () => (
   <section id='achievements'>
     <Container padding='100px 4vw'>
@@ -113,13 +121,3 @@ const Achievements: React.FC = () => (
     </Container>
   </section>
 );
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
