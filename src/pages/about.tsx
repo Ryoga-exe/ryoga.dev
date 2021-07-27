@@ -9,7 +9,6 @@ import styled from '@emotion/styled';
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
-
 import { BreakPoint } from 'src/utils/breakPoint';
 
 const H1 = styled.h1`

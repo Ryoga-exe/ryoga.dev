@@ -17,7 +17,6 @@ import { faSkiing } from '@fortawesome/free-solid-svg-icons';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import SEO from '@utils/seo';
-
 import { Card, CardFlame } from 'src/components/molecules/card';
 
 const TopPage: React.FC<PageProps> = ({ location }) => {
@@ -48,7 +47,7 @@ const Socials = styled.div`
   font-size: 1.7rem;
   margin-bottom: 0.7rem;
   > span {
-    margin-right: 1.0rem;
+    margin-right: 1rem;
   }
 `;
 

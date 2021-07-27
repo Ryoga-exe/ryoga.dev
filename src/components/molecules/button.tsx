@@ -89,8 +89,8 @@ const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => 
 
 const ButtonWrapper = styled.div`
   > a {
-    margin-right: 2.0rem;
+    margin-right: 2rem;
   }
-`
+`;
 
 export { ButtonDetail, ButtonWrapper };

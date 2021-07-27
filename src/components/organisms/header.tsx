@@ -5,7 +5,6 @@ import Container from '@components/atoms/container';
 import Logo from '@components/atoms/logo';
 import styled from '@emotion/styled';
 import Color from '@utils/color';
-
 import { BreakPoint } from 'src/utils/breakPoint';
 
 const Base = styled.header`
