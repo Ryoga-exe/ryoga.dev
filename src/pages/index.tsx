@@ -15,7 +15,6 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faSkiing } from '@fortawesome/free-solid-svg-icons';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
-import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import SEO from '@utils/seo';
 import { Card, CardFlame } from 'src/components/molecules/card';
 
@@ -79,11 +78,21 @@ const Skills: React.FC = () => (
     `}>
     <Container padding='100px 4vw'>
       <Heading.H3>Skills</Heading.H3>
-      <CardFlame>
-        <Card title='Coding' icon={faCode} size='3.0rem'></Card>
-        <Card title='Creating' icon={faTools} size='3.0rem'></Card>
-        <Card title='Skiing' icon={faSkiing} size='3.0rem'></Card>
-        <Card title='Game' icon={faGamepad} size='3.0rem'></Card>
+      <CardFlame size={{ pc: '33.33333%', tb: '50%', sp: '100%' }}>
+        <Card title='Programming' icon={faCode} size='3.0rem'>
+          プログラミングがある程度できます。Web系はフロントエンドからバックエンドまで全て好きです。
+          ゲームプログラミングもしており、OpenSiv3Dというライブラリに貢献した経験があります。
+          また、競技プログラミングもしていて、AtCoderのコンテストにほぼ毎週参加しています。 レートは1000を突破し緑コーダーです！
+        </Card>
+        <Card title='Creating & Design' icon={faTools} size='3.0rem'>
+          ものづくりやデザインが得意です。このサイトをデザインも込みで作れる程度の能力はあります。
+          また、電子工作などもしており、自作ゲームのハードウェアの作成などをしています。
+          自作PCをしたり、折り紙をしたり、編み物をしたりなど創作活動が大好きです。
+        </Card>
+        <Card title='Skiing' icon={faSkiing} size='3.0rem'>
+          スキーを3歳の頃からしていて今もなお得意です。 全日本スキー連盟のスキーバッジテストに小学生で合格した実績があります。
+          また、競技スキーもやっています。全国中学校スキー大会に出場した経験があります。
+        </Card>
       </CardFlame>
       <br />
       <ButtonWrapper>

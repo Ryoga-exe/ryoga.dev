@@ -9,36 +9,47 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
   padding: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 
   > h4 {
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 0.6em;
   }
 
   > div {
-    font-size: 1em;
+    font-size: 0.85em;
     white-space: normal;
     text-align: left;
   }
-
-  @media (${BreakPoint.CSS.tb}) {
-    width: 33.33333333%;
-  }
-
-  @media (${BreakPoint.CSS.sp}) {
-    width: 50%;
-  }
 `;
 
-const StyledFlame = styled.div`
+interface CardSize {
+  pc: string;
+  tb: string;
+  sp: string;
+}
+
+const StyledFlame = styled.div<{
+  size?: CardSize;
+}>`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  > div {
+    width: ${(props) => props.size?.pc || '25%'};
+
+    @media (${BreakPoint.CSS.tb}) {
+      width: ${(props) => props.size?.tb || '33.333333%'};
+    }
+
+    @media (${BreakPoint.CSS.sp}) {
+      width: ${(props) => props.size?.sp || '50%'};
+    }
+  }
 `;
 
 const Card: React.FC<any> = ({ icon, size, title, children }) => (
@@ -57,9 +68,14 @@ const Card: React.FC<any> = ({ icon, size, title, children }) => (
   </React.Fragment>
 );
 
-const CardFlame: React.FC<any> = ({ children }) => (
+type CardFlameProps = {
+  children?: React.ReactNode;
+  size?: CardSize;
+};
+
+const CardFlame: React.FC<CardFlameProps> = ({ children, size }) => (
   <React.Fragment>
-    <StyledFlame>{children}</StyledFlame>
+    <StyledFlame size={size}>{children}</StyledFlame>
   </React.Fragment>
 );
 
