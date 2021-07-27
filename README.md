@@ -13,6 +13,7 @@ Made with...
 - Gatsby.js
 - TypeScript
 - SCSS
+- Emotion
 - styled-components
 - Font Awesome
 - react-fontawesome
