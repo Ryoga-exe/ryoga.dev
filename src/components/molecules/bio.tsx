@@ -1,5 +1,4 @@
 import { useStaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
