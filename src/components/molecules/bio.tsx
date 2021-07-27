@@ -3,19 +3,12 @@ import Image from 'gatsby-image';
 import React from 'react';
 
 import styled from '@emotion/styled';
-
-//import { BioQuery } from "../../../types/graphql-types"
+import { css } from '@emotion/react';
+import { StaticImage } from "gatsby-plugin-image"
 
 const Bio: React.FC<any> = () => {
   const data = useStaticQuery(graphql`
     query Bio {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-        childImageSharp {
-          fixed(width: 60, height: 60) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           author {
@@ -31,9 +24,20 @@ const Bio: React.FC<any> = () => {
   `);
 
   const { author, social } = data.site.siteMetadata;
+  
   return (
     <Base>
-      <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
+      <StaticImage
+          src="https://raw.githubusercontent.com/Ryoga-exe/Ryoga-exe/main/icon/icon.jpg"
+          alt={author}
+          placeholder="blurred"
+          layout="fixed"
+          width={60}
+          css={css`margin-bottom: 0;
+          margin-right: 1.2rem;
+          min-width: 60px;
+          border-radius: 50%;`}
+        />
       <div>
         <p>
           <a href={`https://twitter.com/${social.twitter}`}>{author.name}</a>
@@ -50,13 +54,6 @@ const Base = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 0;
-`;
-
-const BioImage = styled(Image)`
-  margin-bottom: 0;
-  margin-right: 1.2rem;
-  min-width: 60px;
-  border-radius: 50%;
 `;
 
 export default Bio;
