@@ -1,4 +1,4 @@
-{  
+{
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -38,4 +38,4 @@
   },
   "exclude": ["node_modules", "public", ".cache"],
   "include": ["./src/**/*"]
-} 
+}

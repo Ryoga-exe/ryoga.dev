@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
+import { Link } from 'gatsby';
+import React from 'react';
 
-import styled from "@emotion/styled"
-import { css } from "@emotion/react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
-import Color from '@utils/color'
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Color from '@utils/color';
 
 const Base = styled.a`
   text-decoration: none;
@@ -14,10 +14,10 @@ const Base = styled.a`
   padding: 8px 50px;
   line-height: 1;
   margin-top: 30px;
-  font-size: 1.00em;
+  font-size: 1em;
   border-radius: 2px;
   color: ${Color.buttonText};
-  
+
   background-color: ${Color.buttonBg};
   transition: 0.3s;
   > span {
@@ -39,46 +39,51 @@ const Base = styled.a`
     background-color: ${Color.buttonBgHoverd};
     transition: 0.3s;
     > span {
-      
       transform: translateX(-5px);
       transition: 0.3s;
     }
     > svg {
-      
       transform: translateX(5px);
       opacity: 1;
       transition: 0.3s;
     }
   }
-`
+`;
 
 const BaseLink = Base.withComponent(Link);
 
 type ButtonDetailProps = {
   children?: React.ReactNode;
-  to : string;
-  target? : string;
-}
+  to: string;
+  target?: string;
+};
 
 const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => {
-  const isExternal = (to.startsWith('http://') || to.startsWith('https://'));
+  const isExternal = to.startsWith('http://') || to.startsWith('https://');
   return (
     <React.Fragment>
-      {isExternal ?
-        <Base href={to} target="_blank">
+      {isExternal ? (
+        <Base href={to} target='_blank'>
           <span>
-            <FontAwesomeIcon icon={faExternalLinkAlt} css={css`font-size: 0.8em; margin-right: 0.4em;`}/>
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              css={css`
+                font-size: 0.8em;
+                margin-right: 0.4em;
+              `}
+            />
             {children}
           </span>
-          <FontAwesomeIcon icon={faArrowRight}/>
-        </Base>:
+          <FontAwesomeIcon icon={faArrowRight} />
+        </Base>
+      ) : (
         <BaseLink to={to} target={target}>
           <span>{children}</span>
-          <FontAwesomeIcon icon={faArrowRight}/>
+          <FontAwesomeIcon icon={faArrowRight} />
         </BaseLink>
-      }
+      )}
     </React.Fragment>
-  )
-}
+  );
+};
 
 export default ButtonDetail;

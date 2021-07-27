@@ -1,35 +1,35 @@
-.gatsby-highlight{
+.gatsby-highlight {
   background: #272822; // okaidia
   border-radius: 0.3em;
   margin: 0.5em 0;
   padding: 1em;
   overflow: auto;
   font-size: 0.9em;
-  @media (max-width: 992px){
+  @media (max-width: 992px) {
     font-size: 0.75em;
   }
-  pre[class*="language-"] {
+  pre[class*='language-'] {
     margin: 0;
     padding: 0;
     overflow: initial;
     float: left; // 1
-    min-width: 100%; // 2 
+    min-width: 100%; // 2
   }
-  
-  pre[class*="language-"].line-numbers {
+
+  pre[class*='language-'].line-numbers {
     padding-left: 2.8em; // 3
   }
 }
 
 /* code[class*="language-"], pre[class*="language-"] { line-height: 1.4; }  */
 
-:not(pre) > code[class="language-text"] {
+:not(pre) > code[class='language-text'] {
   color: black;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  padding: .2em .4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,.15);
+  background-color: rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   text-shadow: 0 0px;
 }

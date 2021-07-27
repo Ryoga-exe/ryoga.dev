@@ -1,6 +1,6 @@
-import path from "path"
-import { GatsbyNode } from "gatsby"
-import { createFilePath } from "gatsby-source-filesystem"
+import { GatsbyNode } from 'gatsby';
+import { createFilePath } from 'gatsby-source-filesystem';
+import path from 'path';
 
 interface BlogProps {
   allMarkdownRemark: {
@@ -9,15 +9,15 @@ interface BlogProps {
         node: {
           frontmatter: {
             title: string;
-          }
+          };
           fields: {
             slug: string;
-          }
-        }
+          };
+        };
       }
-    ]
-  }
-};
+    ];
+  };
+}
 
 const query = `
   query {
@@ -48,8 +48,8 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions:
   const posts = result.data.allMarkdownRemark.edges;
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
       path: post.node.fields.slug,
@@ -59,7 +59,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions:
         previous,
         next,
       },
-    })
+    });
   });
 };
 
@@ -72,4 +72,4 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: 
       value,
     });
   }
-}
+};

@@ -38,7 +38,7 @@ module.exports = {
     `gatsby-plugin-root-import`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-fontawesome-css`,
-    "gatsby-plugin-twitter",
+    'gatsby-plugin-twitter',
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -61,7 +61,7 @@ module.exports = {
         userName: siteMetadata.social.qiita,
         fetchPrivate: false,
         // excludedPostIds:
-      }
+      },
     },
     /*
     {
@@ -94,7 +94,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
@@ -153,4 +153,4 @@ module.exports = {
     },
     // `gatsby-plugin-offline`,
   ],
-}
+};

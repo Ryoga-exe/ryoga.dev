@@ -1,4 +1,4 @@
-article/*.blog-article*/{
+article/*.blog-article*/ {
   .blog-title {
     margin-bottom: 35px;
     h1 {
@@ -18,6 +18,6 @@ article/*.blog-article*/{
   }
 
   padding-bottom: 1.5rem;
-  margin-bottom: 2.0rem;
+  margin-bottom: 2rem;
   border-bottom: dashed 1px gray;
 }

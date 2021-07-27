@@ -1,17 +1,17 @@
 ---
 title: Gatsby.js でサイトを作った
-date: "2020-09-15"
-description: "Hello World!"
+date: '2020-09-15'
+description: 'Hello World!'
 tags: ['gatsby', 'develop']
 status: 'published'
 ---
 
-`Gatsby.js`というイケイケな静的サイトジェネレーターを知り、折角なので自分のサイトを作り直してみた。  
+`Gatsby.js`というイケイケな静的サイトジェネレーターを知り、折角なので自分のサイトを作り直してみた。
 
 <small>まあ、公開を急いだためまだスターターほぼそのままであるが…</small>
 
-とりあえず今言えることは、「Gatsby最高！！！！」  
-はい、めちゃくちゃいい。ブログがMark Down記法で書けて、しかもTSにも対応、確認しやすいし、スターターも充実している。  
+とりあえず今言えることは、「Gatsby 最高！！！！」  
+はい、めちゃくちゃいい。ブログが Mark Down 記法で書けて、しかも TS にも対応、確認しやすいし、スターターも充実している。
 
 ```cpp{numberLines: true}
 #include <iostream>
@@ -25,7 +25,7 @@ int main() {
 
 コードも置ける。
 
-GitHub Actionsを使えば、自動でビルド&デプロイしてくれる。
+GitHub Actions を使えば、自動でビルド&デプロイしてくれる。
 なんかすげえ楽。  
 しかも**爆速**  
 いいっすねぇ。

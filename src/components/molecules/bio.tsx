@@ -1,10 +1,12 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-import styled from "@emotion/styled"
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
+import React from 'react';
+
+import styled from '@emotion/styled';
+
 //import { BioQuery } from "../../../types/graphql-types"
 
-const Bio: React.FC<any>= () => {
+const Bio: React.FC<any> = () => {
   const data = useStaticQuery(graphql`
     query Bio {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
@@ -26,9 +28,9 @@ const Bio: React.FC<any>= () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <Base>
       <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
@@ -39,8 +41,8 @@ const Bio: React.FC<any>= () => {
         <p>{author.summary}</p>
       </div>
     </Base>
-  )
-}
+  );
+};
 
 // justify-content: center;
 const Base = styled.div`
@@ -48,13 +50,13 @@ const Base = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 0;
-`
+`;
 
 const BioImage = styled(Image)`
   margin-bottom: 0;
   margin-right: 1.2rem;
   min-width: 60px;
   border-radius: 50%;
-`
+`;
 
-export default Bio
+export default Bio;

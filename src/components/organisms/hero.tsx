@@ -1,8 +1,9 @@
-import React from "react"
-import styled from "@emotion/styled"
-import Logo from "@components/atoms/logo"
-import Arrow from "@components/molecules/arrow"
-import Color from '@utils/color'
+import React from 'react';
+
+import Logo from '@components/atoms/logo';
+import Arrow from '@components/molecules/arrow';
+import styled from '@emotion/styled';
+import Color from '@utils/color';
 
 const Base = styled.div`
   position: relative;
@@ -13,15 +14,15 @@ const Base = styled.div`
   align-items: center;
   padding: 10px 0px;
   background-color: ${Color.bgAccent};
-`
+`;
 
 const Hero: React.FC = () => {
-  return(
+  return (
     <Base>
-      <Logo fill="white" isHero={true}/>
-      <Arrow href='#aboutMe' className="scroll"></Arrow>
+      <Logo fill='white' isHero={true} />
+      <Arrow href='#aboutMe' className='scroll'></Arrow>
     </Base>
   );
-}
+};
 
-export default Hero
+export default Hero;

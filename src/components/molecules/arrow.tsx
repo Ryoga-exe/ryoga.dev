@@ -1,5 +1,5 @@
-import { keyframes } from '@emotion/react'
-import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react';
+import styled from '@emotion/styled';
 
 const ArrowSize = 18;
 
@@ -15,7 +15,7 @@ const Animation = keyframes`
     transform: rotate(-45deg) translate(-25px, 25px);
     opacity: 0;
   }
-`
+`;
 
 const Arrow = styled.a`
   width: 30px;
@@ -39,6 +39,6 @@ const Arrow = styled.a`
     transform: rotate(-45deg) translate(0, 0);
     animation: ${Animation} 1.5s infinite;
   }
-`
+`;
 
-export default Arrow
+export default Arrow;

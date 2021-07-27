@@ -1,9 +1,10 @@
 //import "typeface-montserrat"
 //import "typeface-merriweather"
-import "ress"
-import "prismjs/themes/prism-okaidia.css"
-import "prismjs/plugins/line-numbers/prism-line-numbers.css"
-import "src/styles/prismhighlight.scss"
-import "typeface-roboto"
-import "src/styles/global.scss"
-import "src/global.d.ts"
+import 'ress';
+import 'typeface-roboto';
+
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import 'prismjs/themes/prism-okaidia.css';
+import 'src/global.d.ts';
+import 'src/styles/global.scss';
+import 'src/styles/prismhighlight.scss';

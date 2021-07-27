@@ -1,7 +1,8 @@
-import React from "react"
-import styled from "@emotion/styled";
-import Container from "@components/atoms/container"
-import Color from '@utils/color'
+import React from 'react';
+
+import Container from '@components/atoms/container';
+import styled from '@emotion/styled';
+import Color from '@utils/color';
 
 const BaseFooter = styled.footer`
   width: 100%;
@@ -9,7 +10,7 @@ const BaseFooter = styled.footer`
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: ${Color.bgAccent};
-`
+`;
 
 const FotterSmall = styled.small`
   display: inline;
@@ -19,28 +20,27 @@ const FotterSmall = styled.small`
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     &:hover {
-      color: rgba(255, 255, 255, 1.0);
+      color: rgba(255, 255, 255, 1);
     }
   }
-  @media (max-width: 751px){
+  @media (max-width: 751px) {
     display: block;
   }
-`
+`;
 
 const Footer: React.FC = () => {
-  const setyaer:number = 2020, year = new Date().getFullYear();
+  const setyaer: number = 2020,
+    year = new Date().getFullYear();
   return (
     <BaseFooter>
       <Container>
+        <FotterSmall>© {setyaer + (year == setyaer ? '' : '-' + year)} Ryoga.exe All rights reserved.</FotterSmall>
         <FotterSmall>
-          © { setyaer + (year == setyaer ? "" : "-" + year)} Ryoga.exe All rights reserved. 
+          Built with <a href='https://www.gatsbyjs.org'>Gatsby</a>
         </FotterSmall>
-        <FotterSmall>
-          Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </FotterSmall>
-        </Container>
+      </Container>
     </BaseFooter>
-  )
-}
+  );
+};
 
 export default Footer;
