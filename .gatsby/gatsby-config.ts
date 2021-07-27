@@ -40,6 +40,9 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-twitter',
     `gatsby-plugin-feed`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -120,8 +123,6 @@ module.exports = {
         extensions: ['js', 'jsx', 'ts', 'tsx'],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
