@@ -63,7 +63,7 @@ const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => 
   return (
     <React.Fragment>
       {isExternal ? (
-        <Base href={to} target='_blank'>
+        <Base href={to} target='_blank' rel='noopener noreferrer'>
           <span>
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
