@@ -147,7 +147,7 @@ const Works: React.FC = () => {
         </div>
         <br />
         <ButtonWrapper>
-          <ButtonDetail to='/works'>More</ButtonDetail>
+          <ButtonDetail to='/works'>Works</ButtonDetail>
         </ButtonWrapper>
       </Container>
     </section>
