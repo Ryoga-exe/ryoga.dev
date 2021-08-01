@@ -1,6 +1,7 @@
 import { Link, PageProps } from 'gatsby';
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
@@ -126,19 +127,27 @@ const Works: React.FC = () => {
           `}>
           <Slider {...settings}>
             <div>
-              <h3>1</h3>
+              <StaticImage
+                src='https://raw.githubusercontent.com/Ryoga-exe/Tetris-Typing/master/screen%20shots/screenshot_0.png'
+                alt='screenshot'
+                placeholder='blurred'
+                layout='constrained'
+                height={300}
+                css={css`border: 3px solid rgba(0, 0, 0, 0.7); margin-bottom: 2em;`}
+              />
+              <h3>Tetris Typing</h3>
             </div>
             <div>
-              <h3>2</h3>
+              <h3>Console Tetris</h3>
             </div>
             <div>
-              <h3>3</h3>
+              <h3>Sigmabeat</h3>
             </div>
           </Slider>
         </div>
         <br />
         <ButtonWrapper>
-          <ButtonDetail to='/works'>Works</ButtonDetail>
+          <ButtonDetail to='/works'>More</ButtonDetail>
         </ButtonWrapper>
       </Container>
     </section>
@@ -146,7 +155,9 @@ const Works: React.FC = () => {
 };
 // #e2e8f0
 const Blog: React.FC = () => (
-  <section id='blog'>
+  <section id='blog' css={css`
+  background-color: #f7fafc;
+`}>
     <Container padding='100px 4vw'>
       <Heading.H3>Blog</Heading.H3>
     </Container>
