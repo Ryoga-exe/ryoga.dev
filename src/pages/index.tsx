@@ -85,7 +85,7 @@ const Skills: React.FC = () => (
           ゲームプログラミングもしており、OpenSiv3Dというライブラリに貢献した経験があります。
           また、競技プログラミングもしていて、AtCoderのコンテストにほぼ毎週参加しています。 レートは1000を突破し緑コーダーです！
         </Card>
-        <Card title='Creating & Design' icon={faTools} size='3.0rem'>
+        <Card title='Creating &amp; Design' icon={faTools} size='3.0rem'>
           ものづくりやデザインが得意です。このサイトをデザインも込みで作れる程度の能力はあります。
           また、電子工作などもしており、自作ゲームのハードウェアの作成などをしています。
           自作PCをしたり、折り紙をしたり、編み物をしたりなど創作活動が大好きです。
