@@ -1,7 +1,7 @@
 import { Link, PageProps } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
-import { StaticImage } from 'gatsby-plugin-image';
 
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
@@ -133,7 +133,10 @@ const Works: React.FC = () => {
                 placeholder='blurred'
                 layout='constrained'
                 height={300}
-                css={css`border: 3px solid rgba(0, 0, 0, 0.7); margin-bottom: 2em;`}
+                css={css`
+                  border: 3px solid rgba(0, 0, 0, 0.7);
+                  margin-bottom: 2em;
+                `}
               />
               <h3>Tetris Typing</h3>
             </div>
@@ -155,9 +158,11 @@ const Works: React.FC = () => {
 };
 // #e2e8f0
 const Blog: React.FC = () => (
-  <section id='blog' css={css`
-  background-color: #f7fafc;
-`}>
+  <section
+    id='blog'
+    css={css`
+      background-color: #f7fafc;
+    `}>
     <Container padding='100px 4vw'>
       <Heading.H3>Blog</Heading.H3>
     </Container>
