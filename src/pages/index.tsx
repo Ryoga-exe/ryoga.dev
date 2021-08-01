@@ -81,10 +81,10 @@ const AboutMe: React.FC = () => {
           <a href={`https://github.com/${social.github}`} target='_blank' rel='noopener noreferrer' data-tip data-for='tooltip-github'>
             <Icon icon={faGithub} hover='gray' cursor='pointer' />
           </a>
-          <ReactTooltip className='tooltip' id='tooltip-twitter' place='top' type='dark' effect='solid'>
+          <ReactTooltip id='tooltip-twitter' place='top' type='dark' effect='solid'>
             <span>@{social.twitter}</span>
           </ReactTooltip>
-          <ReactTooltip className='tooltip' id='tooltip-github' place='top' type='dark' effect='solid'>
+          <ReactTooltip id='tooltip-github' place='top' type='dark' effect='solid'>
             <span>{social.github}</span>
           </ReactTooltip>
         </Socials>
