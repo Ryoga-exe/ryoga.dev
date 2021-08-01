@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
   return (
     <Base>
       <Logo fill='white' isHero={true} />
-      <Arrow href='#aboutMe' className='scroll'></Arrow>
+      <Arrow href='#aboutMe' aria-label='Scroll to next section' className='scroll'></Arrow>
     </Base>
   );
 };
