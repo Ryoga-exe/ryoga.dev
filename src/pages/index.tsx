@@ -120,7 +120,10 @@ const Works: React.FC = () => {
     <section id='works'>
       <Container padding='100px 4vw'>
         <Heading.H3>Works</Heading.H3>
-        <div css={css`text-align: center;`}>
+        <div
+          css={css`
+            text-align: center;
+          `}>
           <Slider {...settings}>
             <div>
               <h3>1</h3>
