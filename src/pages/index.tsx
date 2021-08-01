@@ -34,9 +34,6 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
         <Blog />
         <Achievements />
         <Container>
-          <Link to='/blog'>
-            <h1>Blog</h1>
-          </Link>
           <Bio />
         </Container>
       </Layout>
@@ -165,6 +162,9 @@ const Blog: React.FC = () => (
     `}>
     <Container padding='100px 4vw'>
       <Heading.H3>Blog</Heading.H3>
+      <ButtonWrapper>
+        <ButtonDetail to='/blog'>Blog</ButtonDetail>
+      </ButtonWrapper>
     </Container>
   </section>
 );
@@ -174,6 +174,9 @@ const Achievements: React.FC = () => (
   <section id='achievements'>
     <Container padding='100px 4vw'>
       <Heading.H3>Achievements</Heading.H3>
+      <ButtonWrapper>
+        <ButtonDetail to='/about#Achievements'>Achievements</ButtonDetail>
+      </ButtonWrapper>
     </Container>
   </section>
 );
