@@ -1,5 +1,6 @@
 import { Link, PageProps } from 'gatsby';
 import React from 'react';
+import Slider, { Settings } from 'react-slick';
 
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
@@ -7,6 +8,7 @@ import Icon from '@components/atoms/icon';
 import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
+import { Card, CardFlame } from '@components/molecules/card';
 import Hero from '@components/organisms/hero';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -16,7 +18,8 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faSkiing } from '@fortawesome/free-solid-svg-icons';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 import SEO from '@utils/seo';
-import { Card, CardFlame } from 'src/components/molecules/card';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -104,19 +107,40 @@ const Skills: React.FC = () => (
 );
 
 // #edf2f7
-const Works: React.FC = () => (
-  <section id='works'>
-    <Container padding='100px 4vw'>
-      <Heading.H3>Works</Heading.H3>
-
-      <br />
-      <ButtonWrapper>
-        <ButtonDetail to='/works'>Works</ButtonDetail>
-      </ButtonWrapper>
-    </Container>
-  </section>
-);
-
+const Works: React.FC = () => {
+  const settings: Settings = {
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+  return (
+    <section id='works'>
+      <Container padding='100px 4vw'>
+        <Heading.H3>Works</Heading.H3>
+        <div css={css`text-align: center;`}>
+          <Slider {...settings}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+          </Slider>
+        </div>
+        <br />
+        <ButtonWrapper>
+          <ButtonDetail to='/works'>Works</ButtonDetail>
+        </ButtonWrapper>
+      </Container>
+    </section>
+  );
+};
 // #e2e8f0
 const Blog: React.FC = () => (
   <section id='blog'>
