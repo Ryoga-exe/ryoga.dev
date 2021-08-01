@@ -56,6 +56,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
+    "react-tooltip": "^4.2.21",
     "ress": "^4.0.0",
     "slick-carousel": "^1.8.1",
     "sweet-scroll": "^4.0.0",
