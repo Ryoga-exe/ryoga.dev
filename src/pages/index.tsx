@@ -75,18 +75,14 @@ const AboutMe: React.FC = () => {
       <Container padding='100px 4vw'>
         <Heading.H3>About Me</Heading.H3>
         <Socials>
-          <a href={`https://twitter.com/${social.twitter}`} target='_blank' rel='noopener noreferrer' data-tip data-for='tooltip-twitter'>
+          <a href={`https://twitter.com/${social.twitter}`} target='_blank' rel='noopener noreferrer' data-tip={`@${social.twitter}`} data-for='tooltip-twitter'>
             <Icon icon={faTwitter} hover='gray' cursor='pointer' />
           </a>
-          <a href={`https://github.com/${social.github}`} target='_blank' rel='noopener noreferrer' data-tip data-for='tooltip-github'>
+          <a href={`https://github.com/${social.github}`} target='_blank' rel='noopener noreferrer' data-tip={`@${social.github}`} data-for='tooltip-github'>
             <Icon icon={faGithub} hover='gray' cursor='pointer' />
           </a>
-          <ReactTooltip id='tooltip-twitter' place='top' type='dark' effect='solid'>
-            <span>@{social.twitter}</span>
-          </ReactTooltip>
-          <ReactTooltip id='tooltip-github' place='top' type='dark' effect='solid'>
-            <span>{social.github}</span>
-          </ReactTooltip>
+          <ReactTooltip id='tooltip-twitter' place='top' type='dark' effect='solid' />
+          <ReactTooltip id='tooltip-github' place='top' type='dark' effect='solid' />
         </Socials>
         <p>茨城県の某中等学校に通ってるただの人間です。</p>
         <p>ゲーム開発、Webサイト製作、電子工作などいろいろやっています。たまに編み物もやります。</p>
