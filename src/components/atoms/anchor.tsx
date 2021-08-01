@@ -16,7 +16,7 @@ const Anchor: React.FC<AnchorProps> = ({ to, target, children }) => {
   return (
     <React.Fragment>
       {isExternal ? (
-        <a href={to} target='_blank'>
+        <a href={to} target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon
             icon={faExternalLinkAlt}
             css={css`
