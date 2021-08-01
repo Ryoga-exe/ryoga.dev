@@ -1,4 +1,4 @@
-import { Link, PageProps } from 'gatsby';
+import { PageProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
