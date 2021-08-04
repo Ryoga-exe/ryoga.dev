@@ -78,7 +78,7 @@ const AboutMe: React.FC = () => {
           <a href={`https://twitter.com/${social.twitter}`} aria-label='Twitter' target='_blank' rel='noopener noreferrer' data-tip={`@${social.twitter}`} data-for='tooltip-twitter'>
             <Icon icon={faTwitter} hover='gray' cursor='pointer' />
           </a>
-          <a href={`https://github.com/${social.github}`} aria-label='GitHub' target='_blank' rel='noopener noreferrer' data-tip={`@${social.github}`} data-for='tooltip-github'>
+          <a href={`https://github.com/${social.github}`} aria-label='GitHub' target='_blank' rel='noopener noreferrer' data-tip={`${social.github}`} data-for='tooltip-github'>
             <Icon icon={faGithub} hover='gray' cursor='pointer' />
           </a>
           <ReactTooltip id='tooltip-twitter' place='top' type='dark' effect='solid' />
