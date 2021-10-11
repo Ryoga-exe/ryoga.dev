@@ -81,8 +81,6 @@ const AboutMe: React.FC = () => {
           <a href={`https://github.com/${social.github}`} aria-label='GitHub' target='_blank' rel='noopener noreferrer' data-tip={`${social.github}`} data-for='tooltip-github'>
             <Icon icon={faGithub} hover='gray' cursor='pointer' />
           </a>
-          <ReactTooltip id='tooltip-twitter' place='top' type='dark' effect='solid' />
-          <ReactTooltip id='tooltip-github' place='top' type='dark' effect='solid' />
         </Socials>
         <p>茨城県の某中等学校に通ってるただの人間です。</p>
         <p>ゲーム開発、Webサイト製作、電子工作などいろいろやっています。たまに編み物もやります。</p>
