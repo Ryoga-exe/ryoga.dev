@@ -10,7 +10,7 @@ status: 'published'
 
 2021/10/10 応用情報技術者試験を受験
 
-2021/10/17 合格しました
+2021/12/17 合格しました
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">応用情報技術者試験に合格しました！！！<br>やったーー！！！ <a href="https://t.co/2bMRPIzBcM">pic.twitter.com/2bMRPIzBcM</a></p>&mdash; Ryoga.exe (@Ryoga_exe) <a href="https://twitter.com/Ryoga_exe/status/1471796609529036801?ref_src=twsrc%5Etfw">December 17, 2021</a></blockquote>
 
