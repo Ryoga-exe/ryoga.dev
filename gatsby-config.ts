@@ -1,3 +1,5 @@
+import type { GatsbyConfig } from "gatsby"
+
 const siteTitle = `Ryoga.exe's Website`;
 const siteUrl = `https://ryoga.dev`;
 const siteDescription = `Ryoga.exeのサイト`;
@@ -28,7 +30,7 @@ const siteMetadata = {
   },
 };
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata,
   plugins: [
     `gatsby-plugin-emotion`,
@@ -39,7 +41,7 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-twitter',
-    `gatsby-plugin-feed`,
+    // `gatsby-plugin-feed`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -155,3 +157,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 };
+
+export default config;
