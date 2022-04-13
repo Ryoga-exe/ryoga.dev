@@ -49,7 +49,7 @@ const About: React.FC<any> = ({ location }) => {
           About
           <span className='selection-disabled'>
             <FontAwesomeIcon icon={faSyncAlt} />
-            Last updated: 2021/01/18
+            Last updated: 2022/04/14
           </span>
         </H1>
 
