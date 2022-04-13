@@ -137,7 +137,6 @@ const config: GatsbyConfig = {
         name: siteTitle,
         short_name: siteTitle,
         description: siteDescription,
-        Scope: `/`,
         start_url: `/?utm_source=homescreen`,
         background_color: backgroundColor,
         theme_color: themeColor,
