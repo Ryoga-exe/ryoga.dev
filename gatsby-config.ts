@@ -68,15 +68,6 @@ const config: GatsbyConfig = {
         // excludedPostIds:
       },
     },
-    /*
-    {
-      resolve: 'gatsby-plugin-graphql-codegen',
-      options: {
-        codegenConfig: { maybeValue: 'T | undefined' },
-        fileName: `types/graphql-types.d.ts`
-      },
-    },
-    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {
