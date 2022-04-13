@@ -162,6 +162,17 @@ const Works: React.FC = () => {
               <h3>Tetris Typing</h3>
             </div>
             <div>
+              <StaticImage
+                src='https://raw.githubusercontent.com/Ryoga-exe/Console-Tetris/master/screenshots/screenshot.png'
+                alt='screenshot'
+                placeholder='blurred'
+                layout='constrained'
+                height={300}
+                css={css`
+                  border: 3px solid rgba(0, 0, 0, 0.7);
+                  margin-bottom: 2em;
+                `}
+              />
               <h3>Console Tetris</h3>
             </div>
             <div>
