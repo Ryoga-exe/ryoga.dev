@@ -2,7 +2,6 @@ import { PageProps, useStaticQuery, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
-import ReactTooltip from 'react-tooltip';
 
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
