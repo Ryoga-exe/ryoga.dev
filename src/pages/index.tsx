@@ -133,7 +133,7 @@ const Works: React.FC = () => {
   const settings: Settings = {
     dots: true,
     infinite: true,
-    arrows: true,
+    arrows: false,
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
