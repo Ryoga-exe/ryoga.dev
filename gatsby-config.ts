@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby';
 
 const siteTitle = `Ryoga.exe's Website`;
 const siteUrl = `https://ryoga.dev`;

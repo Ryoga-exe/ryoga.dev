@@ -9,8 +9,8 @@ import styled from '@emotion/styled';
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
-import { BreakPoint } from 'src/utils/breakPoint';
 import Age from 'src/components/molecules/age';
+import { BreakPoint } from 'src/utils/breakPoint';
 
 const H1 = styled.h1`
   position: relative;
@@ -68,7 +68,9 @@ const About: React.FC<any> = ({ location }) => {
 
         <Heading.H2>Profileなど</Heading.H2>
         <p>Name: Ryoga.exe</p>
-        <p>Age: <Age birthday="2004-12-16T02:00+09:00"/></p>
+        <p>
+          Age: <Age birthday='2004-12-16T02:00+09:00' />
+        </p>
         <p>Birthday: {birthday.toLocaleDateString()}</p>
         <p>-</p>
         <p>Ryoga.exeというHNで活動しています。茨城県住みです。</p>

@@ -74,10 +74,24 @@ const AboutMe: React.FC = () => {
       <Container padding='100px 4vw'>
         <Heading.H3>About Me</Heading.H3>
         <Socials>
-          <a href={`https://twitter.com/${social.twitter}`} aria-label='Twitter' target='_blank' rel='noopener noreferrer' data-tip={`@${social.twitter}`} data-for='tooltip-twitter'>
+          <a
+            href={`https://twitter.com/${social.twitter}`}
+            aria-label='Twitter'
+            target='_blank'
+            rel='noopener noreferrer'
+            data-tip={`@${social.twitter}`}
+            data-for='tooltip-twitter'
+          >
             <Icon icon={faTwitter} hover='gray' cursor='pointer' />
           </a>
-          <a href={`https://github.com/${social.github}`} aria-label='GitHub' target='_blank' rel='noopener noreferrer' data-tip={`${social.github}`} data-for='tooltip-github'>
+          <a
+            href={`https://github.com/${social.github}`}
+            aria-label='GitHub'
+            target='_blank'
+            rel='noopener noreferrer'
+            data-tip={`${social.github}`}
+            data-for='tooltip-github'
+          >
             <Icon icon={faGithub} hover='gray' cursor='pointer' />
           </a>
         </Socials>
@@ -99,7 +113,8 @@ const Skills: React.FC = () => (
     id='skills'
     css={css`
       background-color: #f7fafc;
-    `}>
+    `}
+  >
     <Container padding='100px 4vw'>
       <Heading.H3>Skills</Heading.H3>
       <CardFlame size={{ pc: '33.33333%', tb: '50%', sp: '100%' }}>
@@ -144,7 +159,8 @@ const Works: React.FC = () => {
         <div
           css={css`
             text-align: center;
-          `}>
+          `}
+        >
           <Slider {...settings}>
             <div>
               <StaticImage
@@ -193,7 +209,8 @@ const Blog: React.FC = () => (
     id='blog'
     css={css`
       background-color: #f7fafc;
-    `}>
+    `}
+  >
     <Container padding='100px 4vw'>
       <Heading.H3>Blog</Heading.H3>
       <ButtonWrapper>

@@ -59,7 +59,8 @@ const Card: React.FC<any> = ({ icon, size, title, children }) => (
         css={css`
           font-size: ${size};
           margin-bottom: 0.4rem;
-        `}>
+        `}
+      >
         <Icon icon={icon} />
       </p>
       <h4>{title}</h4>
