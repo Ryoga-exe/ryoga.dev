@@ -10,6 +10,7 @@ import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
 import { BreakPoint } from 'src/utils/breakPoint';
+import Age from 'src/components/molecules/age';
 
 const H1 = styled.h1`
   position: relative;
@@ -39,9 +40,6 @@ const H1 = styled.h1`
 // ToDo: Linksの改善 さすがに配列をmapで回したい、あとアイコンかなんかで綺麗にしたい
 const About: React.FC<any> = ({ location }) => {
   const birthday = new Date(2004, 11, 16);
-  const today = new Date();
-  const thisYearBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());
-  const age = today.getFullYear() - birthday.getFullYear();
   return (
     <React.Fragment>
       <Layout location={location}>
@@ -70,7 +68,7 @@ const About: React.FC<any> = ({ location }) => {
 
         <Heading.H2>Profileなど</Heading.H2>
         <p>Name: Ryoga.exe</p>
-        <p>Age: {today < thisYearBirthday ? age - 1 : age}</p>
+        <p>Age: <Age birthday="2004-12-16T02:00+09:00"/></p>
         <p>Birthday: {birthday.toLocaleDateString()}</p>
         <p>-</p>
         <p>Ryoga.exeというHNで活動しています。茨城県住みです。</p>

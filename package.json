@@ -19,7 +19,6 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "dotenv": "^16.0.0",
     "gatsby": "^4.12.1",
-    "gatsby-image": "^3.11.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-emotion": "^7.12.1",
     "gatsby-plugin-feed": "^4.12.1",
@@ -54,7 +53,6 @@
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
-    "react-tooltip": "^4.2.21",
     "ress": "^5.0.2",
     "sass": "^1.50.0",
     "slick-carousel": "^1.8.1",
@@ -71,7 +69,6 @@
     "@types/react-dom": "^18.0.0",
     "@types/react-helmet": "^6.1.5",
     "@types/react-slick": "^0.23.8",
-    "@types/react-tooltip": "^4.2.4",
     "gatsby-plugin-root-import": "^2.0.8",
     "gatsby-remark-code-titles": "^1.1.0",
     "prettier": "^2.6.2"

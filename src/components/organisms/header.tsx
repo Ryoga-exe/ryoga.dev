@@ -1,4 +1,4 @@
-import { Link, PageProps } from 'gatsby';
+import { Link } from 'gatsby';
 import React from 'react';
 
 import Container from '@components/atoms/container';
@@ -83,7 +83,7 @@ const Pages = styled.nav`
 `;
 
 // ToDo: スマホのときメニューで開閉にする
-const Header: React.FC<PageProps> = ({ location }) => {
+const Header: React.FC<any> = ({ location }) => {
   const menuItems = ['about', 'blog', 'works'];
   const locationName = location.pathname.slice(-1) == '/' ? location.pathname.slice(1).slice(0, -1) : location.pathname.slice(1);
   return (

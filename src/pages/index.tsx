@@ -2,7 +2,6 @@ import { PageProps, useStaticQuery, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
-import ReactTooltip from 'react-tooltip';
 
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
@@ -116,7 +115,7 @@ const Skills: React.FC = () => (
         </Card>
         <Card title='Skiing' icon={faSkiing} size='3.0rem'>
           スキーを3歳の頃からしていて今もなお得意です。 全日本スキー連盟のスキーバッジテストの1級に小学生で合格した実績があります。
-          また、競技スキーもやっています。全国中学校スキー大会に出場した経験があります。
+          また、競技スキーもやっています。全国中学校スキー大会やインターハイに出場した経験があります。
         </Card>
       </CardFlame>
       <br />
@@ -162,6 +161,17 @@ const Works: React.FC = () => {
               <h3>Tetris Typing</h3>
             </div>
             <div>
+              <StaticImage
+                src='https://raw.githubusercontent.com/Ryoga-exe/Console-Tetris/master/screenshots/screenshot.png'
+                alt='screenshot'
+                placeholder='blurred'
+                layout='constrained'
+                height={300}
+                css={css`
+                  border: 3px solid rgba(0, 0, 0, 0.7);
+                  margin-bottom: 2em;
+                `}
+              />
               <h3>Console Tetris</h3>
             </div>
             <div>

@@ -68,15 +68,6 @@ const config: GatsbyConfig = {
         // excludedPostIds:
       },
     },
-    /*
-    {
-      resolve: 'gatsby-plugin-graphql-codegen',
-      options: {
-        codegenConfig: { maybeValue: 'T | undefined' },
-        fileName: `types/graphql-types.d.ts`
-      },
-    },
-    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -146,7 +137,6 @@ const config: GatsbyConfig = {
         name: siteTitle,
         short_name: siteTitle,
         description: siteDescription,
-        Scope: `/`,
         start_url: `/?utm_source=homescreen`,
         background_color: backgroundColor,
         theme_color: themeColor,
