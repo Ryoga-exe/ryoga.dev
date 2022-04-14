@@ -19,7 +19,7 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
         <Works />
         <Blog />
         <Achievements />
-        <Container>
+        <Container margin='15px auto'>
           <Bio />
         </Container>
       </Layout>
