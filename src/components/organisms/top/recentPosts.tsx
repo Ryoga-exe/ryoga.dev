@@ -30,7 +30,7 @@ interface Query {
 
 const Styled = {
   RecentPost: styled.div`
-    color: #a2a2a2;
+    color: #737373;
     font-size: 0.96rem;
     a {
       text-decoration: none;
