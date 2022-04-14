@@ -74,7 +74,6 @@ const Content: React.FC = () => {
   `);
 
   const recentPosts = data.allMarkdownRemark.edges;
-
   return (
     <section
       id='blog'
@@ -90,7 +89,7 @@ const Content: React.FC = () => {
               const title = node.frontmatter?.title || node.fields?.slug;
               const date = node.frontmatter.date;
               return (
-                <li>
+                <li key={date}>
                   <span>{date}</span>
                   <Anchor to={node.fields?.slug}>{title}</Anchor>
                 </li>

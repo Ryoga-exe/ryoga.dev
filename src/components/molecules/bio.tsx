@@ -5,8 +5,22 @@ import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+interface Query {
+  site: {
+    siteMetadata: {
+      author: {
+        name: string;
+        summary: string;
+      }
+      social: {
+        twitter: string;
+      }
+    };
+  };
+}
+
 const Bio: React.FC<any> = () => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<Query>(graphql`
     query Bio {
       site {
         siteMetadata {
@@ -28,7 +42,7 @@ const Bio: React.FC<any> = () => {
     <Base>
       <StaticImage
         src='https://raw.githubusercontent.com/Ryoga-exe/Ryoga-exe/main/icon/icon.jpg'
-        alt={author}
+        alt={author.name}
         placeholder='blurred'
         layout='fixed'
         width={60}
