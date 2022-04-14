@@ -3,8 +3,7 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Color from '@utils/color';
 

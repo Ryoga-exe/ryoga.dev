@@ -6,8 +6,7 @@ import Heading from '@components/atoms/heading';
 import Icon from '@components/atoms/icon';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
 import styled from '@emotion/styled';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Content: React.FC = () => {
   const data = useStaticQuery(graphql`
