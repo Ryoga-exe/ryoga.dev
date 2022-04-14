@@ -3,7 +3,6 @@ import React from 'react';
 
 import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
-
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
@@ -12,8 +11,8 @@ interface BlogPostsIndexQuery {
   site: {
     siteMetadata: {
       title: string;
-    }
-  },
+    };
+  };
   allMarkdownRemark: {
     edges: [
       {
@@ -32,7 +31,6 @@ interface BlogPostsIndexQuery {
     ];
   };
 }
-
 
 const BlogIndex: React.FC<PageProps<BlogPostsIndexQuery>> = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges;
