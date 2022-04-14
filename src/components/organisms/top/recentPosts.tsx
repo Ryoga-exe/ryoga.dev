@@ -31,6 +31,7 @@ interface Query {
 const Styled = {
   RecentPost: styled.div`
     color: #a2a2a2;
+    font-size: 0.96rem;
     a {
       text-decoration: none;
       color: #4173b3;
@@ -40,7 +41,7 @@ const Styled = {
       border-top: 2px solid #efefef;
       > span {
         margin-right: 0.9rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
       }
     }
     li:last-child {
@@ -82,7 +83,7 @@ const Content: React.FC = () => {
       `}
     >
       <Container padding='100px 4vw'>
-        <Heading.H3>Blog</Heading.H3>
+        <Heading.H3>Recent Posts</Heading.H3>
         <Styled.RecentPost>
           <ul className='alt'>
             {recentPosts.map(({ node }) => {

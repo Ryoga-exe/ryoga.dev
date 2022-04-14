@@ -6,7 +6,7 @@ import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
 import Hero from '@components/organisms/hero';
 import SEO from '@utils/seo';
-import { AboutMe, Skills, Works, Blog, Achievements } from 'src/components/organisms/top';
+import { AboutMe, Skills, Works, RecentPosts, Achievements } from 'src/components/organisms/top';
 
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -17,7 +17,7 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
         <AboutMe />
         <Skills />
         <Works />
-        <Blog />
+        <RecentPosts />
         <Achievements />
         <Container margin='15px auto'>
           <Bio />
