@@ -8,3 +8,4 @@ import 'prismjs/themes/prism-okaidia.css';
 import 'src/global.d.ts';
 import 'src/styles/global.scss';
 import 'src/styles/prismhighlight.scss';
+// import type { GatsbyBrowser } from "gatsby"
