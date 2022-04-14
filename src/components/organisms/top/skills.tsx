@@ -5,9 +5,7 @@ import Heading from '@components/atoms/heading';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
 import { Card, CardFlame } from '@components/molecules/card';
 import { css } from '@emotion/react';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faSkiing } from '@fortawesome/free-solid-svg-icons';
-import { faTools } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faSkiing, faTools } from '@fortawesome/free-solid-svg-icons';
 
 const Content: React.FC = () => (
   <section
