@@ -1,22 +1,40 @@
-import { Link, graphql } from 'gatsby';
+import { Link, graphql, PageProps } from 'gatsby';
 import React from 'react';
 
 import Layout from '@components/layout';
 import Bio from '@components/molecules/bio';
-import styled from '@emotion/styled';
+
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SEO from '@utils/seo';
-import { BlogPostsIndexQuery } from 'types/graphql-types';
 
-const Base = styled.footer``;
+interface BlogPostsIndexQuery {
+  site: {
+    siteMetadata: {
+      title: string;
+    }
+  },
+  allMarkdownRemark: {
+    edges: [
+      {
+        node: {
+          excerpt: string;
+          fields: {
+            slug: string;
+          };
+          frontmatter: {
+            date: string;
+            title: string;
+            description: string;
+          };
+        };
+      }
+    ];
+  };
+}
 
-type Props = {
-  data: BlogPostsIndexQuery;
-  location: any;
-};
 
-const BlogIndex: React.FC<Props> = ({ data, location }) => {
+const BlogIndex: React.FC<PageProps<BlogPostsIndexQuery>> = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (

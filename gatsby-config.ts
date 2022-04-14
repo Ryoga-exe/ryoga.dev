@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby';
 
 const siteTitle = `Ryoga.exe's Website`;
 const siteUrl = `https://ryoga.dev`;
@@ -57,15 +57,6 @@ const config: GatsbyConfig = {
       options: {
         path: `content/assets`,
         name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-qiita`,
-      options: {
-        accessToken: process.env.QIITA_API_TOKEN,
-        userName: siteMetadata.social.qiita,
-        fetchPrivate: false,
-        // excludedPostIds:
       },
     },
     {

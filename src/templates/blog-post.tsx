@@ -36,7 +36,8 @@ const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
-          }}>
+          }}
+        >
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel='prev'>
