@@ -67,7 +67,7 @@ const ButtonDetail: React.FC<ButtonDetailProps> = ({ children, to, target }) => 
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
               css={css`
-                font-size: 0.8em;
+                font-size: 0.75em;
                 margin-right: 0.4em;
                 margin-bottom: 0.1em;
               `}
