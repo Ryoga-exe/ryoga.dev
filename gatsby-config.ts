@@ -74,6 +74,13 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://slide.ryoga.dev/feed`,
+        name: `SlidePosts`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
