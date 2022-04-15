@@ -13,16 +13,25 @@ interface Query {
     edges: [
       {
         node: {
-          excerpt: string;
           fields: {
             slug: string;
-          };
-          frontmatter: {
             date: string;
             title: string;
-            description: string;
           };
         };
+      }
+    ];
+  };
+  allFeedQiitaPosts: {
+    edges: [
+      {
+        node: {
+          fields: {
+            slug: string;
+            date: string;
+            title: string;
+          }
+        }
       }
     ];
   };
@@ -58,22 +67,34 @@ const Content: React.FC = () => {
       allMarkdownRemark(limit: 10, sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { status: { eq: "published" } } }) {
         edges {
           node {
-            excerpt
             fields {
               slug
-            }
-            frontmatter {
               date(formatString: "YYYY-MM-DD")
               title
-              description
+            }
+          }
+        }
+      }
+      allFeedQiitaPosts(limit: 10, sort: { fields: [fields___date], order: DESC }) {
+        edges {
+          node {
+            fields {
+              slug
+              date(formatString: "YYYY-MM-DD")
+              title
             }
           }
         }
       }
     }
   `);
+  
+  const recentPosts = [...data.allMarkdownRemark.edges, ...data.allFeedQiitaPosts.edges].sort((a, b) => {
+    if( a.node.fields.date < b.node.fields.date ) return 1
+    if( a.node.fields.date > b.node.fields.date ) return -1
+    return 0
+  })
 
-  const recentPosts = data.allMarkdownRemark.edges;
   return (
     <section
       id='blog'
@@ -86,8 +107,8 @@ const Content: React.FC = () => {
         <Styled.RecentPost>
           <ul className='alt'>
             {recentPosts.map(({ node }) => {
-              const title = node.frontmatter?.title || node.fields?.slug;
-              const date = node.frontmatter.date;
+              const title = node.fields?.title || node.fields?.slug;
+              const date = node.fields.date;
               return (
                 <li key={date}>
                   <span>{date}</span>

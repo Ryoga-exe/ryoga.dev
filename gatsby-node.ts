@@ -7,11 +7,12 @@ interface BlogProps {
     edges: [
       {
         node: {
-          frontmatter: {
-            title: string;
-          };
           fields: {
             slug: string;
+            date: string;
+            title: string;
+            description: string;
+            excerpt: string;
           };
         };
       }
@@ -30,9 +31,10 @@ const query = `
         node {
           fields {
             slug
-          }
-          frontmatter {
+            date
             title
+            description
+            excerpt
           }
         }
       }
@@ -64,12 +66,36 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions:
 };
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: { createNodeField }, getNode }) => {
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = `/blog` + createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
+  if (node.internal.type !== `MarkdownRemark` && node.internal.type !== `FeedQiitaPosts`) {
+    return;
   }
+  
+  const [
+    slug,
+    title,
+    date,
+    description,
+    excerpt,
+  ] = node.internal.type === `MarkdownRemark`
+    ? [
+      `/blog` + createFilePath({ node, getNode }),
+      node.frontmatter?.title,
+      node.frontmatter?.date,
+      node.frontmatter?.description,
+      node.excerpt,
+    ]
+    : [
+      node.link,
+      node.title,
+      node.pubDate,
+      node.content,
+      node.content,
+    ];
+  
+  createNodeField({ name: `slug`,        node,   value: slug        });
+  createNodeField({ name: `title`,       node,   value: title       });
+  createNodeField({ name: `date`,        node,   value: date        });
+  createNodeField({ name: `description`, node,   value: description });
+  createNodeField({ name: `excerpt`,     node,   value: excerpt     });
+
 };

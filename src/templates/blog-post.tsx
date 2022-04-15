@@ -15,13 +15,13 @@ const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+      <SEO title={post.fields.title} description={post.fields.description || post.excerpt} />
       <article className='blog-article'>
         <div className='blog-title'>
-          <h1 itemProp='headline'>{post.frontmatter.title}</h1>
+          <h1 itemProp='headline'>{post.fields.title}</h1>
           <p className='post-date'>
             <FontAwesomeIcon icon={faCalendarAlt} />
-            {post.frontmatter.date}
+            {post.fields.date}
           </p>
         </div>
         <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp='articleBody' />
@@ -41,7 +41,7 @@ const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel='prev'>
-                ← {previous.frontmatter.title}
+                ← {previous.fields.title}
               </Link>
             )}
           </li>
@@ -49,7 +49,7 @@ const BlogPostTemplate: React.FC<any> = ({ data, pageContext, location }) => {
           <li>
             {next && (
               <Link to={next.fields.slug} rel='next'>
-                {next.frontmatter.title} →
+                {next.fields.title} →
               </Link>
             )}
           </li>
@@ -73,7 +73,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
-      frontmatter {
+      fields {
         title
         date(formatString: "YYYY/MM/DD")
         description
