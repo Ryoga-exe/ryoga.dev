@@ -67,6 +67,13 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://zenn.dev/ryoga_exe/feed`,
+        name: `ZennPosts`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
