@@ -11,10 +11,10 @@ interface Query {
       author: {
         name: string;
         summary: string;
-      }
+      };
       social: {
         twitter: string;
-      }
+      };
     };
   };
 }

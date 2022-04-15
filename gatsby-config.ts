@@ -64,7 +64,7 @@ const config: GatsbyConfig = {
       options: {
         url: `https://qiita.com/Ryoga-exe/feed.atom`,
         name: `QiitaPosts`,
-      }
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,

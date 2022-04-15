@@ -30,8 +30,8 @@ interface Query {
             slug: string;
             date: string;
             title: string;
-          }
-        }
+          };
+        };
       }
     ];
   };
@@ -88,12 +88,12 @@ const Content: React.FC = () => {
       }
     }
   `);
-  
+
   const recentPosts = [...data.allMarkdownRemark.edges, ...data.allFeedQiitaPosts.edges].sort((a, b) => {
-    if( a.node.fields.date < b.node.fields.date ) return 1
-    if( a.node.fields.date > b.node.fields.date ) return -1
-    return 0
-  })
+    if (a.node.fields.date < b.node.fields.date) return 1;
+    if (a.node.fields.date > b.node.fields.date) return -1;
+    return 0;
+  });
 
   return (
     <section

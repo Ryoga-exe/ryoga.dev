@@ -69,33 +69,15 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: 
   if (node.internal.type !== `MarkdownRemark` && node.internal.type !== `FeedQiitaPosts`) {
     return;
   }
-  
-  const [
-    slug,
-    title,
-    date,
-    description,
-    excerpt,
-  ] = node.internal.type === `MarkdownRemark`
-    ? [
-      `/blog` + createFilePath({ node, getNode }),
-      node.frontmatter?.title,
-      node.frontmatter?.date,
-      node.frontmatter?.description,
-      node.excerpt,
-    ]
-    : [
-      node.link,
-      node.title,
-      node.pubDate,
-      node.content,
-      node.content,
-    ];
-  
-  createNodeField({ name: `slug`,        node,   value: slug        });
-  createNodeField({ name: `title`,       node,   value: title       });
-  createNodeField({ name: `date`,        node,   value: date        });
-  createNodeField({ name: `description`, node,   value: description });
-  createNodeField({ name: `excerpt`,     node,   value: excerpt     });
 
+  const [slug, title, date, description, excerpt] =
+    node.internal.type === `MarkdownRemark`
+      ? [`/blog` + createFilePath({ node, getNode }), node.frontmatter?.title, node.frontmatter?.date, node.frontmatter?.description, node.excerpt]
+      : [node.link, node.title, node.pubDate, node.content, node.content];
+
+  createNodeField({ name: `slug`, node, value: slug });
+  createNodeField({ name: `title`, node, value: title });
+  createNodeField({ name: `date`, node, value: date });
+  createNodeField({ name: `description`, node, value: description });
+  createNodeField({ name: `excerpt`, node, value: excerpt });
 };
