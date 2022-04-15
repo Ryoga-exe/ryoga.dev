@@ -2,7 +2,7 @@ import { GatsbyNode } from 'gatsby';
 import { createFilePath } from 'gatsby-source-filesystem';
 import path from 'path';
 
-interface BlogProps {
+interface QueryType {
   allMarkdownRemark: {
     edges: [
       {
@@ -44,7 +44,7 @@ const query = `
 
 export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions: { createPage } }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
-  const result = await graphql<BlogProps>(query);
+  const result = await graphql<QueryType>(query);
 
   if (result.errors) throw result.errors;
   const posts = result.data.allMarkdownRemark.edges;
@@ -69,33 +69,15 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: 
   if (node.internal.type !== `MarkdownRemark` && node.internal.type !== `FeedQiitaPosts`) {
     return;
   }
-  
-  const [
-    slug,
-    title,
-    date,
-    description,
-    excerpt,
-  ] = node.internal.type === `MarkdownRemark`
-    ? [
-      `/blog` + createFilePath({ node, getNode }),
-      node.frontmatter?.title,
-      node.frontmatter?.date,
-      node.frontmatter?.description,
-      node.excerpt,
-    ]
-    : [
-      node.link,
-      node.title,
-      node.pubDate,
-      node.content,
-      node.content,
-    ];
-  
-  createNodeField({ name: `slug`,        node,   value: slug        });
-  createNodeField({ name: `title`,       node,   value: title       });
-  createNodeField({ name: `date`,        node,   value: date        });
-  createNodeField({ name: `description`, node,   value: description });
-  createNodeField({ name: `excerpt`,     node,   value: excerpt     });
 
+  const [slug, title, date, description, excerpt] =
+    node.internal.type === `MarkdownRemark`
+      ? [`/blog` + createFilePath({ node, getNode }), node.frontmatter?.title, node.frontmatter?.date, node.frontmatter?.description, node.excerpt]
+      : [node.link, node.title, node.pubDate, node.content, node.content];
+
+  createNodeField({ name: `slug`, node, value: slug });
+  createNodeField({ name: `title`, node, value: title });
+  createNodeField({ name: `date`, node, value: date });
+  createNodeField({ name: `description`, node, value: description });
+  createNodeField({ name: `excerpt`, node, value: excerpt });
 };
