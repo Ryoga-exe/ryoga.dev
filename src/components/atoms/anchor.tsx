@@ -2,8 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import { css } from '@emotion/react';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 type AnchorProps = {
   to: string;
@@ -17,12 +16,10 @@ const Anchor: React.FC<AnchorProps> = ({ to, target, children }) => {
     <React.Fragment>
       {isExternal ? (
         <a href={to} target='_blank' rel='noopener noreferrer'>
-          <FontAwesomeIcon
-            icon={faExternalLinkAlt}
+          <FaExternalLinkAlt
             css={css`
-              font-size: 0.8em;
+              font-size: 0.75em;
               margin-right: 0.4em;
-              margin-bottom: 0.05em;
             `}
           />
           {children}
