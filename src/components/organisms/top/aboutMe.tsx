@@ -7,6 +7,7 @@ import Icon from '@components/atoms/icon';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
 import styled from '@emotion/styled';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import AtCoder from 'src/components/atoms/atcoder';
 
 const Content: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -16,6 +17,7 @@ const Content: React.FC = () => {
           social {
             twitter
             github
+            atcoder
           }
         }
       }
@@ -31,6 +33,11 @@ const Content: React.FC = () => {
       color: black;
       text-decoration: none;
       margin-right: 1rem;
+      transition: 0.2s;
+      &:hover {
+        fill: gray;
+        transition: 0.2s;
+      }
     }
   `;
 
@@ -58,6 +65,16 @@ const Content: React.FC = () => {
             data-for='tooltip-github'
           >
             <Icon icon={faGithub} hover='gray' cursor='pointer' />
+          </a>
+          <a
+            href={`https://atcoder.jp/users/${social.atcoder}`}
+            aria-label='AtCoder'
+            target='_blank'
+            rel='noopener noreferrer'
+            data-tip={`${social.atcoder}`}
+            data-for='tooltip-github'
+          >
+            <span><AtCoder aria-hidden="true" focusable="false" className='svg-inline--fa'/></span>
           </a>
         </Socials>
         <p>茨城県の某中等学校に通ってるただの人間です。</p>
