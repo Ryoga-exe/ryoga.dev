@@ -7,6 +7,7 @@ import Bio from '@components/molecules/bio';
 import Hero from '@components/organisms/hero';
 import SEO from '@utils/seo';
 import { AboutMe, Skills, Works, RecentPosts, Achievements } from 'src/components/organisms/top';
+import { css } from '@emotion/react';
 
 const TopPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -14,11 +15,17 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
       <Layout location={location}>
         <SEO title='Top' />
         <Hero />
-        <AboutMe />
-        <Skills />
-        <Works />
-        <RecentPosts />
-        <Achievements />
+        <div css={css`
+          > section:nth-child(even) {
+            background-color: #f7fafc;
+          }
+        `}>
+          <AboutMe />
+          <Skills />
+          <Works />
+          <RecentPosts />
+          <Achievements />
+        </div>
         <Container margin='15px auto'>
           <Bio />
         </Container>

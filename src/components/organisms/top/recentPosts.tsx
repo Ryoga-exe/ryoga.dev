@@ -4,7 +4,7 @@ import React from 'react';
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
-import { css } from '@emotion/react';
+
 import styled from '@emotion/styled';
 import Anchor from 'src/components/atoms/anchor';
 
@@ -120,12 +120,7 @@ const Content: React.FC = () => {
   });
 
   return (
-    <section
-      id='blog'
-      css={css`
-        background-color: #f7fafc;
-      `}
-    >
+    <section id='blog'>
       <Container padding='100px 4vw'>
         <Heading.H3>Recent Posts</Heading.H3>
         <Styled.RecentPost>
