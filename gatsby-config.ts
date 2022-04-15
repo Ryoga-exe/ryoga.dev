@@ -60,6 +60,13 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://qiita.com/Ryoga-exe/feed.atom`,
+        name: `QiitaPosts`,
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [

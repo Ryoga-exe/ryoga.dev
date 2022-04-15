@@ -37,23 +37,23 @@ const Content: React.FC = () => (
       <Styled.RecentPost>
           <ul className='alt'>
             <li>
-              <span>2022</span>
+              <span>2022-03</span>
               <p>AtCoder Heuristic 水コーダー達成</p>
             </li>
             <li>
-              <span>2022</span>
+              <span>2022-03</span>
               <p>情報科学の達人2022年度受講生に採択</p>
             </li>
             <li>
-              <span>2022</span>
+              <span>2022-02</span>
               <p>JOI 2021/2022 本選出場・本選Bランク</p>
             </li>
             <li>
-              <span>2021</span>
+              <span>2021-12</span>
               <p>AtCoder Algorithm 水コーダー達成</p>
             </li>
             <li>
-              <span>2021</span>
+              <span>2021-12</span>
               <p>令和3年度 秋期 応用情報技術者試験合格</p>
             </li>
           </ul>

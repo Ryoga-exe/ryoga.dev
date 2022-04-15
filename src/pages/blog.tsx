@@ -20,8 +20,6 @@ interface BlogPostsIndexQuery {
           excerpt: string;
           fields: {
             slug: string;
-          };
-          frontmatter: {
             date: string;
             title: string;
             description: string;
@@ -40,7 +38,7 @@ const BlogIndex: React.FC<PageProps<BlogPostsIndexQuery>> = ({ data, location })
       <Layout location={location}>
         <SEO title='Blog' />
         {posts.map(({ node }) => {
-          const title = node.frontmatter?.title || node.fields?.slug;
+          const title = node.fields?.title || node.fields?.slug;
           return (
             <article key={node.fields?.slug} itemScope itemType='http://schema.org/Article'>
               <header>
@@ -51,13 +49,13 @@ const BlogIndex: React.FC<PageProps<BlogPostsIndexQuery>> = ({ data, location })
                 </h3>
                 <small>
                   <FontAwesomeIcon icon={faCalendarAlt} />
-                  {node.frontmatter?.date}
+                  {node.fields?.date}
                 </small>
               </header>
               <section>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter?.description || node.excerpt,
+                    __html: node.fields?.description || node.excerpt,
                   }}
                   itemProp='description'
                 />
@@ -87,8 +85,6 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
-          }
-          frontmatter {
             date(formatString: "YYYY/MM/DD")
             title
             description
