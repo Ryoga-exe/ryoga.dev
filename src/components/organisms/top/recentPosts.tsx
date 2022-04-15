@@ -35,6 +35,19 @@ interface Query {
       }
     ];
   };
+  allFeedSlidePosts: {
+    edges: [
+      {
+        node: {
+          fields: {
+            slug: string;
+            date: string;
+            title: string;
+          };
+        };
+      }
+    ];
+  };
 }
 
 const Styled = {
@@ -86,10 +99,21 @@ const Content: React.FC = () => {
           }
         }
       }
+      allFeedSlidePosts(limit: 10, sort: { fields: [fields___date], order: DESC }) {
+        edges {
+          node {
+            fields {
+              slug
+              date(formatString: "YYYY-MM-DD")
+              title
+            }
+          }
+        }
+      }
     }
   `);
 
-  const recentPosts = [...data.allMarkdownRemark.edges, ...data.allFeedQiitaPosts.edges].sort((a, b) => {
+  const recentPosts = [...data.allMarkdownRemark.edges, ...data.allFeedQiitaPosts.edges, ...data.allFeedSlidePosts.edges].sort((a, b) => {
     if (a.node.fields.date < b.node.fields.date) return 1;
     if (a.node.fields.date > b.node.fields.date) return -1;
     return 0;

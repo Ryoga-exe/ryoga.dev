@@ -66,14 +66,16 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions:
 };
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: { createNodeField }, getNode }) => {
-  if (node.internal.type !== `MarkdownRemark` && node.internal.type !== `FeedQiitaPosts`) {
+  if (node.internal.type !== `MarkdownRemark` &&
+      node.internal.type !== `FeedQiitaPosts` &&
+      node.internal.type !== `FeedSlidePosts`) {
     return;
   }
 
   const [slug, title, date, description, excerpt] =
     node.internal.type === `MarkdownRemark`
       ? [`/blog` + createFilePath({ node, getNode }), node.frontmatter?.title, node.frontmatter?.date, node.frontmatter?.description, node.excerpt]
-      : [node.link, node.title, node.pubDate, node.content, node.content];
+      : [node.link, node.title, node.pubDate, node.contentSnippet, node.contentSnippet];
 
   createNodeField({ name: `slug`, node, value: slug });
   createNodeField({ name: `title`, node, value: title });
