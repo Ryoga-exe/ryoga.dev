@@ -74,7 +74,9 @@ const Content: React.FC = () => {
             data-tip={`${social.atcoder}`}
             data-for='tooltip-github'
           >
-            <span><AtCoder aria-hidden="true" focusable="false" className='svg-inline--fa'/></span>
+            <span>
+              <AtCoder aria-hidden='true' focusable='false' className='svg-inline--fa' />
+            </span>
           </a>
         </Socials>
         <p>茨城県の某中等学校に通ってるただの人間です。</p>

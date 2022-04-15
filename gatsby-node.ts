@@ -66,9 +66,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions:
 };
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: { createNodeField }, getNode }) => {
-  if (node.internal.type !== `MarkdownRemark` &&
-      node.internal.type !== `FeedQiitaPosts` &&
-      node.internal.type !== `FeedSlidePosts`) {
+  if (node.internal.type !== `MarkdownRemark` && node.internal.type !== `FeedQiitaPosts` && node.internal.type !== `FeedSlidePosts`) {
     return;
   }
 

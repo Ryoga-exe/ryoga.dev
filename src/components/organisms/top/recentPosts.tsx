@@ -4,7 +4,6 @@ import React from 'react';
 import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
-
 import styled from '@emotion/styled';
 import Anchor from 'src/components/atoms/anchor';
 
