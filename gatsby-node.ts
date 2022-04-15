@@ -75,8 +75,6 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = async ({ node, actions: 
   const [slug, title, date, description, excerpt] =
     node.internal.type === `MarkdownRemark`
       ? [`/blog` + createFilePath({ node, getNode }), node.frontmatter?.title, node.frontmatter?.date, node.frontmatter?.description, node.excerpt]
-      : node.internal.type === `FeedQiitaPosts`
-      ? [node.link, node.title, node.pubDate, node.contentSnippet, node.contentSnippet]
       : [node.link, node.title, node.pubDate, node.contentSnippet, node.contentSnippet];
 
   createNodeField({ name: `slug`, node, value: slug });
