@@ -4,16 +4,10 @@ import Container from '@components/atoms/container';
 import Heading from '@components/atoms/heading';
 import { ButtonDetail, ButtonWrapper } from '@components/molecules/button';
 import { Card, CardFlame } from '@components/molecules/card';
-import { css } from '@emotion/react';
 import { faCode, faSkiing, faTools } from '@fortawesome/free-solid-svg-icons';
 
 const Content: React.FC = () => (
-  <section
-    id='skills'
-    css={css`
-      background-color: #f7fafc;
-    `}
-  >
+  <section id='skills'>
     <Container padding='100px 4vw'>
       <Heading.H3>Skills</Heading.H3>
       <CardFlame size={{ pc: '33.33333%', tb: '50%', sp: '100%' }}>
