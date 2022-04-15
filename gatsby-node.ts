@@ -2,7 +2,7 @@ import { GatsbyNode } from 'gatsby';
 import { createFilePath } from 'gatsby-source-filesystem';
 import path from 'path';
 
-interface BlogProps {
+interface QueryType {
   allMarkdownRemark: {
     edges: [
       {
@@ -44,7 +44,7 @@ const query = `
 
 export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions: { createPage } }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
-  const result = await graphql<BlogProps>(query);
+  const result = await graphql<QueryType>(query);
 
   if (result.errors) throw result.errors;
   const posts = result.data.allMarkdownRemark.edges;
