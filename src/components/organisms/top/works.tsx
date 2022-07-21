@@ -57,6 +57,17 @@ const Content: React.FC = () => {
               <h3>Console Tetris</h3>
             </div>
             <div>
+            <StaticImage
+                src='https://raw.githubusercontent.com/Ryoga-exe/Sigmabeat2/main/docs/Screenshot.png'
+                alt='screenshot'
+                placeholder='blurred'
+                layout='constrained'
+                height={300}
+                css={css`
+                  border: 3px solid rgba(0, 0, 0, 0.7);
+                  margin-bottom: 2em;
+                `}
+              />
               <h3>Sigmabeat</h3>
             </div>
           </Slider>
