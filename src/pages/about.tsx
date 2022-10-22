@@ -87,7 +87,7 @@ const About: React.FC<any> = ({ location }) => {
         <br />
         <Anchor to='https://atcoder.jp/users/ryoga_exe'>AtCoder</Anchor>
         <br />
-        <Anchor to='https://www.youtube.com/channel/UCWa6xjYb_02j4gMr4POxwIw'>Youtube</Anchor>
+        <Anchor to='https://www.youtube.com/channel/UCWa6xjYb_02j4gMr4POxwIw'>YouTube</Anchor>
         <br />
         <Anchor to='https://www.instagram.com/ryoga.exe/'>Instagram</Anchor>
         <br />
