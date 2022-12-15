@@ -69,7 +69,7 @@ const About: React.FC<any> = ({ location }) => {
         <Heading.H2>Profileなど</Heading.H2>
         <p>Name: Ryoga.exe</p>
         <p>
-          Age: <Age birthday='2004-12-16T02:00+09:00' />
+          Age: <Age birthday='2004-12-16T00:00+09:00' />
         </p>
         <p>Birthday: {birthday.toLocaleDateString()}</p>
         <p>-</p>
