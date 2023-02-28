@@ -25,6 +25,8 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: '14.16.0'
+          cache: yarn
+          cache-dependency-path: ./yarn.lock
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -39,7 +41,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile --prefer-offline
 
       - name: Build
         run: yarn build
