@@ -116,7 +116,7 @@ Go で書いている自作シェルです。OS とかを自作するのはよ�
 
 ### [tweet-counter-static](https://github.com/Ryoga-exe/tweet-counter-static) / [tweet-counter-extension](https://github.com/Ryoga-exe/tweet-counter-extension)
 
-コンテンツ入門というレポートがツイートな意味のわからない授業を取ったのですが、「API が使えなく名ちゃったからいい感じのツイート数を数える方法考えてね！」といった課題が出たので作りました。
+コンテンツ入門というレポートがツイートな意味のわからない授業を取ったのですが、「API が使えなくなちゃったからいい感じのツイート数を数える方法考えてね！」といった課題が出たので作りました。
 使い方とかは README を読んでください。
 
 ### [css-monte-carlo-pi](https://github.com/Ryoga-exe/css-monte-carlo-pi)
