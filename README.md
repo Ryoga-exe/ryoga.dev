@@ -5,28 +5,26 @@
 [![Github issues](https://img.shields.io/github/issues/ryoga-exe/ryoga.dev)](https://github.com/ryoga-exe/ryoga.dev/issues)
 [![Github top language](https://img.shields.io/github/languages/top/ryoga-exe/ryoga.dev)](https://github.com/ryoga-exe/ryoga.dev/)
 
-This is my portfolio site!
-You can see [here](https://ryoga.dev)!
+This is my portfolio site.
 
 ## Stack
 
-- [Gatsby.js](https://www.gatsbyjs.com/) - A React framework
+- [Bun](https://bun.sh/) - An all-in-one toolkit for JavaScript and TypeScript apps
+- [Astro](https://astro.build) - The web framework for content-driven websites
 
 ## Project structure
 
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
-$PROJECT_ROOT
-│   # 
-├── pages
-│   # 
-├── src
-│   # 
-└── public
-```
-
-## OGP Image
-
-![card](static/images/default.png)
-
-## LICENSE
 
