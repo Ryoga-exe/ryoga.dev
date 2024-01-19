@@ -10,7 +10,13 @@
     "astro": "astro",
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier --write --ignore-unknown"
+    ]
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
@@ -18,6 +24,8 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.12.3"
   }
