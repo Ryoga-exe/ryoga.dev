@@ -27,4 +27,3 @@ This is my portfolio site.
 │       └── index.astro
 └── package.json
 ```
-
