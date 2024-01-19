@@ -8,3 +8,8 @@ trailingComma: "es5"
 bracketSpacing: true
 bracketSameLine: true
 arrowParens: "always"
+plugins: ["prettier-plugin-astro"]
+overrides:
+  - files: "*.astro"
+    options:
+      parser: "astro"
