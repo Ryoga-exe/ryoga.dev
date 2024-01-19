@@ -5,6 +5,7 @@ env:
   browser: true
 extends:
   - "eslint:recommended"
+  - "plugin:import/typescript"
   - "plugin:astro/recommended"
   - "prettier"
 parserOptions:
@@ -13,6 +14,17 @@ parserOptions:
   project: "./tsconfig.json"
 globals:
   astroHTML: true
+plugins:
+  - "@typescript-eslint"
+  - "import"
+rules:
+  import/order:
+    - 2
+    - newlines-between: always
+      alphabetize:
+        order: asc
+        caseInsensitive: true
+      warnOnUnassignedImports: true
 overrides:
   - files: ["*.astro"]
     parser: "astro-eslint-parser"
@@ -25,3 +37,5 @@ overrides:
       astro/no-unused-css-selector: "error"
       astro/jsx-a11y/alt-text: "error"
       astro/jsx-a11y/control-has-associated-label: "error"
+  - files: ["*.ts"]
+    parser: "@typescript-eslint/parser"
