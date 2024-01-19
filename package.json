@@ -27,8 +27,9 @@
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write .",
     "format": "prettier --write .",
-    "eslint:fix": "eslint . --fix",
-    "lint": "eslint . --fix",
+    "eslint": "eslint . --fix",
+    "stylellint": "stylelint . --fix --ignore-path .gitignore",
+    "lint": "eslint . --fix && stylelint . --fix --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -37,11 +38,15 @@
     ],
     "*.{js,jsx,ts,tsx,astro}": [
       "eslint --fix"
+    ],
+    "*.{css,scss,astro}": [
+      "stylelint --fix"
     ]
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "astro": "^4.2.1",
+    "scss": "^0.2.4",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
@@ -52,7 +57,14 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.0",
+    "postcss-html": "^1.6.0",
     "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.12.3"
+    "prettier-plugin-astro": "^0.12.3",
+    "stylelint": "^16.1.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+    "stylelint-no-unsupported-browser-features": "^8.0.0",
+    "stylelint-prettier": "^5.0.0",
+    "stylelint-scss": "^6.0.0"
   }
 }
