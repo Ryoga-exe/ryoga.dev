@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # ESLint cache
 .eslintcache
+
+# StyleLint cache
+.stylelintcache
