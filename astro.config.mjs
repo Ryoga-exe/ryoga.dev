@@ -5,6 +5,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   vite: {
     css: {
+      transformer: "lightningcss",
       preprocessorOptions: {
         scss: {
           api: "modern-compiler",
