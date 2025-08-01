@@ -1,76 +1,14 @@
 {
   "name": "ryoga.dev",
-  "private": true,
-  "description": "ryoga.dev - Ryoga.exe's Website",
   "type": "module",
   "version": "0.0.1",
-  "license": "MIT",
-  "author": {
-    "name": "Ryoga-exe",
-    "email": "contact@ryoga.dev",
-    "url": "https://ryoga.dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Ryoga-exe/ryoga.dev.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Ryoga-exe/ryoga.dev/issues",
-    "email": "contact@ryoga.dev"
-  },
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "prettier:fix": "prettier --cache --write .",
-    "prettier:check": "prettier --cache --check .",
-    "stylelint:fix": "stylelint --cache --fix **/*.{css,scss,sass,astro,jsx,tsx} --ignore-path .gitignore",
-    "stylelint:check": "stylelint --cache **/*.{css,scss,sass,astro,jsx,tsx} --ignore-path .gitignore",
-    "eslint:fix": "eslint --cache --fix .",
-    "eslint:check": "eslint --cache .",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "**/*": [
-      "prettier --cache --write --ignore-unknown"
-    ],
-    "*.{js,jsx,ts,tsx,astro}": [
-      "eslint --cache --fix"
-    ],
-    "*.{css,scss,astro}": [
-      "stylelint --cache --fix"
-    ]
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "astro": "^5.12.6",
-    "scss": "^0.2.4",
-    "typescript": "^5.8.3"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.38.0",
-    "@typescript-eslint/parser": "^8.38.0",
-    "eslint": "^9.32.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-astro": "^1.3.1",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.2",
-    "postcss-html": "^1.6.0",
-    "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.14.1",
-    "stylelint": "^16.1.0",
-    "stylelint-config-html": "^1.1.0",
-    "stylelint-config-prettier-scss": "^1.0.0",
-    "stylelint-config-recess-order": "^7.1.0",
-    "stylelint-config-standard-scss": "^15.0.1",
-    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
-    "stylelint-no-unsupported-browser-features": "^8.0.4",
-    "stylelint-prettier": "^5.0.3",
-    "stylelint-scss": "^6.12.1"
+    "astro": "^5.12.7"
   }
 }
