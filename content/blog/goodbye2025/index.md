@@ -180,6 +180,13 @@ CSS だけでバーコードを描画するやつです。
 ac-library の Zig 実装です。
 AtCoder の言語アップデートで入ったようです。嬉しい。
 
+### [WORDの記事の雛形 Typst版](https://github.com/WORD-COINS/article-template-typst)
+
+[情報科学類誌 WORD](https://www.word-ac.net/) は Typst になりました。
+その際の template を実装しました。
+
+もともと LaTeX 組版だったのですが、ビルドが長いなどの問題があった・Typst が十分に成熟してきたため Typst に移行しました。
+
 ### [WORDのコミケ号（BEST SELECTION 6号）](https://x.com/word_tsukuba/status/1955963350397149607)寄稿＆表紙デザイン
 
 実は表紙のデザインをやったりしました。
